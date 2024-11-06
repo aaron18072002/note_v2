@@ -652,3 +652,5 @@ của lớp đó và điều đó giúp cho chương trình tiết kiệm bộ n
 -- Trong Java, Exception là những lỗi xảy ra trong quá trình chạy chương trình (runtime). Exception thường được sử dụng để chỉ các tình huống bất thường mà chương trình gặp phải và cần xử lý.
 
 -- Khi một Exception xảy ra trong Java và nó không được handle (xử lý) bởi bất kỳ khối try-catch nào, luồng thực thi sẽ bị gián đoạn, và tất cả các dòng mã sau điểm xảy ra Exception sẽ không được thực hiện.
+
+-- Stack trace là một biểu diễn của call stack tại thời điểm mà Exception xảy ra, cho thấy trình tự các phương thức đã được gọi trước khi đến vị trí gây ra lỗi. Mỗi phần tử trong stack trace đại diện cho một lời gọi phương thức, bắt đầu từ phương thức gốc (ở cuối stack trace) cho đến phương thức nơi Exception được ném ra (ở đầu stack trace).
