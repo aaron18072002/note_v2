@@ -13,6 +13,7 @@
 - prospective (adj) = potential : tiềm năng
 - put off: cởi / put on: mặc / put up: dựng
 - preservation (n): sự bảo quản
+- pantry (n): phòng đựng thức ăn
 - participant (n) = turnout (n): người tham gia
 - particaite in (v) = join in = engage in = involve in = take part in: tham gia
 - recognize (v): nhận ra, nhận biết
@@ -24,11 +25,12 @@
 - forward (adv): phía trước / (v): chuyển hướng
 - formaly (adv): trước đây
 - factor (n): nhân tố
+- further (adv): xa hơn
+- furniture (n): đồ gia dụng
+- feature (v): có, mang nét đặc trưng
 - infinitive (n): dạng nguyên thể
 - INNOVATIVE (adv): có tính đổi mới
 - involve (v): liên quan
-- further (adv): xa hơn
-- furniture (n): đồ gia dụng
 - contraction (n): viết tắt
 - complementary (adj): bổ sung
 - COMPLIANCE (n): tuân thủ
