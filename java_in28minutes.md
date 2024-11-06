@@ -660,7 +660,10 @@ của lớp đó và điều đó giúp cho chương trình tiết kiệm bộ n
 -- Các loại Exception trong JAVA:
 
 +) Checked Exception: Các lớp kế thừa trực tiếp Throwable class ngoại trừ RuntimeException và Error được gọi là checked exception, ví dụ: IOException, SQLException,... Các checked exception được kiểm tra tại thời điểm biên dịch.
+Throwable -> Exception -> InterruptedException.
 
 +) Unchecked Exception: Các lớp kế thừa RuntimeException được gọi là unchecked exception, ví dụ: ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException, ... Các unchecked exception không được kiểm tra tại thời điểm biên dịch, nhưng chúng được kiểm tra trong thời gian chạy (runtime).
+Throwable -> Exception -> RuntimeException.
 
-+) Error: Lỗi không thể khôi phục được, ví dụ: OutOfMemoryError, VirtualMachineError, AssertionError, v.v.
++) Error: Là các lỗi nghiêm trọng xảy ra trong hệ thống, và chúng thường là các vấn đề nằm ngoài tầm kiểm soát của ứng dụng, ví dụ: OutOfMemoryError, VirtualMachineError, AssertionError, v.v.
+Throwable -> Error.
