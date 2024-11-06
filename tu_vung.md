@@ -28,6 +28,7 @@
 - further (adv): xa hơn
 - furniture (n): đồ gia dụng
 - feature (v): có, mang nét đặc trưng
+- favorite (adj): ưa thích / favorable (adj): thuận lợi / favoring (adj): ưu ái
 - infinitive (n): dạng nguyên thể
 - INNOVATIVE (adv): có tính đổi mới
 - involve (v): liên quan
