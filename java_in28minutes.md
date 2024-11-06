@@ -649,4 +649,6 @@ của lớp đó và điều đó giúp cho chương trình tiết kiệm bộ n
 
 - EXCEPTION
 
--- Trong Java, Exception là những lỗi xảy ra trong quá trình chạy chương trình (runtime). Exception thường được sử dụng để chỉ các tình huống bất thường mà chương trình gặp phải và cần xử lý
+-- Trong Java, Exception là những lỗi xảy ra trong quá trình chạy chương trình (runtime). Exception thường được sử dụng để chỉ các tình huống bất thường mà chương trình gặp phải và cần xử lý.
+
+-- Khi một Exception xảy ra trong Java và nó không được handle (xử lý) bởi bất kỳ khối try-catch nào, luồng thực thi sẽ bị gián đoạn, và tất cả các dòng mã sau điểm xảy ra Exception sẽ không được thực hiện.
