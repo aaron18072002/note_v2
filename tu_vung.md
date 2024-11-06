@@ -74,6 +74,7 @@
 - utensil (n): dụng cụ nhà bếp
 - unforeseen (adv) = expected (v): không lường trước được
 - unanimously (adv): đồng lòng
+- upon (pre): ngay vào lúc
 - demolish (v) = destroy = torn down: phá hủy, phá bỏ
 - devorce (v): ly dị
 - defect (n): khuyết điểm
