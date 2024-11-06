@@ -51,6 +51,7 @@
 - rehearsal (n) = drill (n): buổi diễn tập
 - runway (n): đường băng
 - renowned (adj) = notable (adj) = well-known: nổi tiếng, đáng chú ý
+- renovate (v) = remodel (v): cải tạo, tân trang
 - clarity (n): sự rõ ràng / clarify (v): làm sáng tỏ
 - exclusive (adj) = unique: độc quyền, duy nhất
 - bulletin (n): bản tin
