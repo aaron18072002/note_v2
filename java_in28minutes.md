@@ -646,3 +646,7 @@ của lớp đó và điều đó giúp cho chương trình tiết kiệm bộ n
 
 +) Lớp này hoạt động độc lập với thể hiện của lớp bên ngoài, nghĩa là nó không thể truy cập trực tiếp vào các thành viên non-static của lớp bên ngoài
 (như biến hoặc phương thức non-static)....
+
+- EXCEPTION
+
+-- Trong Java, Exception là những lỗi xảy ra trong quá trình chạy chương trình (runtime). Exception thường được sử dụng để chỉ các tình huống bất thường mà chương trình gặp phải và cần xử lý
