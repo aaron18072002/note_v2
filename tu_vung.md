@@ -61,6 +61,7 @@
 - bulletin (v) = inform = notify = announce
 - barn (n): kho thóc, chuồn
 - badge (n): boảng tên
+- be in charge of = be responsible for = be capable of = qualified: đủ khả năng
 - gather (v): tụ họp
 - erect (v): dựng lên = build something
 - instrument (n): nhạc cụ
