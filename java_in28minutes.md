@@ -321,15 +321,19 @@ mà cả hai lớp cha này đều có phương thức cùng tên và cùng tham
 
 - ABSTRACTION
 
--- Trong JAVA, abstract class (lớp trừu tượng) được sử dụng để làm lớp cha, chứa các đặc điểm và hành vi chung mà các lớp con kế thừa,abstract class được sử dụng để định nghĩa các hành vi và thuộc tính chung.
+-- Trong JAVA, abstract class (lớp trừu tượng) được sử dụng để làm lớp cha, chứa các đặc điểm và hành vi chung mà các lớp con kế thừa,
+abstract class được sử dụng để định nghĩa các hành vi và thuộc tính chung.
 
 -- Lớp con bắt buộc phải implement tất cả các phương thức trừu tượng của lớp cha.
 
 -- Không thể khởi tạo đối tượng từ lớp trừu tượng.
 
--- Trong JAVA, một abstract method (phương thức trừu tượng) bắt buộc phải được override (ghi đè) trong các lớp con kế thừa. Phương thức trừu tượng chỉ được khai báo trong lớp cha, nhưng không có phần thân thực thi (implementation), vì vậy các lớp con cần phải cung cấp chi tiết cụ thể cho phương thức này.
+-- Trong JAVA, một abstract method (phương thức trừu tượng) bắt buộc phải được override (ghi đè) trong các lớp con kế thừa.
+Phương thức trừu tượng chỉ được khai báo trong lớp cha, nhưng không có phần thân thực thi (implementation),
+vì vậy các lớp con cần phải cung cấp chi tiết cụ thể cho phương thức này.
 
--- Trong 1 lớp trừu tượng, từ khóa this vẫn có thể được sử dụng mặc dù lớp này không thể được khởi tạo trực tiếp. Điều này là do this là một tham chiếu đến đối tượng hiện tại và sẽ trỏ tới các đối tượng của bất kỳ lớp con nào kế thừa từ lớp trừu tượng đó.
+-- Trong 1 lớp trừu tượng, từ khóa this vẫn có thể được sử dụng mặc dù lớp này không thể được khởi tạo trực tiếp.
+Điều này là do this là một tham chiếu đến đối tượng hiện tại và sẽ trỏ tới các đối tượng của bất kỳ lớp con nào kế thừa từ lớp trừu tượng đó.
 
 -- Abstract thể hiện mối quan hệ IS-A còn Interface thể hiện mối quan hệ HAS-A.
 
