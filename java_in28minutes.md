@@ -293,7 +293,8 @@ không thể chứa trực tiếp các kiểu nguyên thủy (primitive types) n
 
 - DEFAULT
 
--- Kể từ Java 8, có thể định nghĩa các phương thức có thân (body) trong một interface bằng cách sử dụng từ khóa default. Điều này cho phép các interface cung cấp các phương thức mặc định mà các lớp triển khai có thể sử dụng hoặc ghi đè.
+-- Kể từ Java 8, có thể định nghĩa các phương thức có thân (body) trong một Interface bằng cách sử dụng từ khóa default.
+Điều này cho phép các Interface cung cấp các phương thức mặc định mà các lớp triển khai có thể sử dụng hoặc ghi đè.
 
 - INHERITANCE
 
