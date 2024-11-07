@@ -727,3 +727,11 @@ phương thức (method), cấu tử (constructor) hoặc lớp (class).
 +) Phạm vi truy cập: Chỉ trong lớp khai báo.
 
 +) Sử dụng cho: Phương thức và biến (không dùng cho lớp ngoài cùng).
+
+- UNMANAGED và MANAGED RESOURCES
+
+-- Managed Resources và Unmanaged Resources trong Java:
+
++) Managed Resources trong Java thường được coi là các đối tượng mà Java Virtual Machine (JVM) và Garbage Collector (GC) quản lý, như các đối tượng tiêu chuẩn của Java (chuỗi, danh sách, v.v.). Garbage Collector sẽ tự động thu hồi các đối tượng này khỏi bộ nhớ khi chúng không còn được tham chiếu.
+
++) Unmanaged Resources trong Java bao gồm các tài nguyên hệ thống như luồng I/O, kết nối cơ sở dữ liệu, kết nối mạng, file handles, và các tài nguyên khác không tự động được giải phóng bởi GC. Vì Garbage Collector không biết cách xử lý các tài nguyên này, lập trình viên phải giải phóng chúng một cách thủ công, thường là bằng cách gọi phương thức close() hoặc sử dụng cú pháp try-with-resources để đảm bảo chúng được giải phóng ngay cả khi có lỗi xảy ra.
