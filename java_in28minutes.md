@@ -679,3 +679,38 @@ Throwable -> Exception -> RuntimeException.
 +) Error: Là các lỗi nghiêm trọng xảy ra trong hệ thống, và chúng thường là các vấn đề nằm ngoài tầm kiểm soát của ứng dụng,
 ví dụ: OutOfMemoryError, VirtualMachineError, AssertionError, v.v.
 Throwable -> Error.
+
+- ACCESS MODIFIER
+
+-- Có hai loại modifier trong java: access modifiers và non-access modifiers.
+
+-- Các access modifiers trong java xác định độ truy cập (Phạm vi) vào dữ liệu của của các trường (field),
+phương thức (method), cấu tử (constructor) hoặc lớp (class).
+
+-- Và có một vài non-access modifiers chẳng hạn static, abstract, synchronized, native, volatile, transient, v.v..
+
+-- PUBLIC:
+
++) Phạm vi truy cập: Bất kỳ đâu trong chương trình, kể cả từ các package khác.
+
++) Sử dụng cho: Lớp, phương thức, biến.
+
+-- PROTECTED:
+
++) Phạm vi truy cập: Trong cùng một package và các lớp con (subclass) kể cả khi chúng ở package khác.
+
++) Sử dụng cho: Phương thức và biến (không dùng cho lớp ngoài cùng).
+
+-- DEFAULT (hay còn gọi là package-private):
+
++) Phạm vi truy cập: Trong cùng một package.
+
++) Sử dụng cho: Lớp, phương thức, biến.
+
++) Ý nghĩa: Khi không có modifier nào được khai báo, Java sẽ coi đó là phạm vi default.
+
+-- PRIVATE:
+
++) Phạm vi truy cập: Chỉ trong lớp khai báo.
+
++) Sử dụng cho: Phương thức và biến (không dùng cho lớp ngoài cùng).
