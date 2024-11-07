@@ -353,7 +353,7 @@ Phiên bản Java 9, có thể thêm private methods.
 
 - COLLECTIONS
 
--- Iterable -> Collection -> List.
+-- Interface Iterable -> Interface Collection -> Interface List.
 
 -- Iterable: Đây là Interface gốc, cung cấp phương thức iterator() để lặp qua các phần tử. Tất cả các lớp triển khai Iterable
 có thể được duyệt bằng vòng lặp for-each.
@@ -729,6 +729,8 @@ phương thức (method), cấu tử (constructor) hoặc lớp (class).
 +) Sử dụng cho: Phương thức và biến (không dùng cho lớp ngoài cùng).
 
 - UNMANAGED và MANAGED RESOURCES
+
+-- Interface AutoCloseable -> Interface Closeable -> Unmanaged Resources.
 
 -- Managed Resources và Unmanaged Resources trong Java:
 
