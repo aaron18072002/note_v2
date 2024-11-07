@@ -39,6 +39,7 @@
 - complementary (adj): bổ sung
 - COMPLIANCE (n): tuân thủ
 - commute (v): đi làm / commuter (n): người đi làm
+- community (n) = local: địa phương
 - state (v): diễn đạt
 - supply (n): đồ dùng / supply (v): cung cấp
 - suspend (v) = delay: trì hoãn
@@ -62,6 +63,7 @@
 - barn (n): kho thóc, chuồn
 - badge (n): boảng tên
 - be in charge of = be responsible for = be capable of = qualified: đủ khả năng
+- be accustomed to = be familiar with: quen với
 - gather (v): tụ họp
 - erect (v): dựng lên = build something
 - instrument (n): nhạc cụ
