@@ -50,12 +50,12 @@
 - regret (n): hối hận
 - remain (v): giữ nguyên
 - remand (v): nhác nhở
-- REMARKABLE (adj) = outstanding (adj) = noticeable = substantial = considerable: nổi bật
 - receipt (n) = invoice (n): hóa đơn, biên lai
 - rehearsal (n) = drill (n): buổi diễn tập
 - runway (n): đường băng
 - renowned (adj) = notable (adj) = well-known: nổi tiếng, đáng chú ý
 - renovate (v) = remodel (v): cải tạo, tân trang
+- revenue (n): doanh thu / avenue (n): đại lộ / venue (n) = location = site = place: địa điểm
 - clarity (n): sự rõ ràng / clarify (v): làm sáng tỏ
 - exclusive (adj) = unique: độc quyền, duy nhất
 - bulletin (n): bản tin
@@ -73,7 +73,7 @@
 - THOROUGHLY (adv): kỹ lưỡng
 - gather (v) = assenble (v): tụ họp
 - so = therefore = thus = hence = consequently: do đó
-- significant (adj) = substantially (adj) = CONSIDERABLY (adj) đáng kể
+- significant (adj) = remarkable (adj) = noticeable = substantially (adj) = considerable (adj) đáng kể
 - utensil (n): dụng cụ nhà bếp
 - unforeseen (adv) = expected (v): không lường trước được
 - unanimously (adv): đồng lòng
