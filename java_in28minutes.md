@@ -651,7 +651,9 @@ của lớp bên ngoài (như biến hoặc phương thức non-static)....
 
 - EXCEPTION
 
--- Trong Java, Exception là những lỗi xảy ra trong quá trình chạy chương trình (runtime). Exception thường được sử dụng để chỉ các
+-- Trong JAVA, Exception là 1 class mà extends class Throwable.
+
+-- Exception là những lỗi xảy ra trong quá trình chạy chương trình (runtime). Exception thường được sử dụng để chỉ các
 tình huống bất thường mà chương trình gặp phải và cần xử lý.
 
 -- Khi một Exception xảy ra trong Java và nó không được handle (xử lý) bởi bất kỳ khối try-catch nào, luồng thực thi sẽ bị gián đoạn,
