@@ -603,7 +603,8 @@ Callable trong Collection được thực thi xong.
 -- Phương thức invokeAny(Collection<?> extends Callable<T> tasks) Phương thức invokeAny() nhận một tập hợp (collection)
 của các đối tượng Callable hoặc các lớp được kế thừa từ Callable chúng. Gọi phương thức này không trả về một Future,
 nhưng trả về kết quả của một trong những đối tượng Callables. Bạn không đảm bảo về kết quả nào bạn sẽ nhận được từ callable.
-Chỉ cần một trong số chúng hoàn thành (Tức là ko cần tất cả các thread hoàn thành, chỉ cần 1 task hoàn thành phương thức get() sẽ nhận được kết quả.
+Chỉ cần một trong số chúng hoàn thành (Tức là ko cần tất cả các thread hoàn thành, chỉ cần 1 task hoàn thành phương thức get()
+sẽ nhận được kết quả.
 
 - FUTURE
 
@@ -642,28 +643,39 @@ của lớp đó và điều đó giúp cho chương trình tiết kiệm bộ n
 
 +) Một nested class được khai báo với từ khóa static gọi là nested static class.
 
-+) Khác với các lớp thông thường, một nested static class có thể được truy cập mà không cần tạo một đối tượng của outer class (lớp bên ngoài).
++) Khác với các lớp thông thường, một nested static class có thể được truy cập mà không cần tạo một đối tượng của outer class
+(lớp bên ngoài).
 
-+) Lớp này hoạt động độc lập với thể hiện của lớp bên ngoài, nghĩa là nó không thể truy cập trực tiếp vào các thành viên non-static của lớp bên ngoài
-(như biến hoặc phương thức non-static)....
++) Lớp này hoạt động độc lập với thể hiện của lớp bên ngoài, nghĩa là nó không thể truy cập trực tiếp vào các thành viên non-static
+của lớp bên ngoài (như biến hoặc phương thức non-static)....
 
 - EXCEPTION
 
--- Trong Java, Exception là những lỗi xảy ra trong quá trình chạy chương trình (runtime). Exception thường được sử dụng để chỉ các tình huống bất thường mà chương trình gặp phải và cần xử lý.
+-- Trong Java, Exception là những lỗi xảy ra trong quá trình chạy chương trình (runtime). Exception thường được sử dụng để chỉ các
+tình huống bất thường mà chương trình gặp phải và cần xử lý.
 
--- Khi một Exception xảy ra trong Java và nó không được handle (xử lý) bởi bất kỳ khối try-catch nào, luồng thực thi sẽ bị gián đoạn, và tất cả các dòng mã sau điểm xảy ra Exception sẽ không được thực hiện.
+-- Khi một Exception xảy ra trong Java và nó không được handle (xử lý) bởi bất kỳ khối try-catch nào, luồng thực thi sẽ bị gián đoạn,
+và tất cả các dòng mã sau điểm xảy ra Exception sẽ không được thực hiện.
 
--- Stack trace là một biểu diễn của call stack tại thời điểm mà Exception xảy ra, cho thấy trình tự các phương thức đã được gọi trước khi đến vị trí gây ra lỗi. Mỗi phần tử trong stack trace đại diện cho một lời gọi phương thức, bắt đầu từ phương thức gốc (ở cuối stack trace) cho đến phương thức nơi Exception được ném ra (ở đầu stack trace).
+-- Stack trace là một biểu diễn của call stack tại thời điểm mà Exception xảy ra, cho thấy trình tự các phương thức đã được gọi
+trước khi đến vị trí gây ra lỗi. Mỗi phần tử trong stack trace đại diện cho một lời gọi phương thức, bắt đầu từ phương thức gốc
+(ở cuối stack trace) cho đến phương thức nơi Exception được ném ra (ở đầu stack trace).
 
--- Trong Java, khối finally được thiết kế để luôn thực thi sau khối try hoặc catch, bất kể có Exception xảy ra hay không, hoặc thậm chí khi có câu lệnh return trong khối try hoặc catch. Trường hợp duy nhất mà khối finally không được thực thi là khi nó gặp phương thức System.exit() ở bất kỳ đâu trong khối try/catch.
+-- Trong Java, khối finally được thiết kế để luôn thực thi sau khối try hoặc catch, bất kể có Exception xảy ra hay không,
+hoặc thậm chí khi có câu lệnh return trong khối try hoặc catch. Trường hợp duy nhất mà khối finally không được thực thi là
+khi nó gặp phương thức System.exit() ở bất kỳ đâu trong khối try/catch.
 
 -- Các loại Exception trong JAVA:
 
-+) Checked Exception: Các lớp kế thừa trực tiếp Throwable class ngoại trừ RuntimeException và Error được gọi là checked exception, ví dụ: IOException, SQLException,... Các checked exception được kiểm tra tại thời điểm biên dịch.
++) Checked Exception: Các lớp kế thừa trực tiếp Throwable class ngoại trừ RuntimeException và Error được gọi là checked exception,
+ví dụ: IOException, SQLException,... Các checked exception được kiểm tra tại thời điểm biên dịch.
 Throwable -> Exception -> InterruptedException.
 
-+) Unchecked Exception: Các lớp kế thừa RuntimeException được gọi là unchecked exception, ví dụ: ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException, ... Các unchecked exception không được kiểm tra tại thời điểm biên dịch, nhưng chúng được kiểm tra trong thời gian chạy (runtime).
++) Unchecked Exception: Các lớp kế thừa RuntimeException được gọi là unchecked exception, ví dụ: ArithmeticException,
+NullPointerException, ArrayIndexOutOfBoundsException, ... Các unchecked exception không được kiểm tra tại thời điểm biên dịch,
+nhưng chúng được kiểm tra trong thời gian chạy (runtime).
 Throwable -> Exception -> RuntimeException.
 
-+) Error: Là các lỗi nghiêm trọng xảy ra trong hệ thống, và chúng thường là các vấn đề nằm ngoài tầm kiểm soát của ứng dụng, ví dụ: OutOfMemoryError, VirtualMachineError, AssertionError, v.v.
++) Error: Là các lỗi nghiêm trọng xảy ra trong hệ thống, và chúng thường là các vấn đề nằm ngoài tầm kiểm soát của ứng dụng,
+ví dụ: OutOfMemoryError, VirtualMachineError, AssertionError, v.v.
 Throwable -> Error.
