@@ -56,6 +56,7 @@
 - renowned (adj) = notable (adj) = well-known: nổi tiếng, đáng chú ý
 - renovate (v) = remodel (v): cải tạo, tân trang
 - revenue (n): doanh thu / avenue (n): đại lộ / venue (n) = location = site = place: địa điểm
+- regarding = concerning = about: về
 - clarity (n): sự rõ ràng / clarify (v): làm sáng tỏ
 - exclusive (adj) = unique: độc quyền, duy nhất
 - bulletin (n): bản tin
