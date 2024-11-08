@@ -83,6 +83,7 @@
 - devorce (v): ly dị
 - defect (n): khuyết điểm
 - directly (adv) = in person: trực tiếp
+- due to (pre) = owing to = given = beacause of = account of: bởi vì
 - enquire (v): hỏi thăm # require (v): yêu cầu
 - entitle (v): trao quyền
 - confidential (adj) = private: bí mật
