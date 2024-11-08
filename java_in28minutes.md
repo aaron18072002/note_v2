@@ -570,7 +570,26 @@ Trong trường hợp này, luồng không bị chặn bởi mã đồng bộ h�
 -- Khi một luồng truy cập vào một phương thức hoặc khối mã được đánh dấu synchronized, nó sẽ giữ khóa của đối tượng đó
 và ngăn các luồng khác truy cập vào cùng một khối hoặc phương thức cho đến khi khóa được giải phóng.
 
-- EXECUTOR SERVICE
+-- Vấn đề của synchronized là chỉ 1 Thread được quyền truy cập vào tất cả các synchronized methods khác của 1 object tại 1 thời điểm.
+Khi một thread đang thực thi một phương thức synchronized, tất cả các phương thức synchronized khác của cùng đối tượng đều bị khóa.
+Điều này xảy ra ngay cả khi các phương thức synchronized khác có thể không xung đột với nhau hoặc không tác động lên cùng tài nguyên.
+Các thread khác phải chờ thread hiện tại giải phóng khóa trước khi truy cập bất kỳ phương thức synchronized nào.
+
+- LOCK
+
+-- Lock trong JAVA là 1 Interface.
+
+-- Lock được dùng để giải quyết vấn đề của synchronized.
+
+-- Lock cung cấp một cơ chế khóa linh hoạt hơn, cho phép kiểm soát chính xác khi nào khóa được cấp, được nhả, 
+và hỗ trợ một số tính năng mà synchronized không có:
+
++) Với synchronized, khóa được cấp và giải phóng tự động khi thread vào và thoát khỏi khối mã.
+
++) Ngược lại, Lock yêu cầu bạn phải khóa thủ công bằng cách gọi lock() và giải phóng khóa bằng cách gọi unlock(). 
+Điều này cho phép kiểm soát chính xác thời điểm chiếm và nhả khóa.
+
+- EXECUTOR SERVIC
 
 -- Bên trong ThreadPool, các task sẽ được chèn vào trong một Blocking Queue. Blocking Queue có thể hiểu là nơi chứa các task
 mà các Thread sẽ lấy chúng ra và thực thi lần lượt. Mỗi khi có một task mới được thêm vào Queue và sau đó sẽ chỉ có một Thread đang
