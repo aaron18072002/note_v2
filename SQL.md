@@ -1,3 +1,16 @@
+Học SQL khó? Hãy tư duy như SQL
+
+Cách SQL suy nghĩ:
+
+1. Lấy dữ liệu từ bảng nào? - FROM
+2. Dữ liệu nào cần cho phân tích? - WHERE
+3. Có cần bổ sung thêm dữ liệu? - JOIN
+4. Có cần nhóm/tổng hợp dữ liệu> - GROUP BY
+5. Cần lọc dữ liệu đầu ra? - HAVING
+6. Hiển thị dữ liệu? - SELECT
+7. Cần sắp xếp dữ liệu? - ORDER
+8. Giới hạn dữ liệu in ra màn hình - LIMIT
+
 -- ACID
 
 -- SELECT DISTINCT
