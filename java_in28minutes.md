@@ -251,6 +251,9 @@ một vị trí bộ nhớ hay không.
 -- Phương thức hashCode() trả về một số int đại diện cho 1 instance của class. Khi 2 object là bằng nhau thì hashCode() method của chúng
 cũng phải trả về giá trị bằng nhau. Đó là lý do nếu đã override equals() method thì cũng phải override hashCode() method.
 
+-- Phương thức hashCode() là cơ chế giúp các hash collection như HashMap, HashSet, và Hashtable phân chia và lưu trữ các đối tượng một
+cách hiệu quả bằng cách sử dụng mã băm (hash code) của các đối tượng để đặt chúng vào các bucket.
+
 - WRAPPER CLASS
 
 -- Trong Java, các Wrapper Class được thiết kế để "bọc" (wrap) các kiểu dữ liệu nguyên thủy (như int, double, boolean, v.v.) thành các đối tượng, từ đó
