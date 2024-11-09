@@ -243,8 +243,13 @@ Tuy nhiên, StringBuilder phù hợp với môi trường có một luồng duy 
 -- Trong trường hợp phương thức equals không được ghi đè trong một lớp, thì lớp đó sử dụng cách triển khai mặc định của phương thức equals
 gần với lớp cha nhất.
 
--- Lớp Object được coi là lớp cha của tất cả các lớp Java. Và equals() của 1 Object so sánh cả hai đối tượng có trỏ đến cùng một vị trí bộ nhớ
-hay không.
+-- Lớp Object được coi là lớp cha của tất cả các lớp Java. Và cách triển khai equals() của 1 Object là so sánh cả hai đối tượng có trỏ đến cùng
+một vị trí bộ nhớ hay không.
+
+- HASHCODE METHOD
+
+-- Phương thức hashCode() trả về một số int đại diện cho 1 instance của class. Khi 2 object là bằng nhau thì hashCode() method của chúng
+cũng phải trả về giá trị bằng nhau. Đó là lý do nếu đã override equals() method thì cũng phải override hashCode() method.
 
 - WRAPPER CLASS
 
