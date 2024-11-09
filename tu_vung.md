@@ -36,12 +36,13 @@
 - INNOVATIVE (adv): có tính đổi mới
 - involve (v): liên quan
 - contraction (n): viết tắt
-- complementary (adj): bổ sung
+- complementary (adj): miễn phí
 - COMPLIANCE (n): tuân thủ
 - commute (v): đi làm / commuter (n): người đi làm
 - community (n) = local: địa phương
 - state (v): diễn đạt
 - supply (n): đồ dùng / supply (v): cung cấp
+- supplementary (adj): bổ sung
 - suspend (v) = delay: trì hoãn
 - stiff (adj): cứng
 - steadily (adv): đều đặn
