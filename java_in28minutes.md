@@ -717,6 +717,9 @@ của lớp đó và điều đó giúp cho chương trình tiết kiệm bộ n
 
 -- Lớp static (static class):
 
++) Trong Java, một lớp static phải là lớp lồng nhau (nested class) bên trong một lớp không phải static khác,
+tức là nó không thể tồn tại độc lập như một lớp riêng biệt.
+
 +) Một nested class được khai báo với từ khóa static gọi là nested static class.
 
 +) Khác với các lớp thông thường, một nested static class có thể được truy cập mà không cần tạo một đối tượng của outer class
@@ -804,6 +807,11 @@ phương thức (method), cấu tử (constructor) hoặc lớp (class).
 
 -- Managed Resources và Unmanaged Resources trong Java:
 
-+) Managed Resources trong Java thường được coi là các đối tượng mà Java Virtual Machine (JVM) và Garbage Collector (GC) quản lý, như các đối tượng tiêu chuẩn của Java (chuỗi, danh sách, v.v.). Garbage Collector sẽ tự động thu hồi các đối tượng này khỏi bộ nhớ khi chúng không còn được tham chiếu.
++) Managed Resources trong Java thường được coi là các đối tượng mà Java Virtual Machine (JVM) và Garbage Collector (GC) quản lý,
+như các đối tượng tiêu chuẩn của Java (chuỗi, danh sách, v.v.). Garbage Collector sẽ tự động thu hồi các đối tượng này khỏi bộ nhớ
+khi chúng không còn được tham chiếu.
 
-+) Unmanaged Resources trong Java bao gồm các tài nguyên hệ thống như luồng I/O, kết nối cơ sở dữ liệu, kết nối mạng, file handles, và các tài nguyên khác không tự động được giải phóng bởi GC. Vì Garbage Collector không biết cách xử lý các tài nguyên này, lập trình viên phải giải phóng chúng một cách thủ công, thường là bằng cách gọi phương thức close() hoặc sử dụng cú pháp try-with-resources để đảm bảo chúng được giải phóng ngay cả khi có lỗi xảy ra.
++) Unmanaged Resources trong Java bao gồm các tài nguyên hệ thống như luồng I/O, kết nối cơ sở dữ liệu, kết nối mạng, file handles,
+và các tài nguyên khác không tự động được giải phóng bởi GC. Vì Garbage Collector không biết cách xử lý các tài nguyên này,
+lập trình viên phải giải phóng chúng một cách thủ công, thường là bằng cách gọi phương thức close() hoặc sử dụng cú pháp try-with-resources
+để đảm bảo chúng được giải phóng ngay cả khi có lỗi xảy ra.
