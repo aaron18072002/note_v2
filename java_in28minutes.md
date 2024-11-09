@@ -581,15 +581,21 @@ Các thread khác phải chờ thread hiện tại giải phóng khóa trước 
 
 -- Lock được dùng để giải quyết vấn đề của synchronized.
 
--- Lock cung cấp một cơ chế khóa linh hoạt hơn, cho phép kiểm soát chính xác khi nào khóa được cấp, được nhả, 
+-- Lock cung cấp một cơ chế khóa linh hoạt hơn, cho phép kiểm soát chính xác khi nào khóa được cấp, được nhả,
 và hỗ trợ một số tính năng mà synchronized không có:
 
 +) Với synchronized, khóa được cấp và giải phóng tự động khi thread vào và thoát khỏi khối mã.
 
-+) Ngược lại, Lock yêu cầu bạn phải khóa thủ công bằng cách gọi lock() và giải phóng khóa bằng cách gọi unlock(). 
++) Ngược lại, Lock yêu cầu bạn phải khóa thủ công bằng cách gọi lock() và giải phóng khóa bằng cách gọi unlock().
 Điều này cho phép kiểm soát chính xác thời điểm chiếm và nhả khóa.
 
-- EXECUTOR SERVIC
+- ATOMIC
+
+-- Atomic classes trong Java là các lớp cung cấp các thao tác nguyên tử (atomic operations) trên các giá trị đơn lẻ như số nguyên (int),
+số thực (long), boolean, hoặc các tham chiếu đối tượng. Những thao tác này là nguyên tử vì chúng đảm bảo rằng các hành động sẽ diễn ra một cách toàn vẹn,
+không bị can thiệp bởi các luồng khác, mà không cần sử dụng khóa (lock) để điều phối luồng.
+
+- EXECUTOR SERVICE
 
 -- Bên trong ThreadPool, các task sẽ được chèn vào trong một Blocking Queue. Blocking Queue có thể hiểu là nơi chứa các task
 mà các Thread sẽ lấy chúng ra và thực thi lần lượt. Mỗi khi có một task mới được thêm vào Queue và sau đó sẽ chỉ có một Thread đang
