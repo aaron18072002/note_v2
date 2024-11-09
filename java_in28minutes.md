@@ -611,8 +611,8 @@ khóa khi có các thao tác ghi (thêm, sửa, xóa).
 
 +) Cập nhật tham chiếu của mảng sang bản sao mới thông qua phương thức setArray().
 
-+) Điều này có nghĩa là các thao tác ghi sẽ không thay đổi ngay mảng cơ bản mà tạo ra một bản sao mới. 
-Sau khi ghi xong, tham chiếu mảng sẽ trỏ tới mảng mới này. Các thao tác đọc thực hiện trước khi gọi setArray() 
++) Điều này có nghĩa là các thao tác ghi sẽ không thay đổi ngay mảng cơ bản mà tạo ra một bản sao mới.
+Sau khi ghi xong, tham chiếu mảng sẽ trỏ tới mảng mới này. Các thao tác đọc thực hiện trước khi gọi setArray()
 sẽ thấy dữ liệu cũ.
 
 - EXECUTOR SERVICE
@@ -704,6 +704,11 @@ của lớp đó và điều đó giúp cho chương trình tiết kiệm bộ n
 
 +) Lớp này hoạt động độc lập với thể hiện của lớp bên ngoài, nghĩa là nó không thể truy cập trực tiếp vào các thành viên non-static
 của lớp bên ngoài (như biến hoặc phương thức non-static)....
+
+-- Import static:
+
++) Java cho phép import các thành viên tĩnh (static member) của một class hoặc package vào một class khác
+với từ khóa import static.
 
 - EXCEPTION
 
