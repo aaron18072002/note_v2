@@ -234,10 +234,22 @@ Bất kỳ thao tác nào thay đổi giá trị của String sẽ tạo ra mộ
 -- Thread-safe: Trong trường hợp môi trường luồng, StringBuilder và StringBuffer được sử dụng trong khi một String không được sử dụng.
 Tuy nhiên, StringBuilder phù hợp với môi trường có một luồng duy nhất và StringBuffer phù hợp với đa luồng.
 
+- EQUALS METHOD và TOÁN TỬ ==
+
+-- Toán tử == dùng để so sánh địa chỉ (hoặc tham chiếu), tức là kiểm tra xem cả hai đối tượng có trỏ đến cùng một vị trí bộ nhớ hay không.
+
+-- Phương thức Equals() so sánh dựa trên code bên trong instance chứa nó.
+
+-- Trong trường hợp phương thức equals không được ghi đè trong một lớp, thì lớp đó sử dụng cách triển khai mặc định của phương thức equals
+gần với lớp cha nhất.
+
+-- Lớp Object được coi là lớp cha của tất cả các lớp Java. Và equals() của 1 Object so sánh cả hai đối tượng có trỏ đến cùng một vị trí bộ nhớ
+hay không.
+
 - WRAPPER CLASS
 
--- Trong Java, các Wrapper Class được thiết kế để "bọc" (wrap) các kiểu dữ liệu nguyên thủy (như int, double, boolean, v.v.) thành các đối tượng, từ đó cho phép xử lý
-các giá trị nguyên thủy như thể chúng là các đối tượng. Điều này rất hữu ích vì:
+-- Trong Java, các Wrapper Class được thiết kế để "bọc" (wrap) các kiểu dữ liệu nguyên thủy (như int, double, boolean, v.v.) thành các đối tượng, từ đó
+cho phép xử lý các giá trị nguyên thủy như thể chúng là các đối tượng. Điều này rất hữu ích vì:
 
 ++ Chuyển đổi giữa kiểu nguyên thủy và đối tượng: Các wrapper class cung cấp các phương thức để chuyển đổi qua lại giữa kiểu nguyên thủy và đối tượng.
 Ví dụ: Integer có phương thức parseInt() để chuyển đổi String thành int.
@@ -707,7 +719,7 @@ của lớp bên ngoài (như biến hoặc phương thức non-static)....
 
 -- Import static:
 
-+) Java cho phép import các thành viên tĩnh (static member) của một class hoặc package vào một class khác
++) Java cho phép import các thành viên tĩnh (static member) và static method của một class hoặc package vào một class khác
 với từ khóa import static.
 
 - EXCEPTION
