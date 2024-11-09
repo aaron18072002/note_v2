@@ -305,11 +305,15 @@ không thể chứa trực tiếp các kiểu nguyên thủy (primitive types) n
 
 - FINAL
 
--- Sử dụng với biến: Khi một biến được khai báo với từ khóa final, giá trị của nó không thể thay đổi sau khi được khởi tạo. Điều này tương tự như một hằng số. Khác với CONST Biến FINAL có thể được khởi tạo ở giai đoạn runtime bằng CONSTRUCTOR.
+-- Sử dụng với biến: Khi một biến được khai báo với từ khóa final, giá trị của nó không thể thay đổi sau khi được khởi tạo.
+Điều này tương tự như một hằng số. Khác với CONST Biến FINAL có thể được khởi tạo ở giai đoạn runtime bằng CONSTRUCTOR.
 
 -- Sử dụng với phương thức: Khi một phương thức được khai báo là final, phương thức này không thể bị ghi đè (override) bởi các lớp con.
 
 -- Sử dụng với lớp: Khi một lớp được khai báo là final, lớp đó không thể được kế thừa.
+
+-- Sử dụng với tham số: Trong Java, từ khóa final có thể được sử dụng với các tham số của phương thức để chỉ ra rằng giá trị của tham 
+số không thể thay đổi trong suốt quá trình thực thi của phương thức.
 
 - DEFAULT
 
