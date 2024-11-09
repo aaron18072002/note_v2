@@ -312,7 +312,7 @@ không thể chứa trực tiếp các kiểu nguyên thủy (primitive types) n
 
 -- Sử dụng với lớp: Khi một lớp được khai báo là final, lớp đó không thể được kế thừa.
 
--- Sử dụng với tham số: Trong Java, từ khóa final có thể được sử dụng với các tham số của phương thức để chỉ ra rằng giá trị của tham 
+-- Sử dụng với tham số: Trong Java, từ khóa final có thể được sử dụng với các tham số của phương thức để chỉ ra rằng giá trị của tham
 số không thể thay đổi trong suốt quá trình thực thi của phương thức.
 
 - DEFAULT
@@ -702,7 +702,11 @@ sẽ nhận được kết quả.
 
 -- Biến static (static variables):
 
-+) Biến static có thể được sử dụng làm thuộc tính chung, để dùng chung dữ liệu cho tất cả objects (hoặc instances)
++) Biến static thuộc về lớp chứ không phải thuộc về từng đối tượng cụ thể.
+
++) Chỉ có một bản sao duy nhất của biến static được tạo ra trong bộ nhớ, bất kể có bao nhiêu đối tượng của lớp đó được tạo ra.
+
++) Biến static có thể được sử dụng làm thuộc tính chung, để làm dữ liệu chung cho tất cả objects (hoặc instances)
 của lớp đó và điều đó giúp cho chương trình tiết kiệm bộ nhớ hơn.
 
 -- Phương thức static (static methods):
