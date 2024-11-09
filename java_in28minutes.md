@@ -783,7 +783,7 @@ phương thức (method), cấu tử (constructor) hoặc lớp (class).
 
 -- PROTECTED:
 
-+) Phạm vi truy cập: Trong cùng một package và các lớp con (subclass) kể cả khi chúng ở package khác.
++) Phạm vi truy cập: Trong cùng một package hoặc các lớp con (subclass) kể cả khi chúng ở package khác.
 
 +) Sử dụng cho: Phương thức và biến (không dùng cho lớp ngoài cùng).
 
