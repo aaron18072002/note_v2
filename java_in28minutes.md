@@ -595,6 +595,26 @@ và hỗ trợ một số tính năng mà synchronized không có:
 số thực (long), boolean, hoặc các tham chiếu đối tượng. Những thao tác này là nguyên tử vì chúng đảm bảo rằng các hành động sẽ diễn ra một cách toàn vẹn,
 không bị can thiệp bởi các luồng khác, mà không cần sử dụng khóa (lock) để điều phối luồng.
 
+- COPY ON WRITE
+
+-- CopyOnWriteArrayList là một lớp trong Java Collection Framework được thiết kế đặc biệt để hỗ trợ các hoạt động đọc (truy xuất dữ liệu)
+với hiệu suất cao trong môi trường đa luồng. Nó thực hiện điều này bằng cách đảm bảo rằng các thao tác đọc không cần khóa và chỉ sử dụng
+khóa khi có các thao tác ghi (thêm, sửa, xóa).
+
+-- Hoạt động ghi (thêm, sửa, xóa): Khi thực hiện một thao tác ghi, CopyOnWriteArrayList sẽ:
+
++) Sử dụng ReentrantLock để khóa danh sách nhằm đảm bảo tính an toàn trong môi trường đa luồng.
+
++) Tạo một bản sao mới của mảng cơ bản (mảng lưu trữ dữ liệu danh sách).
+
++) Thực hiện thao tác ghi trên bản sao mới đó.
+
++) Cập nhật tham chiếu của mảng sang bản sao mới thông qua phương thức setArray().
+
++) Điều này có nghĩa là các thao tác ghi sẽ không thay đổi ngay mảng cơ bản mà tạo ra một bản sao mới. 
+Sau khi ghi xong, tham chiếu mảng sẽ trỏ tới mảng mới này. Các thao tác đọc thực hiện trước khi gọi setArray() 
+sẽ thấy dữ liệu cũ.
+
 - EXECUTOR SERVICE
 
 -- Bên trong ThreadPool, các task sẽ được chèn vào trong một Blocking Queue. Blocking Queue có thể hiểu là nơi chứa các task
