@@ -823,3 +823,9 @@ khi chúng không còn được tham chiếu.
 và các tài nguyên khác không tự động được giải phóng bởi GC. Vì Garbage Collector không biết cách xử lý các tài nguyên này,
 lập trình viên phải giải phóng chúng một cách thủ công, thường là bằng cách gọi phương thức close() hoặc sử dụng cú pháp try-with-resources
 để đảm bảo chúng được giải phóng ngay cả khi có lỗi xảy ra.
+
+- ANONYMOUS CLASS
+
+-- Trong Java, lớp ẩn danh là một loại lớp nội mà không có tên, được khai báo và khởi tạo trong một dòng mã.
+Lớp này thường được sử dụng để mở rộng một lớp hoặc triển khai một interface với hành vi cụ thể mà không cần
+tạo ra một lớp riêng biệt. Lớp ẩn danh thường rất hữu ích khi bạn chỉ cần một lần triển khai đơn giản.
