@@ -832,5 +832,17 @@ tạo ra một lớp riêng biệt. Lớp ẩn danh thường rất hữu ích k
 
 - ENUM
 
--- Trong Java, enum là một kiểu dữ liệu đặc biệt được sử dụng để định nghĩa một tập hợp các hằng số. Khi sử dụng enum,
-các giá trị của nó là tham chiếu (reference type) chứ không phải tham trị (value type).
+-- Trong Java, enum thực chất là một tập hợp các đối tượng (object) đại diện cho các hằng số của kiểu enum.
+Mỗi hằng số trong enum là một thể hiện (instance) duy nhất của lớp enum, vì thế chúng đều là các đối tượng với các
+thuộc tính và phương thức riêng.
+
+-- Các đặc điểm quan trọng của enum trong Java:
+
++) Mỗi hằng số là một đối tượng: Khi khai báo một enum với các hằng số, Java tự động tạo ra các đối tượng duy nhất
+cho mỗi hằng số đó. Các đối tượng này là singleton (chỉ có một thể hiện duy nhất trong toàn bộ ứng dụng).
+
++) Có thể có phương thức và thuộc tính: enum không chỉ là tập hợp các giá trị tĩnh. Bạn có thể khai báo các thuộc tính
+và phương thức trong enum để cung cấp thêm thông tin hoặc hành vi cho từng hằng số.
+
++) Có thể sử dụng các constructor: Mặc dù các constructor trong enum phải là private hoặc package-private, bạn vẫn có thể tạo constructor
+để khởi tạo các thuộc tính của từng đối tượng enum.
