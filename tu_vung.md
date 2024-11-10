@@ -17,6 +17,7 @@
 - put off: cởi / put on: mặc / put up: dựng
 - preservation (n): sự bảo quản
 - pantry (n): phòng đựng thức ăn
+- provision (n): điều khoản
 - participant (n) = turnout (n): người tham gia
 - particaite in (v) = join in = engage in = involve in = take part in: tham gia
 - recognize (v): nhận ra, nhận biết
