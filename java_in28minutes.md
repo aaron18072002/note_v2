@@ -829,3 +829,8 @@ lập trình viên phải giải phóng chúng một cách thủ công, thườn
 -- Trong Java, lớp ẩn danh là một loại lớp nội mà không có tên, được khai báo và khởi tạo trong một dòng mã.
 Lớp này thường được sử dụng để mở rộng một lớp hoặc triển khai một interface với hành vi cụ thể mà không cần
 tạo ra một lớp riêng biệt. Lớp ẩn danh thường rất hữu ích khi bạn chỉ cần một lần triển khai đơn giản.
+
+- ENUM
+
+-- Trong Java, enum là một kiểu dữ liệu đặc biệt được sử dụng để định nghĩa một tập hợp các hằng số. Khi sử dụng enum,
+các giá trị của nó là tham chiếu (reference type) chứ không phải tham trị (value type).
