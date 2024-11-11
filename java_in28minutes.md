@@ -857,6 +857,20 @@ cho các module khác và có thể kiểm soát quyền truy cập vào các th
 -- Module thường có một tệp module-info.java ở gốc của nó, dùng để định nghĩa tên module và những gì
 mà module xuất ra (exports) hoặc yêu cầu từ các module khác (requires).
 
+-- requires:
+
++) Khi bạn sử dụng requires, module hiện tại sẽ phụ thuộc vào module được chỉ định, nhưng sự phụ thuộc này không
+được chuyển tiếp cho các module khác.
+
++) Chỉ module hiện tại mới có thể trực tiếp truy cập các API của module được yêu cầu.
+
+-- requires transitive:
+
++) requires transitive không chỉ cho phép module hiện tại truy cập vào module phụ thuộc mà còn cho phép tất cả các module
+khác phụ thuộc vào module hiện tại truy cập module phụ thuộc đó.
+
++) B phụ thuộc C, A phụ thuộc B, suy ra A có thể truy cập vào C.
+
 - JAVA VERSIONS
 
 -- JAVA 5.0: Enhanced for loop, Generics, Enum, Autoboxing.
