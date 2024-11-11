@@ -880,6 +880,14 @@ khác phụ thuộc vào module hiện tại truy cập module phụ thuộc đ�
 
 +) B phụ thuộc C, A phụ thuộc B, suy ra A có thể truy cập vào C.
 
+- YIELD
+
+-- RETURN trong Java được dùng để thoát ra khỏi phương thức hiện tại và trả về một giá trị cho người gọi phương thức.
+
+-- YIELD trong Switch Expression có chức năng trả về giá trị cho chính biểu thức switch, không phải thoát ra khỏi 
+phương thức. yield cho phép biểu thức switch tiếp tục hoạt động như một khối lệnh trả về giá trị mà không ảnh hưởng 
+đến luồng điều khiển của phương thức.
+
 - JAVA VERSIONS
 
 -- JAVA 5.0: Enhanced for loop, Generics, Enum, Autoboxing.
