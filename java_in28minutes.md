@@ -846,3 +846,23 @@ và phương thức trong enum để cung cấp thêm thông tin hoặc hành vi
 
 +) Có thể sử dụng các constructor: Mặc dù các constructor trong enum phải là private hoặc package-private, bạn vẫn có thể tạo constructor
 để khởi tạo các thuộc tính của từng đối tượng enum.
+
+- MODULARIZATION
+
+-- Được giới thiệu từ Java 9 trở đi với hệ thống module (Java Platform Module System - JPMS).
+
+-- Một module là một nhóm các package và tài nguyên, được tổ chức và đóng gói để cung cấp một API cụ thể
+cho các module khác và có thể kiểm soát quyền truy cập vào các thành phần bên trong.
+
+-- Module thường có một tệp module-info.java ở gốc của nó, dùng để định nghĩa tên module và những gì
+mà module xuất ra (exports) hoặc yêu cầu từ các module khác (requires).
+
+- JAVA VERSIONS
+
+-- JAVA 5.0: Enhanced for loop, Generics, Enum, Autoboxing.
+
+-- JAVA 8: Functional Programming, Lambda và Streams, Static Method trong Interface.
+
+-- JAVA 9: Modularization.
+
+-- JAVA 14: Switch Expression.
