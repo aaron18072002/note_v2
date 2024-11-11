@@ -449,6 +449,15 @@ Các lớp triển khai (implements) Map Interface là HashMap, HashTable, Linke
 
 -- Sức chứa (compacity) mặc định khi khởi tạo map là 24 = 16. Kích thước này sẽ tự động tăng gấp đôi mỗi khi thêm phần tử vượt quá kích thước của nó.
 
+- PHƯƠNG THỨC of() và copyOf()
+
+-- Trong Java, cả copyOf và of là 2 static method của các lớp như List, Set, và Map trong java.util.
+Tuy nhiên, chúng có mục đích và cách sử dụng khác nhau:
+
++) of: Dùng để tạo một collection bất biến từ các phần tử cụ thể, không phải từ một collection đã có sẵn.
+
++) copyOf: Dùng để tạo một bản sao bất biến của một collection đã tồn tại.
+
 - GENERICS
 
 -- Generics trong Java là một tính năng cho phép chúng ta tạo ra các Class, Interface và Method có thể hoạt động với nhiều kiểu dữ liệu khác nhau
