@@ -21,6 +21,7 @@
 - preservation (n): sự bảo quản
 - pantry (n): phòng đựng thức ăn
 - provision (n): điều khoản
+- prototype (n): bản nguyên mẫu
 - participant (n) = turnout (n): người tham gia
 - particaite in (v) = join in = engage in = involve in = take part in: tham gia
 - recognize (v): nhận ra, nhận biết
@@ -89,6 +90,7 @@
 - defect (n): khuyết điểm
 - directly (adv) = in person: trực tiếp
 - due to (pre) = owing to = given = beacause of = account of: bởi vì
+- distinguished (adj): ưu tiến
 - enquire (v): hỏi thăm # require (v): yêu cầu
 - entitle (v): trao quyền
 - confidential (adj) = private: bí mật
