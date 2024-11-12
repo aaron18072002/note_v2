@@ -44,6 +44,21 @@ có sự phụ thuộc chặt chẽ vào nhau, dẫn đến khó khăn trong vi�
 Khi một lớp được đánh dấu là một bean, Spring sẽ chịu trách nhiệm khởi tạo nó, quản lý vòng đời của nó, và xử lý các
 phụ thuộc cần thiết cho nó.
 
+- AUTO WIRING
+
+-- Autowiring trong Spring là cơ chế tự động tiêm các phụ thuộc (dependencies) vào các bean trong
+Spring container mà không cần phải cấu hình thủ công. Spring sẽ tự động xác định các phụ thuộc
+cần thiết và tiêm chúng vào các đối tượng của bạn, giúp giảm bớt sự phức tạp và mã lặp lại trong
+việc cấu hình các bean.
+
+-- Spring hỗ trợ ba kiểu autowiring chính:
+
++) Autowiring theo tên (by name).
+
++) Autowiring theo kiểu (by type).
+
++) Autowiring theo constructor (by constructor).
+
 - ANNOTATIONs
 
 -- Annotation là cách để chúng ta thêm siêu dữ liệu (metadata) vào các thành phần trong Java như class,
