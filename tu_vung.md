@@ -104,6 +104,7 @@
 - complex (adj) = intricate (adj): phức tạp
 - competent (adj) = qualified (adj): có năng lực
 - cover letter (n) = application (n): đơn xin việc
+- coastal (adj): thuộc ven biển
 - comply with (v) = follow = obey = adhere to = abide by: tuân thủ
 - enclose (v) = attach: đính kèm
 - emission (n): sự thải ra
