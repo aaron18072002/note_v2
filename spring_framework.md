@@ -28,6 +28,14 @@ của Spring như Spring Core, Spring MVC, Spring Boot, và nhiều thư viện 
 có sự phụ thuộc chặt chẽ vào nhau, dẫn đến khó khăn trong việc thay đổi hoặc mở rộng một thành phần mà không ảnh hưởng
 đến các thành phần khác.
 
+- SPRING BEAN
+
+-- Trong Spring Framework, các đối tượng được Spring quản lý trong container của nó được gọi là Spring Bean.
+
+-- Spring Bean là một đối tượng được khởi tạo, cấu hình và quản lý bởi Spring IoC (Inversion of Control) container.
+Khi một lớp được đánh dấu là một bean, Spring sẽ chịu trách nhiệm khởi tạo nó, quản lý vòng đời của nó, và xử lý các
+phụ thuộc cần thiết cho nó.
+
 - ANNOTATIONs
 
 -- @Override:
