@@ -110,7 +110,7 @@
 - widen (v) = expand: mở rộng
 - whereas (conj): trong khi đó, ngược lại
 - nominate (v) = appoint (v) = assign (v) = designate (v) chỉ định, bổ nhiệm
-- nevertheless (adv) = however (adv)
+- nevertheless (adv) = however (adv) = nonetheless (adv): tuy nhiên
 - accompany (n): đồng hành
 - absence (n): sự vắng mặt
 - attempt (n): sự nỗ lực
