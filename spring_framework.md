@@ -42,6 +42,8 @@ có sự phụ thuộc chặt chẽ vào nhau, dẫn đến khó khăn trong vi�
 Nó chịu trách nhiệm chính trong việc khởi tạo, quản lý vòng đời và xử lý các phụ thuộc (dependencies) cho các
 Spring Beans.
 
+-- IoC Container trong Spring có 2 kiểu là: BeanFactory và ApplicationContext:
+
 - SPRING BEAN
 
 -- Trong Spring Framework, các đối tượng được Spring quản lý trong container của nó được gọi là Spring Bean.
