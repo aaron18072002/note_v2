@@ -46,6 +46,15 @@ phụ thuộc cần thiết cho nó.
 
 - ANNOTATIONs
 
+-- Annotation (chú thích) là một loại siêu dữ liệu (metadata information) trong java có thể được áp dụng
+ở các phần tử mã nguồn java để sau đó một số công cụ (tool), trình gỡ lỗi (debugger) hoặc chương trình
+ứng dụng có thể tận dụng các Annotation này.
+
+-- Điều quan trọng là phải biết rằng: các Annotation được áp dụng trên mã nguồn java được biên dịch
+thành bytecode bởi javac và sử dụng kỹ thuật lập trình phản chiếu (Reflection) để có thể truy vấn
+thông tin siêu dữ liệu (metadata information) và quyết định hành động thích hợp để thực hiện trong
+ngữ cảnh cụ thể.
+
 -- @Override:
 
 +) @Override giúp trình biên dịch Java kiểm tra xem bạn có thực sự ghi đè (override) một phương thức từ interface
@@ -53,3 +62,11 @@ hoặc từ lớp cha hay không.
 
 +) Nếu bạn viết sai tên phương thức hoặc có sai lệch trong danh sách tham số, trình biên dịch sẽ báo lỗi,
 giúp bạn phát hiện vấn đề ngay lập tức.
+
+-- @Configuration:
+
++) Trong Spring Framework, annotation @Configuration được sử dụng để đánh dấu một class
+là Java Configuration Class, nơi bạn có thể khai báo các beans và cấu hình cho Spring IoC
+(Inversion of Control) container.
+
+-- @Bean:
