@@ -46,9 +46,8 @@ phụ thuộc cần thiết cho nó.
 
 - ANNOTATIONs
 
--- Annotation (chú thích) là một loại siêu dữ liệu (metadata information) trong java có thể được áp dụng
-ở các phần tử mã nguồn java để sau đó một số công cụ (tool), trình gỡ lỗi (debugger) hoặc chương trình
-ứng dụng có thể tận dụng các Annotation này.
+-- Annotation là cách để chúng ta thêm siêu dữ liệu (metadata) vào các thành phần trong Java như class,
+method, field, hay thậm chí là các package.
 
 -- Điều quan trọng là phải biết rằng: các Annotation được áp dụng trên mã nguồn java được biên dịch
 thành bytecode bởi javac và sử dụng kỹ thuật lập trình phản chiếu (Reflection) để có thể truy vấn
