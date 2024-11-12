@@ -51,6 +51,9 @@ Spring container mà không cần phải cấu hình thủ công. Spring sẽ t�
 cần thiết và tiêm chúng vào các đối tượng của bạn, giúp giảm bớt sự phức tạp và mã lặp lại trong
 việc cấu hình các bean.
 
+-- Autowiring trong Spring có thể tìm các beans trong container dựa trên tên của Bean hoặc
+type của tham số và tự động tiêm (inject) chúng vào đối tượng của bạn.
+
 -- Spring hỗ trợ ba kiểu autowiring chính:
 
 +) Autowiring theo tên (by name).
