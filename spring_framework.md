@@ -132,3 +132,10 @@ các method này như các bean trong Spring container.
 trong Spring container.
 
 +) Bạn có thể thay đổi scope của bean bằng cách sử dụng thuộc tính @Scope.
+
+-- @Qualifier("tên");
+
++) @Qualifier cho phép chỉ định bean name khi có nhiều bean cùng loại.
+
++) Nếu bạn không sử dụng @Qualifier và có nhiều bean cùng kiểu, Spring sẽ không biết phải
+tiêm bean nào và sẽ ném ra lỗi.
