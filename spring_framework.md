@@ -1,3 +1,11 @@
+- SPRING là gì
+
+-- Spring là một Framework phát triển các ứng dụng Java được sử dụng bởi hàng triệu lập trình viên. Nó giúp tạo các ứng dụng
+có hiệu năng cao, dễ kiểm thử, sử dụng lại code …
+
+-- Spring Framework được xây dựng dựa trên 2 nguyên tắc design chính là: Dependency Injection (DI)
+và Aspect Oriented Programming (AOP).
+
 - MAVEN
 
 -- Trong các dự án Spring, Maven được sử dụng như một công cụ quản lý dependency rất phổ biến.
