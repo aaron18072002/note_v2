@@ -36,6 +36,12 @@ của Spring như Spring Core, Spring MVC, Spring Boot, và nhiều thư viện 
 có sự phụ thuộc chặt chẽ vào nhau, dẫn đến khó khăn trong việc thay đổi hoặc mở rộng một thành phần mà không ảnh hưởng
 đến các thành phần khác.
 
+- SPRING CONTAINER
+
+-- Spring Container (hay còn gọi là Spring IoC Container) là một thành phần quan trọng trong Spring Framework.
+Nó chịu trách nhiệm chính trong việc khởi tạo, quản lý vòng đời và xử lý các phụ thuộc (dependencies) cho các
+Spring Beans.
+
 - SPRING BEAN
 
 -- Trong Spring Framework, các đối tượng được Spring quản lý trong container của nó được gọi là Spring Bean.
