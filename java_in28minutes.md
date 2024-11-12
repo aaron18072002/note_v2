@@ -366,6 +366,8 @@ Phiên bản Java 9, có thể thêm private methods.
 
 -- Interface chỉ có các biến static final.
 
+-- Tất cả các methods trong Interface đều được ngầm định là public.
+
 - POLYMORPHISM
 
 -- Tính đa hình là khả năng một đối tượng có thể thực hiện một tác vụ theo nhiều cách khác nhau.

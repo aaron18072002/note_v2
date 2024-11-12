@@ -27,3 +27,13 @@ của Spring như Spring Core, Spring MVC, Spring Boot, và nhiều thư viện 
 -- Trong Java Spring, Tightly Coupled (liên kết chặt chẽ) ám chỉ khi các thành phần (components) hoặc lớp (classes)
 có sự phụ thuộc chặt chẽ vào nhau, dẫn đến khó khăn trong việc thay đổi hoặc mở rộng một thành phần mà không ảnh hưởng
 đến các thành phần khác.
+
+- ANNOTATIONs
+
+-- @Override:
+
++) @Override giúp trình biên dịch Java kiểm tra xem bạn có thực sự ghi đè (override) một phương thức từ interface
+hoặc từ lớp cha hay không.
+
++) Nếu bạn viết sai tên phương thức hoặc có sai lệch trong danh sách tham số, trình biên dịch sẽ báo lỗi,
+giúp bạn phát hiện vấn đề ngay lập tức.
