@@ -10,13 +10,11 @@ thư mục này vào PATH, bạn sẽ phải nhập đường dẫn đầy đủ
 
 - JAVA PLATFORM
 
--- JAVA là một ngôn ngữ độc lập với nền tảng ( PLATFORM-INDEPENDENT ) vì mã nguồn của JAVA có thể chạy trên nhiều hệ điều hành. Các chương trình Java có thể chạy trên bất kỳ
-máy nào hoặc hệ điều hành không cần cài đặt bất kỳ phần mềm đặc biệt nào. Mặc dù JVM cần phải có mặt trong máy để thực thi BYTECODE (.class).
+-- JAVA là một ngôn ngữ độc lập với nền tảng ( PLATFORM-INDEPENDENT ) vì mã nguồn của JAVA có thể chạy trên nhiều hệ điều hành. Các chương trình Java có thể chạy trên bất kỳ máy nào hoặc hệ điều hành không cần cài đặt bất kỳ phần mềm đặc biệt nào. Mặc dù JVM cần phải có mặt trong máy để thực thi BYTECODE (.class).
 
 -- JAVA PLATFORM bao gồm Java Virtual Machine (JVM), Java Runtime Environment (JRE), Java Development Kit (JDK), Java Application Programming Interface (API) và Java Language.
 
--- SOURCE CODE JAVA (.java) sau khi được COMPILE bởi trình biên dịch JAVAC sẽ trở thành BYTECODE (.class), sau đó BYTECODE sẽ được thực thi (EXECUTION) bởi JVM để trở thành
-ngôn ngữ máy cho từng loại HỆ ĐIỀU HÀNH.
+-- SOURCE CODE JAVA (.java) sau khi được COMPILE bởi trình biên dịch JAVAC sẽ trở thành BYTECODE (.class), sau đó BYTECODE sẽ được thực thi (EXECUTION) bởi JVM để trở thành ngôn ngữ máy cho từng loại HỆ ĐIỀU HÀNH.
 
 - JDK
 
@@ -884,8 +882,8 @@ khác phụ thuộc vào module hiện tại truy cập module phụ thuộc đ�
 
 -- RETURN trong Java được dùng để thoát ra khỏi phương thức hiện tại và trả về một giá trị cho người gọi phương thức.
 
--- YIELD trong Switch Expression có chức năng trả về giá trị cho chính biểu thức switch, không phải thoát ra khỏi 
-phương thức. yield cho phép biểu thức switch tiếp tục hoạt động như một khối lệnh trả về giá trị mà không ảnh hưởng 
+-- YIELD trong Switch Expression có chức năng trả về giá trị cho chính biểu thức switch, không phải thoát ra khỏi
+phương thức. yield cho phép biểu thức switch tiếp tục hoạt động như một khối lệnh trả về giá trị mà không ảnh hưởng
 đến luồng điều khiển của phương thức.
 
 - JAVA VERSIONS

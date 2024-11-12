@@ -21,3 +21,9 @@ phát triển phần mềm, từ kiểm thử (test), biên dịch (compile) đ�
 
 +) Tích hợp với Spring: Trong các dự án Spring, Maven đóng vai trò rất quan trọng khi tích hợp các dependency
 của Spring như Spring Core, Spring MVC, Spring Boot, và nhiều thư viện khác của Spring Framework.
+
+- TIGHTLY COUPLED
+
+-- Trong Java Spring, Tightly Coupled (liên kết chặt chẽ) ám chỉ khi các thành phần (components) hoặc lớp (classes)
+có sự phụ thuộc chặt chẽ vào nhau, dẫn đến khó khăn trong việc thay đổi hoặc mở rộng một thành phần mà không ảnh hưởng
+đến các thành phần khác.
