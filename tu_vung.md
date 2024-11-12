@@ -1,6 +1,9 @@
 +) QKD: Diễn tả một hành động đã xảy ra và kết thúc trong quá khứ, không còn ảnh hưởng đến hiện tại.
 +) HTHT: Diễn tả một hành động bắt đầu trong quá khứ và kéo dài đến hiện tại hoặc có ảnh hưởng đến hiện tại.
 
+- as well as: cũng như
+- as long as = provided that: miễn là
+- as far as: theo như
 - occurrence = happening (n): xảy ra
 - occasion (n): dịp
 - obligation (n) = duty (n) : nghĩa vụ
