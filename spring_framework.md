@@ -52,6 +52,33 @@ Spring Beans.
 Khi một lớp được đánh dấu là một bean, Spring sẽ chịu trách nhiệm khởi tạo nó, quản lý vòng đời của nó, và xử lý các
 phụ thuộc cần thiết cho nó.
 
+- POJO
+
+-- POJO viết tắt của Plain old Java object.
+
+-- POJO dùng để chỉ một đối tượng đơn giản, không bị ràng buộc vào bất kỳ framework hoặc cấu trúc
+phức tạp nào. tức là:
+
++) Không extends bất kỳ 1 class nào.
+
++) Không implement bất kỳ 1 interface nào.
+
++) Không chứa anntation nào.
+
++) Chỉ chứa fields và getter setter cơ bản.
+
+- JAVA BEAN
+
+-- Là 1 java class với các quy ước sau:
+
++) Tất cả properties đều private.
+
++) Một public constructor với không argument.
+
++) Triển khai Serializable Interface.
+
++) Các Java Bean yêu cầu các phương thức getter và setter để truy cập các thuộc tính private.
+
 - AUTO WIRING
 
 -- Autowiring trong Spring là cơ chế tự động tiêm các phụ thuộc (dependencies) vào các bean trong
