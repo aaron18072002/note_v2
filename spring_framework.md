@@ -69,3 +69,13 @@ là Java Configuration Class, nơi bạn có thể khai báo các beans và cấ
 (Inversion of Control) container.
 
 -- @Bean:
+
++) Annotation @Bean thường được sử dụng bên trong một configuration class, được đánh dấu với @Configuration.
+Khi một class có annotation @Configuration, Spring hiểu rằng class này chứa các method định nghĩa bean
+mà ứng dụng cần, và Spring sẽ xử lý các method có annotation @Bean để đăng ký các đối tượng trả về từ
+các method này như các bean trong Spring container.
+
++) Các bean được tạo ra với @Bean theo mặc định là singleton, tức là chỉ có một instance duy nhất
+trong Spring container.
+
++) Bạn có thể thay đổi scope của bean bằng cách sử dụng thuộc tính @Scope.
