@@ -139,3 +139,14 @@ trong Spring container.
 
 +) Nếu bạn không sử dụng @Qualifier và có nhiều bean cùng kiểu, Spring sẽ không biết phải
 tiêm bean nào và sẽ ném ra lỗi.
+
+-- @Component: Khi một class sử dụng annotation @Component trong Spring Framework, đây là một phần của cơ chế
+dependency injection (DI). Cụ thể, khi bạn đánh dấu một class với @Component, Spring sẽ:
+
++) Tạo Bean: Spring sẽ tự động phát hiện class này và đăng ký nó như một Bean trong Spring Application Context.
+Điều này có nghĩa là Spring sẽ quản lý vòng đời của đối tượng này và bạn có thể sử dụng nó trong các
+phần khác của ứng dụng.
+
++) Tiêm vào các lớp khác: Các lớp khác có thể sử dụng đối tượng này thông qua dependency injection.
+Spring sẽ tự động tiêm (inject) Bean vào các lớp cần sử dụng nó, thông qua constructor, setter,
+hoặc trường (field) của lớp đó.
