@@ -151,6 +151,14 @@ phần khác của ứng dụng.
 Spring sẽ tự động tiêm (inject) Bean vào các lớp cần sử dụng nó, thông qua constructor, setter,
 hoặc trường (field) của lớp đó.
 
+-- @ComponentScan("tên"):
+
++) Sử dụng annotation này để thông báo cho spring container rằng: “Phải biết vào các package nào trong dự án
+để quét các Annotation và tạo Bean.”
+
++) @ComponentScan thường được sử dụng với @Configuration trong Spring để cấu hình phạm vi quét các bean và
+tự động đăng ký chúng vào Spring IoC container.
+
 - SO SÁNH @Bean và @Component:
 
 -- Dùng @Component khi:
