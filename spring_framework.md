@@ -102,10 +102,10 @@ type của tham số và tự động tiêm (inject) chúng vào đối tượng
 -- Annotation là cách để chúng ta thêm siêu dữ liệu (metadata) vào các thành phần trong Java như class,
 method, field, hay thậm chí là các package.
 
--- Điều quan trọng là phải biết rằng: các Annotation được áp dụng trên mã nguồn java được biên dịch
-thành bytecode bởi javac và sử dụng kỹ thuật lập trình phản chiếu (Reflection) để có thể truy vấn
-thông tin siêu dữ liệu (metadata information) và quyết định hành động thích hợp để thực hiện trong
-ngữ cảnh cụ thể.
+-- Điều quan trọng là phải biết rằng: Khi mã nguồn Java được biên dịch bằng trình biên dịch javac,
+các annotation có thể được lưu vào bytecode (file .class), và từ đó chúng có thể được truy cập bằng kỹ thuật phản chiếu
+(reflection) tại runtime. Kỹ thuật này cho phép chương trình có thể lấy thông tin về các annotation đã được áp dụng
+(như loại annotation, giá trị của các thuộc tính trong annotation) và từ đó quyết định hành động cần thực hiện.
 
 -- @Override:
 
