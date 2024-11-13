@@ -150,3 +150,28 @@ phần khác của ứng dụng.
 +) Tiêm vào các lớp khác: Các lớp khác có thể sử dụng đối tượng này thông qua dependency injection.
 Spring sẽ tự động tiêm (inject) Bean vào các lớp cần sử dụng nó, thông qua constructor, setter,
 hoặc trường (field) của lớp đó.
+
+- SO SÁNH @Bean và @Component:
+
+-- Dùng @Component khi:
+
++) Spring tự động phát hiện và quản lý các class như @Service, @Repository, @Controller:
+Khi bạn sử dụng @Component (hoặc các annotation chuyên biệt như @Service, @Repository, @Controller),
+Spring sẽ tự động phát hiện các lớp này thông qua component scanning và đăng ký chúng như các bean
+trong Spring IoC container.
+
++) Spring IoC tự động tạo instance của lớp này: Spring sẽ tự động tạo và quản lý vòng đời của các bean này.
+Ví dụ, nếu bạn đánh dấu một lớp với @Service, Spring sẽ tự động khởi tạo đối tượng của lớp đó khi cần và
+tiêm (inject) vào các lớp khác khi chúng yêu cầu.
+
+-- Dùng @Bean khi:
+
++) Khai báo bean thủ công: Nếu bạn muốn tự tay tạo ra một instance của bean và cấu hình cách mà nó được khởi tạo,
+bạn sử dụng @Bean. Điều này giúp bạn có thể cấu hình và quản lý beans một cách chi tiết hơn,
+ví dụ như khi cần tạo một bean với tham số constructor hoặc cần làm gì đó phức tạp trong quá trình khởi tạo.
+
++) Cấu hình đặc biệt cho bean: Khi bạn cần kiểm soát cách tạo một instance của bean (như việc cấu hình với tham số cụ thể).
+
++) Lớp cần tạo bean không nằm trong package quét của Spring: Nếu lớp bạn muốn tạo bean không nằm trong package
+mà Spring đang quét (thông qua component scanning), bạn có thể sử dụng @Bean để khai báo và tạo bean cho lớp đó
+mà không cần phải di chuyển lớp đó vào package đã quét.
