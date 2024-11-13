@@ -139,7 +139,10 @@ trong Spring container.
 bean (đối tượng) được Spring quản lý để gán vào.
 
 +) @Autowired sử dụng field injection khi được đặt trực tiếp trên một field (biến) trong lớp.
-Field injection sẽ yêu cầu Spring tự động tìm và tiêm (inject) một instance của bean phù hợp vào field đó.
+
++) @Autowired sử dụng constructor injection khi được đặt trực tiếp trên một constructor trong lớp.
+
++) @Autowired sử dụng setter injection khi được đặt trực tiếp trên một hàm setter trong lớp.
 
 -- @Qualifier("tên");
 
