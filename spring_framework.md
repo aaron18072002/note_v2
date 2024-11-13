@@ -133,6 +133,11 @@ trong Spring container.
 
 +) Bạn có thể thay đổi scope của bean bằng cách sử dụng thuộc tính @Scope.
 
+-- @Autowired:
+
++) Khi @Autowired được thêm vào một field trong Spring, điều đó có nghĩa là field này cần một instance của một
+bean (đối tượng) được Spring quản lý để gán vào.
+
 -- @Qualifier("tên");
 
 +) @Qualifier cho phép chỉ định bean name khi có nhiều bean cùng loại.
