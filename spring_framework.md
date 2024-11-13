@@ -138,6 +138,9 @@ trong Spring container.
 +) Khi @Autowired được thêm vào một field trong Spring, điều đó có nghĩa là field này cần một instance của một
 bean (đối tượng) được Spring quản lý để gán vào.
 
++) @Autowired sử dụng field injection khi được đặt trực tiếp trên một field (biến) trong lớp.
+Field injection sẽ yêu cầu Spring tự động tìm và tiêm (inject) một instance của bean phù hợp vào field đó.
+
 -- @Qualifier("tên");
 
 +) @Qualifier cho phép chỉ định bean name khi có nhiều bean cùng loại.
