@@ -45,6 +45,8 @@
 - COMPLIANCE (n): tuân thủ
 - commute (v): đi làm / commuter (n): người đi làm
 - community (n) = local: địa phương
+- clarity (n): sự rõ ràng / clarify (v): làm sáng tỏ
+- compact (adj): nhỏ gọn
 - state (v): diễn đạt
 - supply (n): đồ dùng / supply (v): cung cấp
 - supplementary (adj): bổ sung
@@ -63,7 +65,6 @@
 - renovate (v) = remodel (v): cải tạo, tân trang
 - revenue (n): doanh thu / avenue (n): đại lộ / venue (n) = location = site = place: địa điểm
 - regarding = concerning = about: về
-- clarity (n): sự rõ ràng / clarify (v): làm sáng tỏ
 - exclusive (adj) = unique: độc quyền, duy nhất
 - bulletin (n): bản tin
 - bulletin (v) = inform = notify = announce
