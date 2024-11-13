@@ -66,7 +66,7 @@ Khác: Các Class con kế thừa abstract class bắt buộc phải override ab
 
 --- IoC sẽ chịu trách nghiệm tạo ra và Dispose các instant của dependency còn tiêm nó vào module cấp cao là việc của DI.
 
---- Có 3 cách tiêm dependency: Constructor injection, Setter injection, Interface injection.
+--- Có 3 cách tiêm dependency trong Spring: Constructor injection, Setter injection, Field injection.
 
 -- Dependency Injection
 
