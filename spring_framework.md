@@ -55,10 +55,50 @@ phụ thuộc cần thiết cho nó.
 - BEAN SCOPEs
 
 -- SINGLETON: Trong singleton scope, Spring container sẽ chỉ tạo một instance duy nhất của bean trong suốt vòng đời của
-container (ứng dụng).
+Spring IoC Container (context).
 
 -- PROTOTYPE: Với prototype scope, mỗi lần có yêu cầu về bean, Spring container sẽ tạo ra một instance mới của bean
 và trả về instance đó.
+
+-- REQUEST: Với request scope, Spring sẽ tạo ra một instance mới của bean cho mỗi yêu cầu HTTP. Instance của bean này sẽ
+chỉ tồn tại trong suốt thời gian xử lý của request đó và sẽ bị hủy khi request kết thúc.
+
+-- SESSION: Với session scope, Spring sẽ tạo một instance mới cho mỗi session HTTP và tồn tại trong suốt vòng đời của session đó.
+Bean sẽ được lưu trữ cho đến khi session kết thúc (hết hạn hoặc bị hủy).
+
+-- APPLICATION: Trong Spring, application scope sẽ tạo một instance của bean và duy trì nó suốt vòng đời của ServletContext.
+Điều này rất hữu ích cho các ứng dụng web khi bạn muốn một bean tồn tại và được chia sẻ giữa tất cả các request và session,
+nhưng chỉ trong phạm vi của ServletContext.
+
+- VÒNG ĐỜI CỦA BEAN
+
+-- Bean Definition : khởi tạo bean thông qua sử dụng Annotation hoặc XML
+
+-- Bean Instantiation : Spring khởi tạo các đối tượng Bean giống như khởi tạo đối tượng Java thông thường và đưa nó
+vào ApplicationContext.
+
+-- Populating Bean properties : Spring thực hiện scan các bean thực thi các Aware interfaces và thực hiện set
+các giá vào các property như id, scope và giá trị mặc định như khai báo của bean đấy.
+
+-- Pre-Initialization : Các phương thức postProcessBeforeInitialization() bắt đầu thực thi và @PostConstruct annotation
+thực thi sau ngay nó.
+
+-- AfterPropertiesSet : Spring thực thi các phương thức afterPropertiesSet() của beans mà có implement InitializingBean.
+
+-- Custom Initialization : Spring kích hoạt các method khởi tạo với các thuộc tính được define ở trong initMethod trong
+@Bean annotations.
+
+-- Post-initialization : BeanPostProcessors của Spring hoạt động lần thứ 2. Lần này nó kích hoạt các phương thức
+postProcessAfterInitialization().
+
+-- Ready : các Bean đã được khởi tạo và inject vào trong các dependencies
+
+-- Pre-Destroy : Spring kích hoạt @PreDestroy annotated methods ở bước này.
+
+-- Destroy : Spring thực thi the destroy() methods.
+
+-- Custom Destruction : Có thể tuỳ chỉnh các thời điểm huỷ bằng thuộc tính destroyMethod ở trong @Bean annotation và
+Spring sẽ chạy nó trong giai đoạn cuối.
 
 - POJO
 
@@ -187,6 +227,17 @@ phải khởi tạo ngay từ đầu.
 +) Trong Spring, mặc định việc khởi tạo các bean là eager (tức là khởi tạo ngay khi container Spring khởi động),
 trừ khi có chỉ định khác. Điều này có nghĩa là tất cả các bean sẽ được tạo và sẵn sàng sử dụng ngay khi ứng dụng
 khởi động.
+
+-- @PostConstruct:
+
++) Được sử dụng để đánh dấu một phương thức sẽ được thực thi ngay lập tức ngay sau khi bean được khởi tạo và
+các dependency được tiêm (sau khi hoàn tất quá trình dependency injection).
+
+-- @PreDestroy:
+
++) Được sử dụng để đánh dấu một phương thức sẽ được gọi trước khi bean bị hủy (destroyed). Điều này thường được
+sử dụng để thực hiện các hành động dọn dẹp tài nguyên hoặc các hoạt động cần thiết trước khi bean bị Spring container
+thu hồi và đóng lại.
 
 - SO SÁNH @Bean và @Component:
 
