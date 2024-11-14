@@ -92,6 +92,12 @@ và Aspect Oriented Programming (AOP).
 
 -- Classpath là một khái niệm quan trọng trong Java và các ứng dụng Java-based (như Spring Boot), dùng để chỉ đường dẫn (path) tới các tài nguyên cần thiết để chương trình Java có thể thực thi. Classpath xác định nơi mà Java Runtime Environment (JRE) hoặc Java Virtual Machine (JVM) tìm kiếm các lớp (classes), thư viện (libraries), tài nguyên (resources), và các file cấu hình khi ứng dụng được chạy.
 
+- JAR FILE
+
+-- Trong Spring Boot, một JAR file (Java ARchive) là một file nén chứa tất cả các thành phần cần thiết để chạy ứng dụng Java, bao gồm các lớp Java đã biên dịch (compiled classes), thư viện bên ngoài (dependencies), và các tài nguyên (resources). Spring Boot sử dụng JAR file để đóng gói và triển khai ứng dụng dễ dàng, giúp chạy ứng dụng mà không cần cấu hình thêm hoặc phụ thuộc vào các server bên ngoài.
+
+-- Trong Spring Boot, JAR file có khả năng chứa embedded server (server nhúng), cho phép ứng dụng có thể tự chạy mà không cần triển khai lên một server bên ngoài. Tomcat là embedded server mặc định được tích hợp trong Spring Boot khi bạn sử dụng các starter như spring-boot-starter-web.
+
 - EMBEDDED SERVER
 
 -- Embedded server trong Spring Boot là một tính năng cho phép ứng dụng Spring Boot chạy trên một server được tích hợp sẵn bên trong ứng dụng mà không cần phải triển khai vào một server bên ngoài như Tomcat, Jetty, hoặc Undertow. Điều này giúp quá trình phát triển, thử nghiệm, và triển khai ứng dụng nhanh chóng hơn.
