@@ -84,7 +84,13 @@ và Aspect Oriented Programming (AOP).
 
 +) Spring Boot Starter Projects: Spring Boot Starter là một nhóm các dependency được cấu hình sẵn mà bạn có thể thêm vào dự án của mình để nhanh chóng bắt đầu phát triển ứng dụng mà không cần phải cấu hình từng phần một. Starter giúp bạn không cần phải tự tìm và cấu hình các thư viện, thay vào đó chỉ cần thêm một dependency vào pom.xml hoặc build.gradle. Mỗi Starter chứa các cấu hình cơ bản và các thư viện cần thiết cho một loại ứng dụng cụ thể.
 
-+) AutoConfiguration: AutoConfiguration trong Spring Boot là một cơ chế giúp tự động cấu hình các bean cần thiết dựa trên các điều kiện cụ thể. Điều này giúp giảm thiểu công việc cấu hình thủ công và đảm bảo rằng ứng dụng được cấu hình đúng cách dựa trên các thư viện và classpath có sẵn.
++) AutoConfiguration trong Spring Boot dựa vào các dependencies mà bạn thêm vào dự án thông qua các starter projects để tự động cấu hình ứng dụng. Khi bạn thêm một Spring Boot Starter vào dự án, AutoConfiguration sẽ kiểm tra các thư viện trong classpath và tự động cấu hình các thành phần cần thiết cho bạn.
+
++) AutoConfiguration sử dụng các annotation điều kiện để kích hoạt hoặc bỏ qua việc cấu hình các bean, tùy thuộc vào sự hiện diện của các thư viện hoặc các thuộc tính cấu hình trong classpath.
+
+- CLASS PATH
+
+-- Classpath là một khái niệm quan trọng trong Java và các ứng dụng Java-based (như Spring Boot), dùng để chỉ đường dẫn (path) tới các tài nguyên cần thiết để chương trình Java có thể thực thi. Classpath xác định nơi mà Java Runtime Environment (JRE) hoặc Java Virtual Machine (JVM) tìm kiếm các lớp (classes), thư viện (libraries), tài nguyên (resources), và các file cấu hình khi ứng dụng được chạy.
 
 - MAVEN
 
