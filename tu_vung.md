@@ -1,6 +1,8 @@
 +) QKD: Diễn tả một hành động đã xảy ra và kết thúc trong quá khứ, không còn ảnh hưởng đến hiện tại.
 +) HTHT: Diễn tả một hành động bắt đầu trong quá khứ và kéo dài đến hiện tại hoặc có ảnh hưởng đến hiện tại.
 
++) make/find/keep + N/Cụm N + ADJ.
+
 - as well as: cũng như
 - as long as = provided that: miễn là
 - as far as: theo như
@@ -9,6 +11,7 @@
 - obligation (n) = duty (n) : nghĩa vụ
 - ordinary (v) = common: thông thường
 - possession (n): sở hữu
+- portable (adj): có thể mang đi
 - predict (v) = guess: dự đoán
 - prefer (v): thích hơn / = appoint (v) = promote (v): thăng chức
 - precidence (n): quyền ưu tiên
@@ -23,7 +26,7 @@
 - provision (n): điều khoản
 - prototype (n): bản nguyên mẫu
 - participant (n) = turnout (n): người tham gia
-- particaite in (v) = join in = engage in = involve in = take part in: tham gia
+- particaite in (v) = join in = engage in = involve in = take part in = attend: tham gia
 - recognize (v): nhận ra, nhận biết
 - reserve (v): đặt chỗ
 - revise (v) = review (v): ôn lại / revision (n): sự ôn tập
@@ -47,6 +50,8 @@
 - community (n) = local: địa phương
 - clarity (n): sự rõ ràng / clarify (v): làm sáng tỏ
 - compact (adj): nhỏ gọn
+- clinic (n): phòng khám
+- ceremony (n): lễ / celebration (n): lễ kỉ niệm
 - state (v): diễn đạt
 - supply (n): đồ dùng / supply (v): cung cấp
 - supplementary (adj): bổ sung
@@ -62,7 +67,7 @@
 - rehearsal (n) = drill (n): buổi diễn tập
 - runway (n): đường băng
 - renowned (adj) = notable (adj) = well-known: nổi tiếng, đáng chú ý
-- renovate (v) = remodel (v): cải tạo, tân trang
+- renovate (v) = remodel (v) = makeover (v) cải tạo, tân trang
 - revenue (n): doanh thu / avenue (n): đại lộ / venue (n) = location = site = place: địa điểm
 - regarding = concerning = about: về
 - exclusive (adj) = unique: độc quyền, duy nhất
@@ -90,6 +95,7 @@
 - demolish (v) = destroy = torn down: phá hủy, phá bỏ
 - devorce (v): ly dị
 - defect (n): khuyết điểm
+- dedication (n): sự cống hiến / be dedicated to + N: dành cho / be dedicated to + Ving: cống hiến
 - directly (adv) = in person: trực tiếp
 - due to (pre) = owing to = given = beacause of = account of: bởi vì
 - distinguished (adj): ưu tiến
@@ -114,9 +120,11 @@
 - emission (n): sự thải ra
 - widen (v) = expand: mở rộng
 - whereas (conj): trong khi đó, ngược lại
+- whose = sở hữu cách/det/tính từ sở hữu
 - nominate (v) = appoint (v) = assign (v) = designate (v) chỉ định, bổ nhiệm
 - nevertheless (adv) = however (adv) = nonetheless (adv): tuy nhiên
 - accompany (n): đồng hành
+- accomplishment (n) = achievement (n): thành tựu
 - absence (n): sự vắng mặt
 - attempt (n): sự nỗ lực
 - anticipate (v) = estimate (v) = forecast: dự đoán
