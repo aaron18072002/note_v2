@@ -132,13 +132,11 @@ vào ApplicationContext.
 -- Populating Bean properties : Spring thực hiện scan các bean thực thi các Aware interfaces và thực hiện set
 các giá vào các property như id, scope và giá trị mặc định như khai báo của bean đấy.
 
--- Pre-Initialization : Các phương thức postProcessBeforeInitialization() bắt đầu thực thi và @PostConstruct annotation
-thực thi sau ngay nó.
+-- Pre-Initialization : Các phương thức postProcessBeforeInitialization() bắt đầu thực thi và @PostConstruct annotation thực thi sau ngay nó.
 
 -- AfterPropertiesSet : Spring thực thi các phương thức afterPropertiesSet() của beans mà có implement InitializingBean.
 
--- Custom Initialization : Spring kích hoạt các method khởi tạo với các thuộc tính được define ở trong initMethod trong
-@Bean annotations.
+-- Custom Initialization : Spring kích hoạt các method khởi tạo với các thuộc tính được define ở trong initMethod trong @Bean annotations.
 
 -- Post-initialization : BeanPostProcessors của Spring hoạt động lần thứ 2. Lần này nó kích hoạt các phương thức
 postProcessAfterInitialization().
