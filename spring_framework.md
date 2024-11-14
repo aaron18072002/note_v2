@@ -100,9 +100,7 @@ của Spring như Spring Core, Spring MVC, Spring Boot, và nhiều thư viện 
 
 - TIGHTLY COUPLED
 
--- Trong Java Spring, Tightly Coupled (liên kết chặt chẽ) ám chỉ khi các thành phần (components) hoặc lớp (classes)
-có sự phụ thuộc chặt chẽ vào nhau, dẫn đến khó khăn trong việc thay đổi hoặc mở rộng một thành phần mà không ảnh hưởng
-đến các thành phần khác.
+-- Trong Java Spring, Tightly Coupled (liên kết chặt chẽ) ám chỉ khi các thành phần (components) hoặc lớp (classes) có sự phụ thuộc chặt chẽ vào nhau, dẫn đến khó khăn trong việc thay đổi hoặc mở rộng một thành phần mà không ảnh hưởng đến các thành phần khác.
 
 - SPRING CONTAINER
 
@@ -122,17 +120,13 @@ Spring Beans.
 
 - BEAN SCOPEs
 
--- SINGLETON: Trong singleton scope, Spring container sẽ chỉ tạo một instance duy nhất của bean trong suốt vòng đời của
-Spring IoC Container (context).
+-- SINGLETON: Trong singleton scope, Spring container sẽ chỉ tạo một instance duy nhất của bean trong suốt vòng đời của Spring IoC Container (context).
 
--- PROTOTYPE: Với prototype scope, mỗi lần có yêu cầu về bean, Spring container sẽ tạo ra một instance mới của bean
-và trả về instance đó.
+-- PROTOTYPE: Với prototype scope, mỗi lần có yêu cầu về bean, Spring container sẽ tạo ra một instance mới của bean và trả về instance đó.
 
--- REQUEST: Với request scope, Spring sẽ tạo ra một instance mới của bean cho mỗi yêu cầu HTTP. Instance của bean này sẽ
-chỉ tồn tại trong suốt thời gian xử lý của request đó và sẽ bị hủy khi request kết thúc.
+-- REQUEST: Với request scope, Spring sẽ tạo ra một instance mới của bean cho mỗi yêu cầu HTTP. Instance của bean này sẽ chỉ tồn tại trong suốt thời gian xử lý của request đó và sẽ bị hủy khi request kết thúc.
 
--- SESSION: Với session scope, Spring sẽ tạo một instance mới cho mỗi session HTTP và tồn tại trong suốt vòng đời của session đó.
-Bean sẽ được lưu trữ cho đến khi session kết thúc (hết hạn hoặc bị hủy).
+-- SESSION: Với session scope, Spring sẽ tạo một instance mới cho mỗi session HTTP và tồn tại trong suốt vòng đời của session đó. Bean sẽ được lưu trữ cho đến khi session kết thúc (hết hạn hoặc bị hủy).
 
 -- APPLICATION: Trong Spring, application scope sẽ tạo một instance của bean và duy trì nó suốt vòng đời của ServletContext.
 Điều này rất hữu ích cho các ứng dụng web khi bạn muốn một bean tồn tại và được chia sẻ giữa tất cả các request và session,
@@ -237,10 +231,7 @@ là Java Configuration Class, nơi bạn có thể khai báo các beans và cấ
 
 -- @Bean:
 
-+) Annotation @Bean thường được sử dụng bên trong một configuration class, được đánh dấu với @Configuration.
-Khi một class có annotation @Configuration, Spring hiểu rằng class này chứa các method định nghĩa bean
-mà ứng dụng cần, và Spring sẽ xử lý các method có annotation @Bean để đăng ký các đối tượng trả về từ
-các method này như các bean trong Spring container.
++) Annotation @Bean thường được sử dụng bên trong một configuration class, được đánh dấu với @Configuration. Khi một class có annotation @Configuration, Spring hiểu rằng class này chứa các method định nghĩa bean mà ứng dụng cần, và Spring sẽ xử lý các method có annotation @Bean để đăng ký các đối tượng trả về từ các method này như các bean trong Spring container.
 
 +) Các bean được tạo ra với @Bean theo mặc định là singleton, tức là chỉ có một instance duy nhất
 trong Spring container.
@@ -265,16 +256,15 @@ bean (đối tượng) được Spring quản lý để gán vào.
 +) Nếu bạn không sử dụng @Qualifier và có nhiều bean cùng kiểu, Spring sẽ không biết phải
 tiêm bean nào và sẽ ném ra lỗi.
 
--- @Component: Khi một class sử dụng annotation @Component trong Spring Framework, đây là một phần của cơ chế
-dependency injection (DI). Cụ thể, khi bạn đánh dấu một class với @Component, Spring sẽ:
+-- @Component: Khi một class sử dụng annotation @Component trong Spring Framework, đây là một phần của cơ chế dependency injection (DI). Cụ thể, khi bạn đánh dấu một class với @Component, Spring sẽ:
 
-+) Tạo Bean: Spring sẽ tự động phát hiện class này và đăng ký nó như một Bean trong Spring Application Context.
-Điều này có nghĩa là Spring sẽ quản lý vòng đời của đối tượng này và bạn có thể sử dụng nó trong các
-phần khác của ứng dụng.
++) Tạo Bean: Spring sẽ tự động phát hiện class này và đăng ký các instances nó như một Bean trong Spring Application Context. Điều này có nghĩa là Spring sẽ quản lý vòng đời của đối tượng này và bạn có thể sử dụng nó trong các phần khác của ứng dụng.
 
 +) Tiêm vào các lớp khác: Các lớp khác có thể sử dụng đối tượng này thông qua dependency injection.
 Spring sẽ tự động tiêm (inject) Bean vào các lớp cần sử dụng nó, thông qua constructor, setter,
 hoặc trường (field) của lớp đó.
+
++) Trong Spring Framework, Stereotype Annotations là các annotation đặc biệt để đánh dấu vai trò của một class trong ứng dụng và giúp Spring tự động phát hiện và quản lý các thành phần này. Các Stereotype Annotations là biến thể @Component annotation, bao gồm: @Service, @Repository, @Controller.
 
 -- @ComponentScan("tên package"):
 
