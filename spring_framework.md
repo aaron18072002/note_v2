@@ -50,7 +50,7 @@ ORM như Hibernate.
 
 +) JSF(JavaServer Faces): Là một framework giúp xây dựng giao diện web với các thành phần reusable.
 
-- SPRING là gì
+- SPRING FRAMEWORK
 
 -- Spring là một Framework phát triển các ứng dụng Java được sử dụng bởi hàng triệu lập trình viên. Nó giúp tạo các ứng dụng
 có hiệu năng cao, dễ kiểm thử, sử dụng lại code …
@@ -74,6 +74,8 @@ và Aspect Oriented Programming (AOP).
 
 +) Spring Boot: Một module đặc biệt giúp phát triển ứng dụng nhanh chóng, tự động cấu hình các bean và cung cấp cấu trúc chuẩn cho ứng dụng Spring.
 
+- SPRING BOOT
+
 - MAVEN
 
 -- Trong các dự án Spring, Maven được sử dụng như một công cụ quản lý dependency rất phổ biến.
@@ -86,8 +88,7 @@ từ đó tiết kiệm thời gian và giảm rủi ro gặp lỗi khi cấu h�
 dựa vào file pom.xml (Project Object Model). Khi bạn khai báo một dependency trong pom.xml, Maven sẽ
 tự động tải về các phiên bản tương thích của thư viện đó và các thư viện liên quan.
 
-+) Quản lý phiên bản: Maven cho phép quản lý phiên bản của các thư viện một cách dễ dàng. Bạn chỉ cần thay
-đổi phiên bản trong pom.xml, và toàn bộ dự án sẽ tự động cập nhật theo.
++) Quản lý phiên bản: Maven cho phép quản lý phiên bản của các thư viện một cách dễ dàng. Bạn chỉ cần thay đổi phiên bản trong pom.xml, và toàn bộ dự án sẽ tự động cập nhật theo.
 
 +) Xây dựng và đóng gói: Maven hỗ trợ các quy trình xây dựng và đóng gói ứng dụng (build và package)
 bằng cách sử dụng các plugin tích hợp sẵn, giúp dễ dàng tạo ra các file jar hoặc war để triển khai.
@@ -95,8 +96,7 @@ bằng cách sử dụng các plugin tích hợp sẵn, giúp dễ dàng tạo r
 +) Quản lý lifecycle: Maven cung cấp một mô hình lifecycle, giúp tự động hóa các bước trong quá trình
 phát triển phần mềm, từ kiểm thử (test), biên dịch (compile) đến đóng gói (package) và triển khai (deploy).
 
-+) Tích hợp với Spring: Trong các dự án Spring, Maven đóng vai trò rất quan trọng khi tích hợp các dependency
-của Spring như Spring Core, Spring MVC, Spring Boot, và nhiều thư viện khác của Spring Framework.
++) Tích hợp với Spring: Trong các dự án Spring, Maven đóng vai trò rất quan trọng khi tích hợp các dependency của Spring như Spring Core, Spring MVC, Spring Boot, và nhiều thư viện khác của Spring Framework.
 
 - TIGHTLY COUPLED
 
@@ -264,7 +264,16 @@ tiêm bean nào và sẽ ném ra lỗi.
 Spring sẽ tự động tiêm (inject) Bean vào các lớp cần sử dụng nó, thông qua constructor, setter,
 hoặc trường (field) của lớp đó.
 
-+) Trong Spring Framework, Stereotype Annotations là các annotation đặc biệt để đánh dấu vai trò của một class trong ứng dụng và giúp Spring tự động phát hiện và quản lý các thành phần này. Các Stereotype Annotations là biến thể @Component annotation, bao gồm: @Service, @Repository, @Controller.
++) Trong Spring Framework, Stereotype Annotations là các annotation đặc biệt để đánh dấu vai trò của một class trong ứng dụng và giúp Spring tự động phát hiện và quản lý các thành phần này. Các Stereotype Annotations là biến thể @Component annotation, bao gồm:
+@Service, @Repository, @Controller, @RestController.
+
+-- @ResponseBody:
+
++) @ResponseBody là một annotation trong Spring dùng để chỉ định rằng dữ liệu trả về từ một phương thức controller sẽ được chuyển thành định dạng JSON hoặc XML (tùy vào yêu cầu từ client) và gửi thẳng về cho client, thay vì điều hướng tới một view.
+
+-- @RestController:
+
++) Là sự kết hợp giữa @Controller và @ResponseBody.
 
 -- @ComponentScan("tên package"):
 
