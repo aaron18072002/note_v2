@@ -76,6 +76,10 @@ và Aspect Oriented Programming (AOP).
 
 - SPRING BOOT
 
+-- Spring Boot là một module của Spring Framework, và nó tích hợp sẵn IoC (Inversion of Control) container mà Spring cung cấp. Điều này có nghĩa là Spring Boot tự động cấu hình và khởi tạo các thành phần trong ứng dụng của bạn mà không cần bạn phải cấu hình
+
+-- Khi bạn sử dụng Spring Boot, nó đã tích hợp sẵn Spring IoC Container. Điều này giúp bạn không cần phải cấu hình các lớp XML/Configuration phức tạp hoặc tốn thời gian tự định nghĩa các bean, như trong Spring Framework trước đây.
+
 - MAVEN
 
 -- Apache Maven là một chương trình quản lý dự án cho phép các developers có thể quản lý về version, các dependencies( các thư viện sử dụng trong dự án ), các modules của Spring Project, quản lý build, tự động download javadoc và source …
