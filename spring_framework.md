@@ -52,6 +52,14 @@ Spring Beans.
 Khi một lớp được đánh dấu là một bean, Spring sẽ chịu trách nhiệm khởi tạo nó, quản lý vòng đời của nó, và xử lý các
 phụ thuộc cần thiết cho nó.
 
+- BEAN SCOPEs
+
+-- SINGLETON: Trong singleton scope, Spring container sẽ chỉ tạo một instance duy nhất của bean trong suốt vòng đời của
+container (ứng dụng).
+
+-- PROTOTYPE: Với prototype scope, mỗi lần có yêu cầu về bean, Spring container sẽ tạo ra một instance mới của bean
+và trả về instance đó.
+
 - POJO
 
 -- POJO viết tắt của Plain old Java object.
