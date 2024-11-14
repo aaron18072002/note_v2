@@ -1,4 +1,4 @@
-- J2EE, JEE, Jakarta EE
+- KHÁI QUÁT VỀ J2EE, JEE, Jakarta EE
 
 -- J2EE (Java 2 Platform, Enterprise Edition):
 
@@ -29,6 +29,26 @@ và gọi nó đơn giản là JEE, trong khi vẫn giữ nguyên các công ngh
 
 +) Các công nghệ quan trọng của Jakarta EE bao gồm Jakarta Servlet, Jakarta JSP, Jakarta JPA, Jakarta EE RESTful Services
 (trước là JAX-RS), và Jakarta Faces (trước là JSF).
+
+-- J2EE → JEE → Jakarta EE là các tên gọi khác nhau của cùng một nền tảng Java dành cho ứng dụng doanh nghiệp,
+với những cải tiến và chuyển giao quyền sở hữu qua các giai đoạn.
+
+-- Các công nghệ phổ biến trong J2EE/JEE/Jakarta EE:
+
++) JBoss (nay là WildFly): Một ứng dụng container server phổ biến, hỗ trợ các ứng dụng Java EE.
+
++) Servlets: Là các lớp Java dùng để xử lý các yêu cầu HTTP trong web applications.
+
++) JSP (JavaServer Pages): Dùng để tạo các trang web động với Java.
+
++) EJB (Enterprise JavaBeans): Là một framework để phát triển các ứng dụng phân tán trong môi trường doanh nghiệp.
+
++) JPA (Java Persistence API): Dùng để quản lý dữ liệu trong các ứng dụng doanh nghiệp, thay thế cho các công nghệ
+ORM như Hibernate.
+
++) JAX-RS: Dùng để phát triển các RESTful web service trong Java.
+
++) JSF(JavaServer Faces): Là một framework giúp xây dựng giao diện web với các thành phần reusable.
 
 - SPRING là gì
 
