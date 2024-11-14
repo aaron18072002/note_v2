@@ -58,6 +58,22 @@ có hiệu năng cao, dễ kiểm thử, sử dụng lại code …
 -- Spring Framework được xây dựng dựa trên 2 nguyên tắc design chính là: Dependency Injection (DI)
 và Aspect Oriented Programming (AOP).
 
+-- Spring Framework chứa các Spring Modules như:
+
++) Spring Core: IoC Container, DI, Auto wiring, ...
+
++) Data Access: JDBC, JPA.
+
++) Integration: JMS.
+
++) Web Module: Spring MVC.
+
++) Testing: Mock Objects, Spring MVC Test.
+
++) Spring Security: Một module tách biệt cho phép dễ dàng bảo mật ứng dụng, hỗ trợ xác thực và phân quyền người dùng.
+
++) Spring Boot: Một module đặc biệt giúp phát triển ứng dụng nhanh chóng, tự động cấu hình các bean và cung cấp cấu trúc chuẩn cho ứng dụng Spring.
+
 - MAVEN
 
 -- Trong các dự án Spring, Maven được sử dụng như một công cụ quản lý dependency rất phổ biến.
@@ -101,8 +117,8 @@ Spring Beans.
 -- Trong Spring Framework, các đối tượng được Spring quản lý trong container của nó được gọi là Spring Bean.
 
 -- Spring Bean là một đối tượng được khởi tạo, cấu hình và quản lý bởi Spring IoC (Inversion of Control) container.
-Khi một lớp được đánh dấu là một bean, Spring sẽ chịu trách nhiệm khởi tạo nó, quản lý vòng đời của nó, và xử lý các
-phụ thuộc cần thiết cho nó.
+
+-- Khi một lớp được đánh dấu là một bean, Spring sẽ chịu trách nhiệm khởi tạo nó, quản lý vòng đời của nó, và xử lý các phụ thuộc cần thiết cho nó.
 
 - BEAN SCOPEs
 
