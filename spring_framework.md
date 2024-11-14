@@ -176,6 +176,10 @@ tự động đăng ký chúng vào Spring IoC container.
 Điều này giúp cải thiện hiệu suất và tiết kiệm tài nguyên trong những trường hợp khi một số bean không cần thiết
 phải khởi tạo ngay từ đầu.
 
++) Trong Spring, mặc định việc khởi tạo các bean là eager (tức là khởi tạo ngay khi container Spring khởi động),
+trừ khi có chỉ định khác. Điều này có nghĩa là tất cả các bean sẽ được tạo và sẵn sàng sử dụng ngay khi ứng dụng
+khởi động.
+
 - SO SÁNH @Bean và @Component:
 
 -- Dùng @Component khi:
