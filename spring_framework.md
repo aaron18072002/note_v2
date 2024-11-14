@@ -170,6 +170,12 @@ hoặc trường (field) của lớp đó.
 +) @ComponentScan thường được sử dụng với @Configuration trong Spring để cấu hình phạm vi quét các bean và
 tự động đăng ký chúng vào Spring IoC container.
 
+-- @Lazy:
+
++) @Lazy được sử dụng để trì hoãn việc khởi tạo các bean cho đến khi chúng thực sự được yêu cầu trong ứng dụng.
+Điều này giúp cải thiện hiệu suất và tiết kiệm tài nguyên trong những trường hợp khi một số bean không cần thiết
+phải khởi tạo ngay từ đầu.
+
 - SO SÁNH @Bean và @Component:
 
 -- Dùng @Component khi:
