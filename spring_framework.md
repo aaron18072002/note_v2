@@ -92,6 +92,10 @@ và Aspect Oriented Programming (AOP).
 
 -- Classpath là một khái niệm quan trọng trong Java và các ứng dụng Java-based (như Spring Boot), dùng để chỉ đường dẫn (path) tới các tài nguyên cần thiết để chương trình Java có thể thực thi. Classpath xác định nơi mà Java Runtime Environment (JRE) hoặc Java Virtual Machine (JVM) tìm kiếm các lớp (classes), thư viện (libraries), tài nguyên (resources), và các file cấu hình khi ứng dụng được chạy.
 
+- EMBEDDED SERVER
+
+-- Embedded server trong Spring Boot là một tính năng cho phép ứng dụng Spring Boot chạy trên một server được tích hợp sẵn bên trong ứng dụng mà không cần phải triển khai vào một server bên ngoài như Tomcat, Jetty, hoặc Undertow. Điều này giúp quá trình phát triển, thử nghiệm, và triển khai ứng dụng nhanh chóng hơn.
+
 - MAVEN
 
 -- Apache Maven là một chương trình quản lý dự án cho phép các developers có thể quản lý về version, các dependencies( các thư viện sử dụng trong dự án ), các modules của Spring Project, quản lý build, tự động download javadoc và source …
