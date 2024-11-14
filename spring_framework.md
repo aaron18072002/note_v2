@@ -1,3 +1,35 @@
+- J2EE, JEE, Jakarta EE
+
+-- J2EE (Java 2 Platform, Enterprise Edition):
+
++) J2EE ra đời vào cuối những năm 1990 và đầu những năm 2000 như một phần của nền tảng Java để hỗ trợ phát triển các ứng
+dụng web và doanh nghiệp phức tạp.
+
++) Nền tảng này bao gồm các công nghệ quan trọng như JSP (JavaServer Pages), Servlets, EJB (Enterprise JavaBeans),
+JPA (Java Persistence API), và các dịch vụ khác để xây dựng các ứng dụng phân tán, dịch vụ web, và hệ thống quản lý dữ liệu.
+
++) Tên gọi "J2EE" xuất phát từ việc phiên bản nền tảng này là "Java 2" (tức J2) và dành cho môi trường doanh nghiệp (Enterprise).
+
+-- JEE (Java Platform, Enterprise Edition):
+
++) Sau khi J2EE trở nên phổ biến, Oracle (trước là Sun Microsystems) đã quyết định loại bỏ chữ "2"
+và gọi nó đơn giản là JEE, trong khi vẫn giữ nguyên các công nghệ cốt lõi.
+
++) JEE đã được cải tiến để dễ dàng hơn cho các nhà phát triển với các API, container, và framework mạnh mẽ hơn.
+
++) Các công nghệ của JEE như JPA, JSF (JavaServer Faces), JAX-RS (dùng để xây dựng RESTful Web Services)
+được phát triển để thay thế các công nghệ cũ như EJB, đồng thời giảm độ phức tạp trong phát triển ứng dụng.
+
+-- Jakarta EE:
+
++) Vào năm 2017, Oracle đã chuyển giao quyền sở hữu Java EE cho Eclipse Foundation, và nền tảng này được đổi tên thành Jakarta EE.
+
++) Việc đổi tên này xảy ra do vấn đề về bản quyền với Oracle, và Eclipse Foundation đã phát triển Jakarta EE từ JEE.
+Điều này có nghĩa là Jakarta EE là sự kế thừa của JEE nhưng với tên gọi mới.
+
++) Các công nghệ quan trọng của Jakarta EE bao gồm Jakarta Servlet, Jakarta JSP, Jakarta JPA, Jakarta EE RESTful Services
+(trước là JAX-RS), và Jakarta Faces (trước là JSF).
+
 - SPRING là gì
 
 -- Spring là một Framework phát triển các ứng dụng Java được sử dụng bởi hàng triệu lập trình viên. Nó giúp tạo các ứng dụng
