@@ -124,7 +124,7 @@ nhưng chỉ trong phạm vi của ServletContext.
 
 - VÒNG ĐỜI CỦA BEAN
 
--- Bean Definition : khởi tạo bean thông qua sử dụng Annotation hoặc XML
+-- Bean Definition : khởi tạo bean thông qua sử dụng Annotation hoặc XML file.
 
 -- Bean Instantiation : Spring khởi tạo các đối tượng Bean giống như khởi tạo đối tượng Java thông thường và đưa nó
 vào ApplicationContext.
