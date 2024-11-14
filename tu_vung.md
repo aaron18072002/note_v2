@@ -66,6 +66,7 @@
 - receipt (n) = invoice (n): hóa đơn, biên lai
 - rehearsal (n) = drill (n): buổi diễn tập
 - runway (n): đường băng
+- respectively (adv): tương ứng
 - renowned (adj) = notable (adj) = well-known: nổi tiếng, đáng chú ý
 - renovate (v) = remodel (v) = makeover (v) cải tạo, tân trang
 - revenue (n): doanh thu / avenue (n): đại lộ / venue (n) = location = site = place: địa điểm
@@ -86,6 +87,7 @@
 - tire (n): lốp xe / tile (n): gạch
 - THOROUGHLY (adv): kỹ lưỡng
 - gather (v) = assenble (v): tụ họp
+- shovel (n): xẻng / shovel (v): xúc
 - so = therefore = thus = hence = consequently: do đó
 - significant (adj) = remarkable (adj) = noticeable = substantially (adj) = considerable (adj) đáng kể
 - utensil (n): dụng cụ nhà bếp
