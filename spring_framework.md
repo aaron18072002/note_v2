@@ -78,13 +78,11 @@ và Aspect Oriented Programming (AOP).
 
 - MAVEN
 
--- Trong các dự án Spring, Maven được sử dụng như một công cụ quản lý dependency rất phổ biến.
-Maven giúp tự động hóa việc tải và quản lý các thư viện (dependency) cần thiết cho dự án,
-từ đó tiết kiệm thời gian và giảm rủi ro gặp lỗi khi cấu hình môi trường.
+-- Apache Maven là một chương trình quản lý dự án cho phép các developers có thể quản lý về version, các dependencies( các thư viện sử dụng trong dự án ), các modules của Spring Project, quản lý build, tự động download javadoc và source …
 
 -- Các tính năng của Maven trong dự án Spring bao gồm:
 
-+) Quản lý dependency: Maven tự động tải về các thư viện cần thiết từ các kho lưu trữ trực tuyến
++) Quản lý dependency/modules: Maven tự động tải về các thư viện cần thiết từ các kho lưu trữ trực tuyến
 dựa vào file pom.xml (Project Object Model). Khi bạn khai báo một dependency trong pom.xml, Maven sẽ
 tự động tải về các phiên bản tương thích của thư viện đó và các thư viện liên quan.
 
