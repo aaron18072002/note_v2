@@ -80,6 +80,12 @@ và Aspect Oriented Programming (AOP).
 
 -- Khi bạn sử dụng Spring Boot, nó đã tích hợp sẵn Spring IoC Container. Điều này giúp bạn không cần phải cấu hình các lớp XML/Configuration phức tạp hoặc tốn thời gian tự định nghĩa các bean, như trong Spring Framework trước đây.
 
+-- Spring Boot cung cấp hai cơ chế chính để giúp bạn phát triển ứng dụng nhanh chóng và dễ dàng hơn, đó là Spring Boot Starter Projects và Auto Configuration:
+
++) Spring Boot Starter Projects: Spring Boot Starter là một nhóm các dependency được cấu hình sẵn mà bạn có thể thêm vào dự án của mình để nhanh chóng bắt đầu phát triển ứng dụng mà không cần phải cấu hình từng phần một. Starter giúp bạn không cần phải tự tìm và cấu hình các thư viện, thay vào đó chỉ cần thêm một dependency vào pom.xml hoặc build.gradle. Mỗi Starter chứa các cấu hình cơ bản và các thư viện cần thiết cho một loại ứng dụng cụ thể.
+
++) AutoConfiguration: AutoConfiguration trong Spring Boot là một cơ chế giúp tự động cấu hình các bean cần thiết dựa trên các điều kiện cụ thể. Điều này giúp giảm thiểu công việc cấu hình thủ công và đảm bảo rằng ứng dụng được cấu hình đúng cách dựa trên các thư viện và classpath có sẵn.
+
 - MAVEN
 
 -- Apache Maven là một chương trình quản lý dự án cho phép các developers có thể quản lý về version, các dependencies( các thư viện sử dụng trong dự án ), các modules của Spring Project, quản lý build, tự động download javadoc và source …
