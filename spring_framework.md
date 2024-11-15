@@ -128,6 +128,14 @@ và Aspect Oriented Programming (AOP).
 
 -- Mockito cho phép bạn tạo các đối tượng giả (mock objects) để thay thế các phụ thuộc trong các unit test. Điều này rất hữu ích khi bạn muốn kiểm tra một lớp mà không phải phụ thuộc vào các thành phần bên ngoài.
 
+-- Trong một unit test trong Java, có 3 bước cơ bản thường được thực hiện, đó là Arrange, Act, và Assert:
+
++) Arrange: Thiết lập dữ liệu, đối tượng cần kiểm tra, và các phụ thuộc cần thiết cho bài test.
+
++) Act: Thực thi phương thức của đối tượng mà bạn muốn kiểm tra.
+
++) Assert: Sử dụng các phương thức xác nhận của JUnit như assertEquals, assertTrue, assertNull, v.v., để kiểm tra xem kết quả trả về có đúng với mong đợi.
+
 - MAVEN
 
 -- Apache Maven là một chương trình quản lý dự án cho phép các developers có thể quản lý về version, các dependencies( các thư viện sử dụng trong dự án ), các modules của Spring Project, quản lý build, tự động download javadoc và source …
