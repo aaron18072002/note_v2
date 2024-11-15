@@ -122,6 +122,12 @@ và Aspect Oriented Programming (AOP).
 
 -- Spring Boot DevTools tự động khởi động lại ứng dụng khi có thay đổi trong mã nguồn, giúp bạn tiết kiệm thời gian trong quá trình phát triển. Tuy nhiên, một điểm cần lưu ý là khi bạn thêm hoặc thay đổi các dependency trong file pom.xml (Maven) hoặc build.gradle (Gradle), bạn vẫn cần khởi động lại ứng dụng một cách thủ công.
 
+- JUNIT:
+
+-- JUnit là một framework cho phép bạn viết và chạy unit tests trong Java. Nó giúp kiểm tra các thành phần nhỏ của ứng dụng như các phương thức và lớp, đảm bảo chúng hoạt động đúng như mong đợi.
+
+-- Mockito cho phép bạn tạo các đối tượng giả (mock objects) để thay thế các phụ thuộc trong các unit test. Điều này rất hữu ích khi bạn muốn kiểm tra một lớp mà không phải phụ thuộc vào các thành phần bên ngoài.
+
 - MAVEN
 
 -- Apache Maven là một chương trình quản lý dự án cho phép các developers có thể quản lý về version, các dependencies( các thư viện sử dụng trong dự án ), các modules của Spring Project, quản lý build, tự động download javadoc và source …
