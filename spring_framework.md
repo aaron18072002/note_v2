@@ -102,6 +102,22 @@ và Aspect Oriented Programming (AOP).
 
 -- Embedded server trong Spring Boot là một tính năng cho phép ứng dụng Spring Boot chạy trên một server được tích hợp sẵn bên trong ứng dụng mà không cần phải triển khai vào một server bên ngoài như Tomcat, Jetty, hoặc Undertow. Điều này giúp quá trình phát triển, thử nghiệm, và triển khai ứng dụng nhanh chóng hơn.
 
+- SPRING BOOT ACUTUATOR
+
+-- Spring Boot Actuator là một module tích hợp sẵn trong Spring Boot, giúp cung cấp các endpoints nhằm theo dõi và quản lý tình trạng của ứng dụng. Các endpoints này giúp bạn nắm bắt các thông tin quan trọng về hệ thống trong quá trình hoạt động mà không cần phải thêm mã code phức tạp.
+
+-- Các Tính Năng Chính:
+
++) Health Checks: Cung cấp endpoint /actuator/health để kiểm tra tình trạng sức khỏe của ứng dụng (các kết nối với cơ sở dữ liệu, dung lượng bộ nhớ, trạng thái hệ thống, v.v.).
+
++) Metrics: Thu thập các số liệu như bộ nhớ, số lượng request, sử dụng CPU, và nhiều thông tin chi tiết khác.
+
++) Environment: Endpoint /actuator/env giúp xem cấu hình môi trường của ứng dụng, bao gồm các biến môi trường và cấu hình đang hoạt động.
+
++) Logging: Cho phép kiểm soát mức độ log của ứng dụng một cách linh động tại runtime.
+
++) Thread Dump và Heap Dump: Hỗ trợ phân tích các vấn đề liên quan đến hiệu suất và bộ nhớ của ứng dụng.
+
 - MAVEN
 
 -- Apache Maven là một chương trình quản lý dự án cho phép các developers có thể quản lý về version, các dependencies( các thư viện sử dụng trong dự án ), các modules của Spring Project, quản lý build, tự động download javadoc và source …
