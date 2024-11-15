@@ -348,6 +348,24 @@ các dependency được tiêm (sau khi hoàn tất quá trình dependency injec
 sử dụng để thực hiện các hành động dọn dẹp tài nguyên hoặc các hoạt động cần thiết trước khi bean bị Spring container
 thu hồi và đóng lại.
 
+-- @SpringBootApplication:
+
++) @SpringBootApplication annotation là sự kết hợp của: @SpringBootConfiguration + @EnableAutoConfiguration + @ComponentScan.
+
+-- @SpringBootConfiguration:
+
++) Annotation này là một biến thể của @Configuration và được sử dụng để chỉ định rằng lớp này là lớp cấu hình chính của Spring Boot.
+
++) Nó cho phép Spring Boot tạo ra một ApplicationContext với các cấu hình mà bạn định nghĩa.
+
+-- @EnableAutoConfiguration:
+
++) Đây là annotation rất quan trọng của Spring Boot, cho phép Spring Boot tự động cấu hình ứng dụng dựa trên các dependency mà bạn đã thêm vào.
+
++) Khi @EnableAutoConfiguration được kích hoạt, Spring Boot sẽ tự động quét classpath để tìm các thư viện cần thiết (như spring-boot-starter-web, spring-boot-starter-data-jpa, v.v.) và tự động cấu hình các bean tương ứng mà không cần cấu hình thủ công.
+
++) Bạn có thể tắt hoặc cấu hình các chức năng tự động này bằng cách thêm tùy chọn trong file application.properties.
+
 - SO SÁNH @Bean và @Component:
 
 -- Dùng @Component khi:
