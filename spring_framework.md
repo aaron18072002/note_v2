@@ -118,6 +118,10 @@ và Aspect Oriented Programming (AOP).
 
 +) Thread Dump và Heap Dump: Hỗ trợ phân tích các vấn đề liên quan đến hiệu suất và bộ nhớ của ứng dụng.
 
+- SPRING BOOT DEVTOOL
+
+-- Spring Boot DevTools tự động khởi động lại ứng dụng khi có thay đổi trong mã nguồn, giúp bạn tiết kiệm thời gian trong quá trình phát triển. Tuy nhiên, một điểm cần lưu ý là khi bạn thêm hoặc thay đổi các dependency trong file pom.xml (Maven) hoặc build.gradle (Gradle), bạn vẫn cần khởi động lại ứng dụng một cách thủ công.
+
 - MAVEN
 
 -- Apache Maven là một chương trình quản lý dự án cho phép các developers có thể quản lý về version, các dependencies( các thư viện sử dụng trong dự án ), các modules của Spring Project, quản lý build, tự động download javadoc và source …
