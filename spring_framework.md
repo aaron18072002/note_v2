@@ -72,17 +72,23 @@ và Aspect Oriented Programming (AOP).
 
 +) Spring Security: Một module tách biệt cho phép dễ dàng bảo mật ứng dụng, hỗ trợ xác thực và phân quyền người dùng.
 
-+) Spring Boot: Một module đặc biệt giúp phát triển ứng dụng nhanh chóng, tự động cấu hình các bean và cung cấp cấu trúc chuẩn cho ứng dụng Spring.
++) Spring Boot: Một module đặc biệt giúp phát triển ứng dụng nhanh chóng, tự động cấu hình các bean và cung cấp cấu trúc
+chuẩn cho ứng dụng Spring.
 
 - SPRING BOOT
 
--- Spring Boot là một module của Spring Framework, và nó tích hợp sẵn IoC (Inversion of Control) container mà Spring cung cấp. Điều này có nghĩa là Spring Boot tự động cấu hình và khởi tạo các thành phần trong ứng dụng của bạn mà không cần bạn phải cấu hình
+-- Spring Boot là một module của Spring Framework, và nó tích hợp sẵn IoC (Inversion of Control) container mà Spring cung cấp.
+Điều này có nghĩa là Spring Boot tự động cấu hình và khởi tạo các thành phần trong ứng dụng của bạn mà không cần bạn phải cấu hình.
 
--- Khi bạn sử dụng Spring Boot, nó đã tích hợp sẵn Spring IoC Container. Điều này giúp bạn không cần phải cấu hình các lớp XML/Configuration phức tạp hoặc tốn thời gian tự định nghĩa các bean, như trong Spring Framework trước đây.
+-- Khi bạn sử dụng Spring Boot, nó đã tích hợp sẵn Spring IoC Container. Điều này giúp bạn không cần phải cấu hình
+các lớp XML/Configuration phức tạp hoặc tốn thời gian tự định nghĩa các bean, như trong Spring Framework trước đây.
 
 -- Spring Boot cung cấp hai cơ chế chính để giúp bạn phát triển ứng dụng nhanh chóng và dễ dàng hơn, đó là Spring Boot Starter Projects và Auto Configuration:
 
-+) Spring Boot Starter Projects: Spring Boot Starter là một nhóm các dependency được cấu hình sẵn mà bạn có thể thêm vào dự án của mình để nhanh chóng bắt đầu phát triển ứng dụng mà không cần phải cấu hình từng phần một. Starter giúp bạn không cần phải tự tìm và cấu hình các thư viện, thay vào đó chỉ cần thêm một dependency vào pom.xml hoặc build.gradle. Mỗi Starter chứa các cấu hình cơ bản và các thư viện cần thiết cho một loại ứng dụng cụ thể.
++) Spring Boot Starter Projects: Spring Boot Starter là một nhóm các dependency được cấu hình sẵn mà bạn có thể thêm vào
+dự án của mình để nhanh chóng bắt đầu phát triển ứng dụng mà không cần phải cấu hình từng phần một. Starter giúp bạn không
+cần phải tự tìm và cấu hình các thư viện, thay vào đó chỉ cần thêm một dependency vào pom.xml hoặc build.gradle.
+Mỗi Starter chứa các cấu hình cơ bản và các thư viện cần thiết cho một loại ứng dụng cụ thể.
 
 +) AutoConfiguration trong Spring Boot dựa vào các dependencies mà bạn thêm vào dự án thông qua các starter projects để tự động cấu hình ứng dụng. Khi bạn thêm một Spring Boot Starter vào dự án, AutoConfiguration sẽ kiểm tra các thư viện trong classpath và tự động cấu hình các thành phần cần thiết cho bạn.
 
