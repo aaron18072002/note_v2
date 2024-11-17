@@ -90,7 +90,9 @@ dự án của mình để nhanh chóng bắt đầu phát triển ứng dụng 
 cần phải tự tìm và cấu hình các thư viện, thay vào đó chỉ cần thêm một dependency vào pom.xml hoặc build.gradle.
 Mỗi Starter chứa các cấu hình cơ bản và các thư viện cần thiết cho một loại ứng dụng cụ thể.
 
-+) AutoConfiguration trong Spring Boot dựa vào các dependencies mà bạn thêm vào dự án thông qua các starter projects để tự động cấu hình ứng dụng. Khi bạn thêm một Spring Boot Starter vào dự án, AutoConfiguration sẽ kiểm tra các thư viện trong classpath và tự động cấu hình các thành phần cần thiết cho bạn.
++) AutoConfiguration trong Spring Boot dựa vào các dependencies mà bạn thêm vào dự án thông qua các starter projects để tự động
+cấu hình ứng dụng. Khi bạn thêm một Spring Boot Starter vào dự án, AutoConfiguration sẽ kiểm tra các thư viện trong classpath
+và tự động cấu hình các thành phần cần thiết cho bạn.
 
 +) AutoConfiguration sử dụng các annotation điều kiện để kích hoạt hoặc bỏ qua việc cấu hình các bean, tùy thuộc vào sự hiện diện của các thư viện hoặc các thuộc tính cấu hình trong classpath.
 
