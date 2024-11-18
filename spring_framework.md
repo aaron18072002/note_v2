@@ -484,6 +484,10 @@ thông qua trình duyệt hoặc các giao thức web. Có vai trò:
 
 -- Servlet là một lớp Java được thiết kế để xử lý các request cụ thể, phổ biến nhất là HTTP request.
 
+-- Servlet đóng vai trò như một Controller trong mô hình MVC (Model-View-Controller), quản lý logic điều hướng
+giữa Model (dữ liệu) và View (giao diện người dùng). Servlet nhận các HTTP request từ Web Server, xử lý chúng
+(bao gồm tương tác với cơ sở dữ liệu hoặc các logic nghiệp vụ), và trả về HTTP response.
+
 -- Mục đích của servlet là tạo ra các phản hồi động (như HTML hoặc JSON) dựa trên request.
 
 -- Servlet Container là môi trường runtime nơi các servlet hoạt động. Nó chịu trách nhiệm đảm bảo vòng đời của servlet
