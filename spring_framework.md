@@ -482,16 +482,15 @@ thông qua trình duyệt hoặc các giao thức web. Có vai trò:
 
 - SERVLET
 
--- Servlet là bộ thư viện của Java dùng để tạo các ứng dụng web (website/ web service).
+-- Servlet là một lớp Java được thiết kế để xử lý các request cụ thể, phổ biến nhất là HTTP request.
 
--- Servlet chạy trên một web server hoặc application server hỗ trợ Servlet, như Apache Tomcat, Jetty, hoặc WildFly.
+-- Mục đích của servlet là tạo ra các phản hồi động (như HTML hoặc JSON) dựa trên request.
 
--- Servlet hỗ trợ nhiều interface và class trong lập trình web.
+-- Servlet Container là môi trường runtime nơi các servlet hoạt động. Nó chịu trách nhiệm đảm bảo vòng đời của servlet
+và tương tác với client.
 
--- Servlet cho phép nhà phát triển phần mềm thêm những nội dung động vào web server sử dụng nền tảng Java (html/xml).
-
--- Servlet Interface khai báo 3 phương thức cần thiết cho một vòng đời của một Servlet là init(), service() và destroy().
-Các phương thức được cài đặt bởi Servlet và được thực thi bởi Servlet Container.
+-- Apache Tomcat là một trong những Servlet Container mã nguồn mở phổ biến và có thể hoạt động như một web server nhẹ và
+servlet container.
 
 - VÒNG ĐỜI CỦA 1 SERVLET INSTANCE
 
@@ -516,4 +515,5 @@ và hủy đúng cách.
 tải các Servlet khi nó khởi động.
 
 -- Bước 4 được thực thi nhiều lần, mỗi khi có đòi hỏi từ phía người dùng tới Servlet.
+
 -- Bước 5 được thực thi khi bộ chứa Servlet (Servlet Container) gỡ bỏ tải (unloaded) một Servlet.
