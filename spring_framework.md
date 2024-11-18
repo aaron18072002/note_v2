@@ -98,7 +98,10 @@ và tự động cấu hình các thành phần cần thiết cho bạn.
 
 - CLASS PATH
 
--- Classpath là một khái niệm quan trọng trong Java và các ứng dụng Java-based (như Spring Boot), dùng để chỉ đường dẫn (path) tới các tài nguyên cần thiết để chương trình Java có thể thực thi. Classpath xác định nơi mà Java Runtime Environment (JRE) hoặc Java Virtual Machine (JVM) tìm kiếm các lớp (classes), thư viện (libraries), tài nguyên (resources), và các file cấu hình khi ứng dụng được chạy.
+-- Classpath là một khái niệm quan trọng trong Java và các ứng dụng Java-based (như Spring Boot), dùng để chỉ đường dẫn (path)
+tới các tài nguyên cần thiết để chương trình Java có thể thực thi. Classpath xác định nơi mà Java Runtime Environment (JRE)
+hoặc Java Virtual Machine (JVM) tìm kiếm các lớp (classes), thư viện (libraries), tài nguyên (resources), và các file cấu hình
+khi ứng dụng được chạy.
 
 - JAR FILE
 
@@ -412,3 +415,19 @@ ví dụ như khi cần tạo một bean với tham số constructor hoặc cầ
 +) Lớp cần tạo bean không nằm trong package quét của Spring: Nếu lớp bạn muốn tạo bean không nằm trong package
 mà Spring đang quét (thông qua component scanning), bạn có thể sử dụng @Bean để khai báo và tạo bean cho lớp đó
 mà không cần phải di chuyển lớp đó vào package đã quét.
+
+- SERVLET
+
+-- Web Server là 1 máy chủ có khả năng tiếp nhận các request từ trình duyệt web và gửi các response đến client
+thông qua giao thức HTTP.
+
+-- Servlet là bộ thư viện của Java dùng để tạo các ứng dụng web (website/ web service).
+
+-- Servlet chạy trên một web server hoặc application server hỗ trợ Servlet, như Apache Tomcat, Jetty, hoặc WildFly.
+
+-- Servlet hỗ trợ nhiều interface và class trong lập trình web.
+
+-- Servlet cho phép nhà phát triển phần mềm thêm những nội dung động vào web server sử dụng nền tảng Java (html/xml).
+
+-- Servlet Interface khai báo 3 phương thức cần thiết cho một vòng đời của một Servlet là init(), service() và destroy().
+Các phương thức được cài đặt bởi Servlet và được thực thi bởi Servlet Container.
