@@ -521,3 +521,35 @@ tải các Servlet khi nó khởi động.
 -- Bước 4 được thực thi nhiều lần, mỗi khi có đòi hỏi từ phía người dùng tới Servlet.
 
 -- Bước 5 được thực thi khi bộ chứa Servlet (Servlet Container) gỡ bỏ tải (unloaded) một Servlet.
+
+- JDBC
+
+-- JDBC (Java Database Connectivity) là một API (Application Programming Interface) trong Java.
+
+-- JDBC API cung cấp các Class và Interface để kết nối với cơ sở dữ liệu, gửi câu lệnh SQL, và xử lý kết quả.
+
+-- JDBC Driver là 1 class mà implement Interface của JDBC API để connect và tương tác với db.
+
+-- JDBC Client là class hoặc code Java do bạn viết. Sử dụng JDBC API (các interface và lớp như Connection,
+Statement, ResultSet, v.v.) để kết nối và thực hiện thao tác trên cơ sở dữ liệu.
+Mã ứng dụng không tự trực tiếp kết nối với cơ sở dữ liệu mà thông qua JDBC Driver.
+
+-- DriverManager là một class quản lý tập hợp các JDBC Driver đã được đăng ký. JDBC Client (ứng dụng của bạn)
+sử dụng DriverManager để tìm JDBC Driver phù hợp. Sau đó, JDBC Driver thực hiện công việc cụ thể để kết nối
+và giao tiếp với cơ sở dữ liệu.
+
+-- Ứng dụng Java sử dụng JDBC làm việc với CSDL thông qua trình tự 7 bước như sau.
+
++) Tạo JDBC Client kết nối đến database.
+
++) Gửi SQL query đến database sử dụng JDBC driver tương ứng.
+
++) JDBC Driver kết nối đến database.
+
++) Thực thi câu lệnh query để lấy kết quả trả về (số bản ghi lấy được, số bản ghi được update/delete).
+
++) Gửi dữ liệu đến ứng dụng thông qua Driver Manager.
+
++) Xử lý dữ liệu trả về.
+
++) Dùng JDBC Client đóng (giải phóng) kế nối đến database.
