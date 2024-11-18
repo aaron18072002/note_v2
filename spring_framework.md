@@ -416,10 +416,33 @@ ví dụ như khi cần tạo một bean với tham số constructor hoặc cầ
 mà Spring đang quét (thông qua component scanning), bạn có thể sử dụng @Bean để khai báo và tạo bean cho lớp đó
 mà không cần phải di chuyển lớp đó vào package đã quét.
 
-- SERVLET
+- WEB SERVER
 
--- Web Server là 1 máy chủ có khả năng tiếp nhận các request từ trình duyệt web và gửi các response đến client
-thông qua giao thức HTTP.
+-- Web Server là một máy chủ chuyên dụng, chịu trách nhiệm tiếp nhận các request từ trình duyệt web (client)
+và gửi lại các response tương ứng.
+
+-- Web Server hoạt động thông qua giao thức HTTP/HTTPS.
+
+- WEB APPLICATION
+
+-- Web Application chạy trên Web Server hoặc Application Server (ví dụ: Tomcat, Nginx).
+
+-- Web Application là một phần mềm chạy trên Web Server, cung cấp các dịch vụ, tính năng mà người dùng có thể truy cập
+thông qua trình duyệt hoặc các giao thức web. Có vai trò:
+
++) Thực hiện xử lý logic nghiệp vụ và truy xuất dữ liệu từ cơ sở dữ liệu.
+
++) Tương tác với người dùng thông qua giao diện động (HTML, JSON, XML, v.v.).
+
+-- Web Application là một phần mềm hoàn chỉnh, bao gồm:
+
++) Frontend: Giao diện người dùng (HTML, CSS, JavaScript).
+
++) Backend: Logic xử lý (Servlet, JSP, hoặc các framework như Spring MVC).
+
++) Cơ sở dữ liệu: Lưu trữ và quản lý dữ liệu.
+
+- SERVLET
 
 -- Servlet là bộ thư viện của Java dùng để tạo các ứng dụng web (website/ web service).
 
