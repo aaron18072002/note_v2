@@ -34,12 +34,15 @@
 - release (v) = launch (v): ra mắt
 - towards (preposition): hướng tới
 - forward (adv): phía trước / (v): chuyển hướng
+- fortunate (adj) = lucky: may mắn
 - formaly (adv): trước đây
 - factor (n): nhân tố
+- fall apart: rớt ra
 - further (adv): xa hơn
 - furniture (n): đồ gia dụng
 - feature (v): có, mang nét đặc trưng
 - favorite (adj): ưa thích / favorable (adj): thuận lợi / favoring (adj): ưu ái
+- far + more: nhiều hơn, thú vị hơn
 - infinitive (n): dạng nguyên thể
 - INNOVATIVE (adv): có tính đổi mới
 - involve (v): liên quan
@@ -82,7 +85,6 @@
 - gather (v): tụ họp
 - erect (v): dựng lên = build something
 - instrument (n): nhạc cụ
-- fortunate (adj) = lucky: may mắn
 - turn (v): xoay, chuyển, đổi
 - tire (n): lốp xe / tile (n): gạch
 - THOROUGHLY (adv): kỹ lưỡng
@@ -97,8 +99,10 @@
 - demolish (v) = destroy = torn down: phá hủy, phá bỏ
 - devorce (v): ly dị
 - defect (n): khuyết điểm
+- debt (n): món nợ
 - dedication (n): sự cống hiến / be dedicated to + N: dành cho / be dedicated to + Ving: cống hiến
 - directly (adv) = in person: trực tiếp
+- diverse (adj): phong phú
 - due to (pre) = owing to = given = beacause of = account of: bởi vì
 - distinguished (adj): ưu tiến
 - enquire (v): hỏi thăm # require (v): yêu cầu
