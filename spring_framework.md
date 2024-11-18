@@ -492,3 +492,28 @@ thông qua trình duyệt hoặc các giao thức web. Có vai trò:
 
 -- Servlet Interface khai báo 3 phương thức cần thiết cho một vòng đời của một Servlet là init(), service() và destroy().
 Các phương thức được cài đặt bởi Servlet và được thực thi bởi Servlet Container.
+
+- VÒNG ĐỜI CỦA 1 SERVLET INSTANCE
+
+-- Vòng đời của một Servlet được quản lý bởi Servlet Container, một thành phần bên trong Web Server
+(ví dụ: Apache Tomcat, Jetty). Servlet Container đảm bảo rằng Servlet được tải, khởi tạo, xử lý request,
+và hủy đúng cách.
+
+-- Có 5 bước:
+
++) Tải lớp Servlet vào bộ nhớ.
+
++) Tạo đối tượng Servlet.
+
++) Gọi phương thức init() của Servlet.
+
++) Gọi phương thức service() của Servlet.
+
++) Gọi phương thức destroy() của Servlet.
+
+-- Bước 1, 2 và 3 được thực thi một lần duy nhất, khi mà Servlet được nạp lần đầu. Mặc định các Servlet không được tải
+(load) lên cho tới khi nó nhận một đòi hỏi đầu tiên từ người dùng. Bạn có thể bắt buộc Servlet Container (Bộ chứa các Servlet)
+tải các Servlet khi nó khởi động.
+
+-- Bước 4 được thực thi nhiều lần, mỗi khi có đòi hỏi từ phía người dùng tới Servlet.
+-- Bước 5 được thực thi khi bộ chứa Servlet (Servlet Container) gỡ bỏ tải (unloaded) một Servlet.
