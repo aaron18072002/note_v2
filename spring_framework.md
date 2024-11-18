@@ -530,6 +530,9 @@ tải các Servlet khi nó khởi động.
 
 -- JDBC Driver là 1 class mà implement Interface của JDBC API để connect và tương tác với db.
 
+-- JDBC Driver thường được thiết kế dưới dạng singleton (mẫu thiết kế đơn thể) trong nhiều trường hợp
+Điều này có nghĩa là mỗi JDBC Driver chỉ cần một thể hiện duy nhất trong suốt quá trình chạy của ứng dụng.
+
 -- JDBC Client là class hoặc code Java do bạn viết. Sử dụng JDBC API (các interface và lớp như Connection,
 Statement, ResultSet, v.v.) để kết nối và thực hiện thao tác trên cơ sở dữ liệu.
 Mã ứng dụng không tự trực tiếp kết nối với cơ sở dữ liệu mà thông qua JDBC Driver.
