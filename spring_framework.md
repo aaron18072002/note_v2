@@ -442,6 +442,44 @@ thông qua trình duyệt hoặc các giao thức web. Có vai trò:
 
 +) Cơ sở dữ liệu: Lưu trữ và quản lý dữ liệu.
 
+- QUY TRÌNH HOẠT ĐỘNG giữa WEB SERVER và WEB APPLICATION
+
+-- Client gửi request đến Web Server:
+
++) Khi người dùng truy cập vào một URL, trình duyệt sẽ gửi một request HTTP đến Web Server.
+
+-- Web Server nhận request:
+
++) Web Server phân tích request và xác định:
+
++) Nếu request yêu cầu nội dung tĩnh (HTML, CSS, hình ảnh), Web Server sẽ trả trực tiếp.
+
++) Nếu request yêu cầu xử lý logic động, Web Server chuyển request đến Web Application.
+
+-- Web Application xử lý request:
+
++) Web Server chuyển request đến Web Application (ví dụ: Servlet trong Java hoặc controller trong Spring).
+
++) Web Application thực hiện các công việc như:
+
++) Lấy thông tin từ request (dữ liệu form, tham số URL, v.v.).
+
++) Tương tác với cơ sở dữ liệu (nếu cần).
+
++) Xử lý logic nghiệp vụ.
+
++) Tạo phản hồi (response).
+
+-- Web Application gửi response về Web Server:
+
++) Sau khi xử lý xong, Web Application trả về kết quả cho Web Server (thường là HTML, JSON, XML hoặc file).
+
+-- Web Server gửi response về cho client:
+
++) Web Server nhận response từ Web Application và chuyển lại cho client (trình duyệt).
+
++) Client sẽ hiển thị kết quả hoặc thực hiện các hành động dựa trên response đó.
+
 - SERVLET
 
 -- Servlet là bộ thư viện của Java dùng để tạo các ứng dụng web (website/ web service).
