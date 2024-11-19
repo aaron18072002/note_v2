@@ -562,9 +562,9 @@ và giao tiếp với cơ sở dữ liệu.
 
 +) Load driver với DriverManager
 
-+) Tạo kết nối (Create Connection) với DriverManager
++) Tạo kết nối (Connection) với DriverManager
 
-+) Tạo câu lệnh truy vấn SQL (Statement)
++) Tạo câu lệnh truy vấn SQL (Statement) với Connection object
 
 +) Dùng JDBC Driver Thực thi câu lệnh truy vấn SQL (Excute query)
 
