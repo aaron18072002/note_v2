@@ -570,6 +570,17 @@ thực thi một câu truy vấn SELECT.
 
 +) Đóng kết nối (Close Connection)
 
+-- Class.forName("com.mysql.cj.jdbc.Driver"): Dòng lệnh này được sử dụng để tải lớp driver MySQL JDBC vào bộ
+nhớ tại runtime, để DriverManager có thể dùng Service Provider Mechanisum để tìm JDBC Driver cho MySql.
+
+- SERVICE PROVIDER MECHANISM
+
+-- Service Provider Mechanism (SPM) là cơ chế mà Java sử dụng để tự động phát hiện và đăng ký các dịch vụ
+(như các JDBC Driver).
+
+-- Khi bạn sử dụng Class.forName("com.mysql.cj.jdbc.Driver"), dòng lệnh này giúp JVM biết rằng cần phải
+nạp lớp driver tại runtime.
+
 - DAO
 
 -- DAO (Data Access Object) là 1 quy ước đặt tên cho các class. Ám chỉ class đó được thiết kế để quản lý
