@@ -569,3 +569,16 @@ và giao tiếp với cơ sở dữ liệu.
 +) Dùng JDBC Driver Thực thi câu lệnh truy vấn SQL (Excute query)
 
 +) Đóng kết nối (Close Connection)
+
+- DAO
+
+-- DAO (Data Access Object) là 1 quy ước đặt tên cho các class. Ám chỉ class đó được thiết kế để quản lý
+việc kết nối và tương tác với cơ sở dữ liệu (database).
+
+-- Trong một ứng dụng Java sử dụng DAO, lớp này thường chứa:
+
++) Kết nối tới cơ sở dữ liệu: Sử dụng JDBC hoặc các framework ORM (như Hibernate).
+
++) Thực thi các câu lệnh SQL: Bao gồm các lệnh SELECT, INSERT, UPDATE, DELETE.
+
++) Chuyển đổi kết quả từ cơ sở dữ liệu thành đối tượng Java.
