@@ -103,6 +103,9 @@ tới các tài nguyên cần thiết để chương trình Java có thể thự
 hoặc Java Virtual Machine (JVM) tìm kiếm các lớp (classes), thư viện (libraries), tài nguyên (resources), và các file cấu hình
 khi ứng dụng được chạy.
 
+-- Class path là một danh sách các đường dẫn mà JVM sử dụng để tìm kiếm các file .class, thư viện .jar, hoặc các tài nguyên
+khác trong quá trình thực thi.
+
 - JAR FILE
 
 -- Trong Spring Boot, một JAR file (Java ARchive) là một file nén chứa tất cả các thành phần cần thiết để chạy ứng dụng Java, bao gồm các lớp Java đã biên dịch (compiled classes), thư viện bên ngoài (dependencies), và các tài nguyên (resources). Spring Boot sử dụng JAR file để đóng gói và triển khai ứng dụng dễ dàng, giúp chạy ứng dụng mà không cần cấu hình thêm hoặc phụ thuộc vào các server bên ngoài.
@@ -541,18 +544,28 @@ Mã ứng dụng không tự trực tiếp kết nối với cơ sở dữ liệ
 sử dụng DriverManager để tìm JDBC Driver phù hợp. Sau đó, JDBC Driver thực hiện công việc cụ thể để kết nối
 và giao tiếp với cơ sở dữ liệu.
 
--- Ứng dụng Java sử dụng JDBC làm việc với CSDL thông qua trình tự 7 bước như sau.
+-- Các thành phần chính trong JDBC:
 
-+) Tạo JDBC Client kết nối đến database.
++) DriverManager: Là một class dùng để quản lý danh sách các Driver
 
-+) Gửi SQL query đến database sử dụng JDBC driver tương ứng.
++) Driver: Là một interface, chịu trách nhiệm xử lý các hoạt động giao tiếp giữa ứng dụng và database
 
-+) JDBC Driver kết nối đến database.
++) Connection: Là một interface, cung cấp các phương thức cho việc thao tác với database
 
-+) Thực thi câu lệnh query để lấy kết quả trả về (số bản ghi lấy được, số bản ghi được update/delete).
++) Statement: Là một interface, để thực thi các câu lệnh SQL xuống database
 
-+) Gửi dữ liệu đến ứng dụng thông qua Driver Manager.
++) ResultSet: Là một bảng dữ liệu mà biểu diễn tập kết quả từ cơ sở dữ liệu trả về bởi các lệnh SQL
 
-+) Xử lý dữ liệu trả về.
++) SQLException: Xử lý ngoại lệ xảy ra trong database
 
-+) Dùng JDBC Client đóng (giải phóng) kế nối đến database.
+-- Các bước kết nối database với Java:
+
++) Load driver với DriverManager
+
++) Tạo kết nối (Create Connection) với DriverManager
+
++) Tạo câu lệnh truy vấn SQL (Statement)
+
++) Dùng JDBC Driver Thực thi câu lệnh truy vấn SQL (Excute query)
+
++) Đóng kết nối (Close Connection)
