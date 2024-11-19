@@ -554,19 +554,19 @@ và giao tiếp với cơ sở dữ liệu.
 
 +) Statement: Là một interface, để thực thi các câu lệnh SQL xuống database
 
-+) ResultSet: Là một bảng dữ liệu mà biểu diễn tập kết quả từ cơ sở dữ liệu trả về bởi các lệnh SQL
++) ResultSet: Là một đối tượng trong Java được sử dụng để lưu trữ và thao tác với dữ liệu kết quả từ câu lệnh
+SELECT trong SQL. Nó đại diện cho một bảng dữ liệu (các dòng và cột) mà bạn nhận được từ cơ sở dữ liệu sau khi
+thực thi một câu truy vấn SELECT.
 
 +) SQLException: Xử lý ngoại lệ xảy ra trong database
 
 -- Các bước kết nối database với Java:
 
-+) Load driver với DriverManager
++) Tạo kết nối (Connection) với DriverManager / Load JDBC Driver
 
-+) Tạo kết nối (Connection) với DriverManager
++) Tạo câu lệnh truy vấn SQL (Statement) với Connection
 
-+) Tạo câu lệnh truy vấn SQL (Statement) với Connection object
-
-+) Dùng JDBC Driver Thực thi câu lệnh truy vấn SQL (Excute query)
++) Dùng Statement Thực thi câu lệnh truy vấn SQL (Excute query)
 
 +) Đóng kết nối (Close Connection)
 
