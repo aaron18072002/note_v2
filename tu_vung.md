@@ -10,6 +10,7 @@
 - occasion (n): dịp
 - obligation (n) = duty (n) : nghĩa vụ
 - ordinary (v) = common: thông thường
+- obtain = gain = achive: đạt được
 - possession (n): sở hữu
 - portable (adj): có thể mang đi
 - predict (v) = guess: dự đoán
@@ -73,6 +74,7 @@
 - renowned (adj) = notable (adj) = well-known: nổi tiếng, đáng chú ý
 - renovate (v) = remodel (v) = makeover (v) cải tạo, tân trang
 - revenue (n): doanh thu / avenue (n): đại lộ / venue (n) = location = site = place: địa điểm
+- regard (v): xem như
 - regarding = concerning = about: về
 - exclusive (adj) = unique: độc quyền, duy nhất
 - bulletin (n): bản tin
