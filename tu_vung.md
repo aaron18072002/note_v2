@@ -140,5 +140,6 @@
 - adequate (v) = complete: đầy đủ
 - accordingly (adv) = suitable: phù hợp
 - means (n): phương tiện
+- morden = up-to-date = state-of-the-art: hiện đại
 - venue (n): nơi gặp mặt
 - hedge (n) = hence (n): hàng rào
