@@ -24,3 +24,13 @@ trữ ngay từ đầu. Nghĩa là không thể thêm và xóa phần tử của
 +) Thời gian thực thi (Time Complexity) – Đo lường tốc độ thực thi khi kích thước đầu vào tăng.
 
 +) Yêu cầu bộ nhớ (Space Complexity) – Đo lường lượng bộ nhớ cần thiết khi xử lý dữ liệu.
+
+- SORT
+
+-- Bubble Sort:
+
++) Chạy từ đầu đến cuối mảng.
+
++) Xét 2 phần tử đúng cạnh nhau. Nếu phần tử đứng trước lớn hơn phần tử đứng sau thì đổi chỗ (tăng dần).
+
++) Sau mỗi lần lặp thì phần tử lớn nhất sẽ trôi xuống dưới.
