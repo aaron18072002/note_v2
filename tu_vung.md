@@ -3,6 +3,8 @@
 
 +) make/find/keep + N/Cụm N + ADJ.
 
++) when/while/as/once + S + HTĐ, S + TLĐ.
+
 - as well as: cũng như
 - as long as = provided that: miễn là
 - as far as: theo như
@@ -86,6 +88,7 @@
 - berry (n): quả trứng cá
 - be in charge of = be responsible for = be capable of = qualified: đủ khả năng
 - be accustomed to = be familiar with: quen với
+- because of = as = because = due to = owing to = as = since = on account of: bởi vì
 - gather (v): tụ họp
 - erect (v): dựng lên = build something
 - instrument (n): nhạc cụ
@@ -108,7 +111,6 @@
 - dedication (n): sự cống hiến / be dedicated to + N: dành cho / be dedicated to + Ving: cống hiến
 - directly (adv) = in person: trực tiếp
 - diverse (adj): phong phú
-- due to (pre) = owing to = given = beacause of = account of: bởi vì
 - distinguished (adj): ưu tiến
 - enquire (v): hỏi thăm # require (v): yêu cầu
 - entitle (v): trao quyền
@@ -143,7 +145,8 @@
 - admittance (n) = permisson (n): sự cho phép
 - adequate (v) = complete: đầy đủ
 - accordingly (adv) = suitable: phù hợp
-- agent (n): nhân viên / agency (n): đại lý
+- agent (n): nhân viên = staff = employee = personnel / agency (n): đại lý
+- associate (n): cộng tác viên
 - means (n): phương tiện
 - morden = up-to-date = state-of-the-art: hiện đại
 - venue (n): nơi gặp mặt
