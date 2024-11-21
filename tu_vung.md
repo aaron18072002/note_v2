@@ -13,6 +13,7 @@
 - obtain = gain = achive: đạt được
 - possession (n): sở hữu
 - portable (adj): có thể mang đi
+- pose for picture: tạo dáng để chụp ảnh
 - predict (v) = guess: dự đoán
 - prefer (v): thích hơn / = appoint (v) = promote (v): thăng chức
 - precidence (n): quyền ưu tiên
