@@ -126,6 +126,7 @@
 - comply with (v) = follow = obey = adhere to = abide by: tuân thủ
 - enclose (v) = attach: đính kèm
 - emission (n): sự thải ra
+- wipe (v): lau chùi
 - widen (v) = expand: mở rộng
 - whereas (conj): trong khi đó, ngược lại
 - whose = sở hữu cách/det/tính từ sở hữu
