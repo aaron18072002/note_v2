@@ -25,6 +25,11 @@ trữ ngay từ đầu. Nghĩa là không thể thêm và xóa phần tử của
 
 +) Yêu cầu bộ nhớ (Space Complexity) – Đo lường lượng bộ nhớ cần thiết khi xử lý dữ liệu.
 
+-- Định nghĩa: Độ phức tạp về thời gian. Là tổng thời gian/số phép tính mà chương trình cần để
+thực thi chương trình.
+
+-- g(n) được gọi là O của f(n) => f(n) <= C.g(n)
+
 - SORT
 
 -- Bubble Sort:
