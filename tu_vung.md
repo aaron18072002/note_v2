@@ -48,6 +48,7 @@
 - infinitive (n): dạng nguyên thể
 - INNOVATIVE (adv): có tính đổi mới
 - involve (v): liên quan
+- issue (n): ẩn phẩm, vấn đề / issue (v): phát hành
 - contraction (n): viết tắt
 - complementary (adj): miễn phí
 - COMPLIANCE (n): tuân thủ
@@ -96,9 +97,10 @@
 - so = therefore = thus = hence = consequently: do đó
 - significant (adj) = remarkable (adj) = noticeable = substantially (adj) = considerable (adj) đáng kể
 - utensil (n): dụng cụ nhà bếp
-- unforeseen (adv) = expected (v): không lường trước được
+- unforeseen (adv) = unexpected (v): không lường trước được
 - unanimously (adv): đồng lòng
 - upon (pre): ngay vào lúc
+- urgent (adj): khẩn cấp
 - demolish (v) = destroy = torn down: phá hủy, phá bỏ
 - devorce (v): ly dị
 - defect (n): khuyết điểm
@@ -141,6 +143,7 @@
 - admittance (n) = permisson (n): sự cho phép
 - adequate (v) = complete: đầy đủ
 - accordingly (adv) = suitable: phù hợp
+- agent (n): nhân viên / agency (n): đại lý
 - means (n): phương tiện
 - morden = up-to-date = state-of-the-art: hiện đại
 - venue (n): nơi gặp mặt
