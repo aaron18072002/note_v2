@@ -588,6 +588,39 @@ thực thi một câu truy vấn SELECT.
 -- Class.forName("com.mysql.cj.jdbc.Driver"): Dòng lệnh này được sử dụng để tải lớp driver MySQL JDBC vào bộ
 nhớ tại runtime, để DriverManager có thể dùng Service Provider Mechanisum để tìm JDBC Driver cho MySql.
 
+- PREPARED STATEMENT
+
+-- Khi nào nên dùng PreparedStatement?
+
++) Khi cần thực thi cùng một câu lệnh nhiều lần với các tham số khác nhau. Vì câu lệnh SQL được biên dịch trước
+(precompiled), có thể tái sử dụng nhiều lần với các tham số khác nhau.
+
++) Khi cần tăng cường bảo mật và ngăn chặn SQL Injection. vì các tham số được truyền riêng biệt, không bị nhúng
+trực tiếp vào chuỗi SQL.
+
+-- Khi nào nên dùng Statement?
+
++) Khi chỉ cần thực thi câu lệnh SQL một lần và không có tham số.
+
++) Khi làm việc với các câu lệnh SQL đơn giản, không phức tạp.
+
+- INTER SERVLET COMMUNICATION là gì?
+
+-- InterServletCommunication (ISC) là cơ chế trong Servlet API cho phép các servlet trong cùng một ứng dụng web
+trao đổi dữ liệu hoặc yêu cầu nhau thực thi một số nhiệm vụ. Các cơ chế phổ biến trong ISC gồm:
+
+-- Forward (chuyển tiếp):
+
++) Sử dụng RequestDispatcher.forward() để chuyển tiếp yêu cầu từ servlet này sang servlet khác.
+
+-- Include (bao gồm):
+
++) Sử dụng RequestDispatcher.include() để bao gồm nội dung của một servlet khác trong phản hồi của servlet hiện tại.
+
+-- Chia sẻ dữ liệu:
+
++) Servlet có thể chia sẻ dữ liệu thông qua các đối tượng như HttpServletRequest, HttpSession, hoặc ServletContext.
+
 - SERVICE PROVIDER MECHANISM
 
 -- Service Provider Mechanism (SPM) là cơ chế mà Java sử dụng để tự động phát hiện và đăng ký các dịch vụ
