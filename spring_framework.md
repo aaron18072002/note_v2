@@ -509,7 +509,10 @@ khởi chạy.
 
 -- Đối tượng ServletContext được chia sẻ giữa tất cả các servlet, JSP, và các thành phần khác trong cùng một ứng dụng.
 
--- ServletContext cho phép các servlet chia sẻ dữ liệu hoặc tài nguyên với nhau mà không cần phụ thuộc vào session hay request.
+-- ServletContext được sử dụng để đọc các tham số cấu hình (params) được định nghĩa trong file web.xml và chia sẻ các
+tham số đó giữa các servlets và JSP trong cùng một ứng dụng web.
+
+-- ServletContext dùng để tạo 1 RequestDispatcher object.
 
 - VÒNG ĐỜI CỦA 1 SERVLET INSTANCE
 
