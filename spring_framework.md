@@ -499,6 +499,18 @@ và tương tác với client.
 -- Apache Tomcat là một trong những Servlet Container mã nguồn mở phổ biến và có thể hoạt động như một web server nhẹ và
 servlet container.
 
+- SERVLET CONTEXT
+
+-- ServletContext là một interface trong Java Servlet API, và các Servlet Container (hay Web Container) như Apache Tomcat,
+Jetty, hoặc WildFly sẽ triển khai (implement) interface này.
+
+-- Web Container (hay Servlet Container) sẽ tạo ra một đối tượng ServletContext duy nhất/singletion khi ứng dụng web được
+khởi chạy.
+
+-- Đối tượng ServletContext được chia sẻ giữa tất cả các servlet, JSP, và các thành phần khác trong cùng một ứng dụng.
+
+-- ServletContext cho phép các servlet chia sẻ dữ liệu hoặc tài nguyên với nhau mà không cần phụ thuộc vào session hay request.
+
 - VÒNG ĐỜI CỦA 1 SERVLET INSTANCE
 
 -- Vòng đời của một Servlet được quản lý bởi Servlet Container, một thành phần bên trong Web Server
