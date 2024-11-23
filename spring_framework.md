@@ -419,6 +419,26 @@ ví dụ như khi cần tạo một bean với tham số constructor hoặc cầ
 mà Spring đang quét (thông qua component scanning), bạn có thể sử dụng @Bean để khai báo và tạo bean cho lớp đó
 mà không cần phải di chuyển lớp đó vào package đã quét.
 
+- FILTER và INTERCEPTOR
+
+-- Filter là một thành phần của Servlet API, được triển khai từ interface javax.servlet.Filter.
+Nó hoạt động ở mức Servlet Container, tức là trước khi Spring xử lý request.
+Filter được áp dụng cho tất cả các request đến ứng dụng web, không phụ thuộc vào Spring.
+
+-- Filter chặn và xử lý request trước khi nó đến DispatcherServlet và sau khi phản hồi được trả về từ DispatcherServlet.
+Thường được sử dụng để xử lý các tác vụ như:
+
++) Thay đổi hoặc thêm HTTP Header.
+
++) Authentication (Xác thực) và Authorization (Phân quyền).
+
++) Logging hoặc kiểm tra hiệu suất.
+
++) CORS (Cross-Origin Resource Sharing).
+
+-- Interceptor là một thành phần của Spring MVC, được triển khai từ interface HandlerInterceptor.
+Nó hoạt động trong phạm vi Spring MVC, tức là sau khi request đã được DispatcherServlet xử lý nhưng trước khi nó đến Controller.
+
 - WEB SERVER
 
 -- Web Server là một máy chủ chuyên dụng, chịu trách nhiệm tiếp nhận các request từ trình duyệt web (client)
