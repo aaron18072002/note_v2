@@ -611,11 +611,14 @@ trao đổi dữ liệu hoặc yêu cầu nhau thực thi một số nhiệm v�
 
 -- Forward (chuyển tiếp):
 
-+) Sử dụng RequestDispatcher.forward() để chuyển tiếp yêu cầu từ servlet này sang servlet khác.
++) Sử dụng RequestDispatcher.forward(request,response) để chuyển tiếp request và response từ servlet hiện tại
+sang servlet khác.
 
 -- Include (bao gồm):
 
-+) Sử dụng RequestDispatcher.include() để bao gồm nội dung của một servlet khác trong phản hồi của servlet hiện tại.
++) Phương thức RequestDispatcher.include() được sử dụng để lấy nội dung từ một trang (Servlet, JSP, HTML, v.v.)
+và chèn nó vào phản hồi của servlet hiện tại. Điều này giúp bạn tái sử dụng nội dung từ các tài nguyên khác mà
+không phải sao chép mã.
 
 -- Chia sẻ dữ liệu:
 
