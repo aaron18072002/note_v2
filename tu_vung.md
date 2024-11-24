@@ -50,6 +50,7 @@
 - infinitive (n): dạng nguyên thể
 - INNOVATIVE (adv): có tính đổi mới
 - involve (v): liên quan
+- irrigate (v): tưới
 - issue (n): ẩn phẩm, vấn đề / issue (v): phát hành
 - contraction (n): viết tắt
 - complementary (adj): miễn phí
