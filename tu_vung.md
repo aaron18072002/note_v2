@@ -14,6 +14,7 @@
 - ordinary (v) = common: thông thường
 - obtain = gain = achive: đạt được
 - possession (n): sở hữu
+- poll (n) = survey: khảo sát, thăm dò
 - portable (adj): có thể mang đi
 - pose for picture: tạo dáng để chụp ảnh
 - predict (v) = guess: dự đoán
