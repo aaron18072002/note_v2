@@ -124,7 +124,7 @@ Nguyên tắc này được gọi là ENCAPSULATION (tính đóng gói).
 
 -- Java CONSTRUCTOR được gọi tại thời điểm tạo đối tượng. Nó khởi tạo các giá trị để cung cấp dữ liệu cho các đối tượng, đó là lý do tại sao nó được gọi là CONSTRUCTOR.
 
-- PRIMITIVE VARIABLE TYPES
+- KIỂU GIÁ TRỊ
 
 -- 1 BYTE = 8 BIT.
 
@@ -132,13 +132,31 @@ Nguyên tắc này được gọi là ENCAPSULATION (tính đóng gói).
 
 -- CHAR - 2 BYTEs: sử dụng 2 byte (16 bit) để biểu diễn một ký tự, và nó dựa trên tiêu chuẩn Unicode.
 
--- BOOLEAN: giá trị là 'true' hoặc 'false'.
+-- Toán tử prefix increment (++) và prefix decrement (--) xảy ra trước toán tử gán (=) trong Java.
 
--- Các toán tử có thể áp dụng cho PRIMITIVE TYPEs gồm: +,-,\*,/,%,++,--.
+-- Sử dụng để lưu trữ dữ liệu
 
--- LƯU Ý: Toán tử prefix increment (++) và prefix decrement (--) xảy ra trước toán tử gán (=) trong Java.
+-- Lưu trữ duy nhất một giá trị
 
--- LƯU Ý: Không nên sử dụng FLOAT và DOUBLE và 2 TYPEs này không thể hiện chính xác các giá trị thập phân.
+-- Giá trị được lưu trữ ở vùng nhớ STACK
+
+-- Giá trị mặc định phụ thuộc vào KDL
+
+- KIỂU ĐỐI TƯỢNG
+
++) Sử dụng để lưu trữ dữ liệu.
+
++) Là wrapper, lưu trữ một hoặc nhiều thông tin, phù hợp yêu cầu thực tế.
+
++) Có thể tự tạo ra các KDL đối tượng như Item, Employee, CustomList.
+
++) Giá trị được lưu trữ ở vùng nhớ HEAP.
+
++) Giá trị mặc định là null – chưa được khởi tạo ở HEAP.
+
++) KDL đối tượng có thể là một class, interface, abstract class.
+
++) Hỗ trợ lưu trữ và các phương thức, giúp xử lý yêu cầu bài toán.
 
 - CASTING
 
