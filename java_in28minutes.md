@@ -109,8 +109,8 @@ hai thành phần chính: DỮ LIỆU - hay TRẠNG THÁI của nó ( DATA - STA
 
 -- Các biến này có thể có giá trị khác nhau đối với mỗi OBJECT khác nhau.
 
--- Các MEMBER VARIABLE không nên được truy cập trực tiếp từ các OBJECTs khác mà nên được GET và SET thông qua METHOD để ngăn chặn việc các OBJECTs khác truyền vào các INVALID VALUE.
-Nguyên tắc này được gọi là ENCAPSULATION (tính đóng gói).
+-- Các MEMBER VARIABLE không nên được truy cập trực tiếp từ các OBJECTs khác mà nên được GET và SET thông qua METHOD
+để ngăn chặn việc các OBJECTs khác truyền vào các INVALID VALUE. Nguyên tắc này được gọi là ENCAPSULATION (tính đóng gói).
 
 - LOCAL VARIABLE
 
@@ -158,7 +158,7 @@ Nguyên tắc này được gọi là ENCAPSULATION (tính đóng gói).
 
 +) Hỗ trợ lưu trữ và các phương thức, giúp xử lý yêu cầu bài toán.
 
-- CASTING
+- CASTING - ÉP KIỂU
 
 -- IMPLICIT CASTING: là quá trình Java tự động chuyển đổi từ kiểu dữ liệu thấp hơn sang kiểu dữ liệu cao hơn mà không
 cần sự can thiệp của lập trình viên. Điều này thường xảy ra khi không có khả năng mất mát dữ liệu,
@@ -219,10 +219,12 @@ Nếu không có BREAK, sau khi một case khớp, chương trình sẽ tiếp t
 - REFERENCE TYPEs
 
 -- Khi khai báo một biến kiểu REFERENCE TYPEs (ví dụ như một đối tượng của một class), biến này sẽ nằm trong STACK.
-Biến của REFERENCE TYPEs sẽ chỉ chứa địa chỉ của đối tượng dữ liệu tại bộ nhớ STACK.
-Đối tượng thực sự được tạo trong vùng nhớ HEAP. Biến tham chiếu trên STACK sẽ chứa địa chỉ trỏ đến vị trí của đối tượng này trên HEAP.
+Biến của REFERENCE TYPEs sẽ chỉ chứa địa chỉ của đối tượng dữ liệu tại bộ nhớ STACK.Đối tượng thực sự được tạo trong
+vùng nhớ HEAP. Biến tham chiếu trên STACK sẽ chứa địa chỉ trỏ đến vị trí của đối tượng này trên HEAP.
 
 - STACK và HEAP
+
+-- Toán tử = hay gán 100% hoạt động trên STACK.
 
 -- Tên biến = alias trỏ đến ô nhớ đang lưu trữ giá trị trong bộ nhớ.
 
