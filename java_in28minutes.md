@@ -206,10 +206,18 @@ Biến của REFERENCE TYPEs sẽ chỉ chứa địa chỉ của đối tượn
 
 - STACK và HEAP
 
--- Nếu khai báo trong phương thức, hàm, hoặc khối mã, biến PRIMITIVE sẽ được lưu trong STACK vì nó có phạm vi giới hạn
-và được quản lý bởi ngăn xếp trong quá trình thực thi.
+-- Tên biến = alias trỏ đến ô nhớ đang lưu trữ giá trị trong bộ nhớ.
 
--- Nếu là MEMBER VARIABLE của một đối tượng, dù có là PRIMITIVE hay không, nó sẽ được lưu trong HEAP, cùng với đối tượng mà nó thuộc về.
+-- Biến sẽ chứa giá trị của ô nhớ mà biến trỏ đến khi mình gọi biến đó.
+
+-- Biến được lưu trữ ở vùng nhớ STACK.
+
+-- Giá trị của biến có thể được lưu trữ ở STACK (kiểu nguyên thủy) và HEAP (kiểu đối tượng).
+
+-- Khi biến là kiểu giá trị nguyên thủy: Giá trị trong ô nhớ STACK là giá trị của biến.
+
+-- Khi biến là kiểu giá trị đối tượng: Giá trị trong ô nhớ STACK là địa chỉ của ô nhớ
+(heap chứa giá trị) mà biến đang trỏ đến.
 
 - STRING trong JAVA
 
