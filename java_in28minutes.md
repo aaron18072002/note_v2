@@ -261,15 +261,16 @@ Tuy nhiên, StringBuilder phù hợp với môi trường có một luồng duy 
 
 - EQUALS METHOD và TOÁN TỬ ==
 
--- Toán tử == dùng để so sánh địa chỉ (hoặc tham chiếu), tức là kiểm tra xem cả hai đối tượng có trỏ đến cùng một vị trí bộ nhớ hay không.
+-- Toán tử == dùng để so sánh địa chỉ (hoặc tham chiếu), tức là kiểm tra xem cả hai đối tượng có trỏ đến
+cùng một vị trí bộ nhớ hay không.
 
 -- Phương thức Equals() so sánh dựa trên code bên trong instance chứa nó.
 
--- Trong trường hợp phương thức equals không được ghi đè trong một lớp, thì lớp đó sử dụng cách triển khai mặc định của phương thức equals
-gần với lớp cha nhất.
+-- Trong trường hợp phương thức equals không được ghi đè trong một lớp, thì lớp đó sử dụng cách triển khai mặc định của
+phương thức equals gần với lớp cha nhất.
 
--- Lớp Object được coi là lớp cha của tất cả các lớp Java. Và cách triển khai equals() của 1 Object là so sánh cả hai đối tượng có trỏ đến cùng
-một vị trí bộ nhớ hay không.
+-- Lớp Object được coi là lớp cha của tất cả các lớp Java. Và cách triển khai equals() của 1 Object là so sánh cả hai đối tượng
+có trỏ đến cùng một vị trí bộ nhớ hay không.
 
 - HASHCODE METHOD
 
@@ -281,11 +282,10 @@ cách hiệu quả bằng cách sử dụng mã băm (hash code) của các đ�
 
 - WRAPPER CLASS
 
--- Trong Java, các Wrapper Class được thiết kế để "bọc" (wrap) các kiểu dữ liệu nguyên thủy (như int, double, boolean, v.v.) thành các đối tượng, từ đó
-cho phép xử lý các giá trị nguyên thủy như thể chúng là các đối tượng. Điều này rất hữu ích vì:
+-- Trong Java, các Wrapper Class được thiết kế để "bọc" (wrap) các kiểu dữ liệu nguyên thủy (như int, double, boolean, v.v.)
+thành các đối tượng, từ đó cho phép xử lý các giá trị nguyên thủy như thể chúng là các đối tượng. Điều này rất hữu ích vì:
 
-++ Chuyển đổi giữa kiểu nguyên thủy và đối tượng: Các wrapper class cung cấp các phương thức để chuyển đổi qua lại giữa kiểu nguyên thủy và đối tượng.
-Ví dụ: Integer có phương thức parseInt() để chuyển đổi String thành int.
+++ Chuyển đổi giữa kiểu nguyên thủy và đối tượng: Các wrapper class cung cấp các phương thức để chuyển đổi qua lại giữa kiểu nguyên thủy và đối tượng. Ví dụ: Integer có phương thức parseInt() để chuyển đổi String thành int.
 
 - AUTO BOXING
 
