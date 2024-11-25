@@ -120,9 +120,16 @@ hai thành phần chính: DỮ LIỆU - hay TRẠNG THÁI của nó ( DATA - STA
 
 - CONSTRUCTOR (Hàm khởi tạo)
 
--- CONSTRUCTOR trong java là một dạng đặc biệt của METHOD được sử dụng để khởi tạo các đối tượng.
+-- Mặc định class sẽ có 1 hàm khởi tạo rỗng(ko có tham số).
 
--- Java CONSTRUCTOR được gọi tại thời điểm tạo đối tượng. Nó khởi tạo các giá trị để cung cấp dữ liệu cho các đối tượng, đó là lý do tại sao nó được gọi là CONSTRUCTOR.
+-- Constructor: Có tên hàm trùng với tên class.
+
+-- Gọi constructor thì trả về KDL chính là class.
+
+-- Gọi thông qua từ khóa new.
+
+-- Java CONSTRUCTOR được gọi tại thời điểm tạo đối tượng. Nó khởi tạo các giá trị để cung cấp dữ liệu cho các đối tượng,
+đó là lý do tại sao nó được gọi là CONSTRUCTOR.
 
 - KIỂU GIÁ TRỊ
 
