@@ -536,9 +536,7 @@ chia sẻ các tham số đó giữa các servlets và JSP trong cùng một ứ
 
 -- Vòng đời của một Servlet được quản lý bởi Servlet Container, một thành phần bên trong Web Server
 (ví dụ: Apache Tomcat, Jetty). Servlet Container đảm bảo rằng Servlet được tải, khởi tạo, xử lý request,
-và hủy đúng cách.
-
--- Có 5 bước:
+và hủy đúng cách. Có 5 bước:
 
 +) Tải lớp Servlet vào bộ nhớ.
 
@@ -550,13 +548,56 @@ và hủy đúng cách.
 
 +) Gọi phương thức destroy() của Servlet.
 
--- Bước 1, 2 và 3 được thực thi một lần duy nhất, khi mà Servlet được nạp lần đầu. Mặc định các Servlet không được tải
-(load) lên cho tới khi nó nhận một đòi hỏi đầu tiên từ người dùng. Bạn có thể bắt buộc Servlet Container (Bộ chứa các Servlet)
-tải các Servlet khi nó khởi động.
+-- Bước 1, 2 và 3 được thực thi một lần duy nhất, khi mà Servlet được nạp lần đầu. Mặc định các Servlet
+không được tải (load) lên cho tới khi nó nhận một đòi hỏi đầu tiên từ người dùng. Bạn có thể bắt buộc
+Servlet Container (Bộ chứa các Servlet) tải các Servlet khi nó khởi động.
 
 -- Bước 4 được thực thi nhiều lần, mỗi khi có đòi hỏi từ phía người dùng tới Servlet.
 
 -- Bước 5 được thực thi khi bộ chứa Servlet (Servlet Container) gỡ bỏ tải (unloaded) một Servlet.
+
+- JSP
+
+-- JSP (JavaServer Pages) là một công nghệ Java cho phép tạo các trang web động. Nó cho phép
+nhúng mã Java trong các tệp HTML để tạo nội dung web đa dạng và tương tác với dữ liệu từ máy chủ.
+
+-- Quá trình biên dịch trang JSP bao gồm ba bước:
+
++) Phân tích cú pháp của JSP
+
++) Biến JSP thành servlet
+
++) Biên dịch servlet
+
+-- vòng đời của JSP:
+
++) Bản dịch trang JSP
+
++) Biên dịch trang JSP(Biên dịch trang JSP thành \_jsp.java)
+
++) Tải lớp (\_jsp.java được chuyển đổi thành tệp lớp \_jsp.class)
+
++) Khởi tạo(Đối tượng của servlet được tạo được tạo)
+
++) Khởi tạo(\_jspinit() phương thức được gọi bởi container)
+
++) Yêu cầu xử lý(\_jspservice() phương thức được gọi bởi container)
+
++) Hủy hoại (\_jspDestroy() phương thức được gọi bởi container)
+
+-- JSP là một Servlet, nó được biên dịch thành một lớp Servlet bởi Servlet Container:
+
++) config -> ServletConfig
+
++) request -> HttpServletRequest
+
++) respone -> HttpServletResponse
+
++) session -> HttpSession
+
++) application -> ServletContext
+
++) out -> PrintWriter
 
 - JDBC
 
