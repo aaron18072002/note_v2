@@ -1,3 +1,5 @@
+DONT LOOK BACK, JUST GOING, GOING ON.
+
 +) QKD: Diễn tả một hành động đã xảy ra và kết thúc trong quá khứ, không còn ảnh hưởng đến hiện tại.
 +) HTHT: Diễn tả một hành động bắt đầu trong quá khứ và kéo dài đến hiện tại hoặc có ảnh hưởng đến hiện tại.
 
