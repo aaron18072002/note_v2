@@ -599,6 +599,8 @@ nhúng mã Java trong các tệp HTML để tạo nội dung web đa dạng và 
 
 +) out -> PrintWriter
 
++) jspInit() -> init() / jspDestroy -> destroy()
+
 - JDBC
 
 -- JDBC (Java Database Connectivity) là một API (Application Programming Interface) trong Java.
