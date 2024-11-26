@@ -131,6 +131,8 @@ hai thành phần chính: DỮ LIỆU - hay TRẠNG THÁI của nó ( DATA - STA
 -- Java CONSTRUCTOR được gọi tại thời điểm tạo đối tượng. Nó khởi tạo các giá trị để cung cấp dữ liệu cho các đối tượng,
 đó là lý do tại sao nó được gọi là CONSTRUCTOR.
 
+-- Khi tạo 1 CONSTRUCTOR mới thì CONSTRUCTOR mặc định sẽ mất đi.
+
 - KIỂU GIÁ TRỊ
 
 -- 1 BYTE = 8 BIT.
@@ -231,7 +233,7 @@ vùng nhớ HEAP. Biến tham chiếu trên STACK sẽ chứa địa chỉ trỏ
 
 - STACK và HEAP
 
--- Toán tử = hay gán 100% hoạt động trên STACK.
+-- Toán tử = hay từ khóa final 100% hoạt động trên STACK.
 
 -- Tên biến = alias trỏ đến ô nhớ đang lưu trữ giá trị trong bộ nhớ.
 
