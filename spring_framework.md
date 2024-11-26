@@ -513,24 +513,22 @@ giữa Model (dữ liệu) và View (giao diện người dùng). Servlet nhận
 
 -- Mục đích của servlet là tạo ra các phản hồi động (như HTML hoặc JSON) dựa trên request.
 
--- Servlet Container là môi trường runtime nơi các servlet hoạt động. Nó chịu trách nhiệm đảm bảo vòng đời của servlet
-và tương tác với client.
+-- Servlet Container là môi trường runtime nơi các servlet hoạt động. Nó chịu trách nhiệm đảm bảo vòng
+đời của servlet và tương tác với client.
 
--- Apache Tomcat là một trong những Servlet Container mã nguồn mở phổ biến và có thể hoạt động như một web server nhẹ và
-servlet container.
+-- Apache Tomcat là một trong những Servlet Container mã nguồn mở phổ biến và có thể hoạt động như một
+web server nhẹ và servlet container.
 
 - SERVLET CONTEXT
 
--- ServletContext là một interface trong Java Servlet API, và các Servlet Container (hay Web Container) như Apache Tomcat,
-Jetty, hoặc WildFly sẽ triển khai (implement) interface này.
+-- ServletContext là một interface trong Java Servlet API, và các Servlet Container (hay Web Container) như Apache Tomcat, Jetty, hoặc WildFly sẽ triển khai (implement) interface này.
 
--- Web Container (hay Servlet Container) sẽ tạo ra một đối tượng ServletContext duy nhất/singletion khi ứng dụng web được
-khởi chạy.
+-- Web Container (hay Servlet Container) sẽ tạo ra một đối tượng ServletContext duy nhất/singletion khi ứng dụng web được khởi chạy.
 
 -- Đối tượng ServletContext được chia sẻ giữa tất cả các servlet, JSP, và các thành phần khác trong cùng một ứng dụng.
 
--- ServletContext được sử dụng để đọc các tham số cấu hình (params) được định nghĩa trong file web.xml và chia sẻ các
-tham số đó giữa các servlets và JSP trong cùng một ứng dụng web.
+-- ServletContext được sử dụng để đọc các tham số cấu hình (params) được định nghĩa trong file web.xml và
+chia sẻ các tham số đó giữa các servlets và JSP trong cùng một ứng dụng web.
 
 -- ServletContext dùng để tạo 1 RequestDispatcher object.
 
@@ -651,6 +649,31 @@ không phải sao chép mã.
 
 -- Khi bạn sử dụng Class.forName("com.mysql.cj.jdbc.Driver"), dòng lệnh này giúp JVM biết rằng cần phải
 nạp lớp driver tại runtime.
+
+- HTTPSESSION trong SERVLET
+
+-- HttpSession là một giao diện (interface) trong Java Servlets được sử dụng để duy trì thông tin phiên
+làm việc (session) của người dùng trong ứng dụng web. Phiên làm việc là một khoảng thời gian mà một người
+dùng tương tác với ứng dụng. HttpSession cho phép bạn lưu trữ và truy xuất thông tin phiên để duy trì
+trạng thái giữa các yêu cầu của người dùng.
+
+-- HttpSession object được tạo ra bởi Servlet Container (như Apache Tomcat, Jetty, hoặc WildFly)
+để duy trì trạng thái phiên làm việc (session) giữa client và server.
+
+- HTTPCOOKIE trong SERVLET
+
+-- Cookie là những đoạn dữ liệu nhỏ được lưu trữ trên máy tính của người dùng bởi trình duyệt web.
+
+-- Cookie sẽ được trình duyệt tự động gửi kèm trong header của HTTP request.
+
+-- Trong SERVLET, có thể get cookies thông qua HttpRequest.getCookies()
+
+- URL REWRITING
+
+-- URL rewriting được sử dụng chủ yếu trong trường hợp cookies bị vô hiệu hóa trên client hoặc
+không thể sử dụng cookies để duy trì trạng thái (session) giữa client và server. Đây là một kỹ
+thuật giúp duy trì trạng thái phiên làm việc bằng cách gắn ID phiên (session ID) trực tiếp vào
+URL của các yêu cầu HTTP.
 
 - DAO
 
