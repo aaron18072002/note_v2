@@ -70,7 +70,7 @@ DONT LOOK BACK, JUST GOING, GOING ON.
 - supplementary (adj): bổ sung
 - suspend (v) = delay: trì hoãn
 - stiff (adj): cứng
-- steadily (adv): đều đặn
+- steadily (adv) = rapidly (adv): đều đặn
 - seldom (adv) = rarely (adv): hiếm khi
 - sponsor (n): nhà tài trợ
 - regret (n): hối hận
