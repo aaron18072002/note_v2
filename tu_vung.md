@@ -52,6 +52,7 @@ DONT LOOK BACK, JUST GOING, GOING ON.
 - far + more: nhiều hơn, thú vị hơn
 - infinitive (n): dạng nguyên thể
 - INNOVATIVE (adv): có tính đổi mới
+- intense (adj): căng thẳng
 - involve (v): liên quan
 - irrigate (v): tưới
 - issue (n): ẩn phẩm, vấn đề / issue (v): phát hành
@@ -82,6 +83,7 @@ DONT LOOK BACK, JUST GOING, GOING ON.
 - renowned (adj) = notable (adj) = well-known: nổi tiếng, đáng chú ý
 - renovate (v) = remodel (v) = makeover (v) cải tạo, tân trang
 - revenue (n): doanh thu / avenue (n): đại lộ / venue (n) = location = site = place: địa điểm
+- regardless of: bất kể là
 - regard (v): xem như
 - regarding = concerning = about: về
 - exclusive (adj) = unique: độc quyền, duy nhất
