@@ -13,6 +13,17 @@ Cách SQL suy nghĩ:
 
 -- ACID
 
+-- PRIMARY KEY
+
+- PRIMARY KEY mặc định luôn có các thuộc tính sau:
+
++) NOT NULL: Giá trị của một cột hoặc tập hợp các cột được đặt làm PRIMARY KEY không được phép là NULL.
+
++) Unique: Giá trị của mỗi hàng trong PRIMARY KEY phải là duy nhất để đảm bảo tính toàn vẹn của dữ liệu.
+
+-- Vì thế, khi bạn khai báo một cột là PRIMARY KEY, bạn không cần phải chỉ định thêm ràng buộc NOT NULL hoặc UNIQUE
+vì nó đã được áp dụng mặc định.
+
 -- SELECT DISTINCT
 
 - Lấy giá trị không trùng lặp của các cột (fields) trong table
