@@ -28,7 +28,19 @@ vì nó đã được áp dụng mặc định.
 
 - Lấy giá trị không trùng lặp của các cột (fields) trong table
 
-- VD: SELECT Field1, Field2 FROM Table1 - Ý nghĩa là query data từ field1, field2 của table1 với các records là không được giống nhau. Nói cách khác nếu ta query 1 fields có nhiều record có value giống nhau thì không trả về toàn bộ records đó mà chỉ trả về 1 record chứa value chung.
+- VD: SELECT Field1, Field2 FROM Table1 - Ý nghĩa là query data từ field1, field2 của table1 với các
+  records là không được giống nhau. Nói cách khác nếu ta query 1 fields có nhiều record có value giống
+  nhau thì không trả về toàn bộ records đó mà chỉ trả về record chứa value chung.
+
+-- STRING FUNCTION
+
+- CONCAT(...): Nếu gặp 1 giá trị NULL, CONCAT thay thế NULL bằng chuỗi rỗng ('') trước khi nối.
+
+- SUBSTRING(str, start, length): Lấy 1 chuỗi phụ từ str từ vị trí indexStart/default là 1 với số lượng char
+  là length. Nếu chưa tới length mà đã hết char để lấy thì dừng.
+
+- REPLACE(chuỗi-gốc, phần-chuỗi-muốn-thay, chuỗi-để-thay): Hàm không thay đổi chuỗi gốc nếu phần_chuỗi_muốn_thay
+  không tìm thấy.
 
 -- COUNT, SUM, AVG - Aggregate Query
 
@@ -36,7 +48,8 @@ vì nó đã được áp dụng mặc định.
 
 - Nếu có bất kỳ giá trị nào trong column = NULL, SUM sẽ trả về NULL.
 
-- Nếu tất cả các giá trị trong column trả về NULL, hàm AVG sẽ trả về NULL. Còn nếu chỉ 1 vài giá trị là NULL, hàm AVG sẽ bỏ qua các giá trị NULL và tính trung bình cho các giá trị còn lại.
+- Nếu tất cả các giá trị trong column trả về NULL, hàm AVG sẽ trả về NULL. Còn nếu chỉ 1 vài giá trị là NULL,
+  hàm AVG sẽ bỏ qua các giá trị NULL và tính trung bình cho các giá trị còn lại.
 
 -- Toán tử LOGIC
 
@@ -52,11 +65,12 @@ vì nó đã được áp dụng mặc định.
 
 - IN (trả về true nếu giá trị nằm trong danh sách được chỉ định).
 
-- LIKE (trả về true nếu giá trị khớp với mẫu đã chỉ định) - thường dùng để lọc dữ liệu trong chuỗi: % - đại diện cho không hoặc nhiều ký tự, \_ - đại diện cho 1 ký tự.
+- LIKE (trả về true nếu giá trị khớp với mẫu đã chỉ định) - thường dùng để lọc dữ liệu trong chuỗi: % - đại diện cho không hoặc
+  nhiều ký tự, \_ - đại diện cho 1 ký tự.
 
 - IS NULL (trả về true nếu giá trị null).
 
-- EXISTS (trả về true nếu truy vấn con trả về bất kỳ hàng nào).
+- EXISTS (trả về true nếu truy vấn con trả về bất kỳ hàng nào
 
 -- WILDCARD
 
@@ -86,11 +100,14 @@ vì nó đã được áp dụng mặc định.
 
 -- HAVING
 
-- Thay thế cho Where vì Where không thể dùng với aggregate functions. WHERE Lọc các hàng dữ liệu trước khi các phép tính toán hoặc hàm tổng hợp được thực hiện. Điều này có nghĩa là bất kỳ điều kiện nào trong câu lệnh WHERE phải dựa trên các cột hoặc giá trị của các hàng dữ liệu ban đầu.
+- Thay thế cho Where vì Where không thể dùng với aggregate functions. WHERE Lọc các hàng dữ liệu trước khi các phép tính toán hoặc
+  hàm tổng hợp được thực hiện. Điều này có nghĩa là bất kỳ điều kiện nào trong
+  câu lệnh WHERE phải dựa trên các cột hoặc giá trị của các hàng dữ liệu ban đầu.
 
 -- UNION
 
-- Toán tử UNION được sử dụng để kết hợp tập hợp kết quả của hai hoặc nhiều câu lệnh SELECT. Mỗi câu lệnh SELECT với UNION phải có cùng số lượng cột, các cột phải có cùng kiểu dữ liệu, các cột trong mỗi câu lệnh SELECT phải có cùng trật tự.
+- Toán tử UNION được sử dụng để kết hợp tập hợp kết quả của hai hoặc nhiều câu lệnh SELECT. Mỗi câu lệnh SELECT với UNION phải có
+  cùng số lượng cột, các cột phải có cùng kiểu dữ liệu, các cột trong mỗi câu lệnh SELECT phải có cùng trật tự.
 
 - UNION loại bỏ các bản ghi trùng lặp trong kết quả.
 
@@ -104,7 +121,7 @@ vì nó đã được áp dụng mặc định.
 
 - RIGHT OUTER JOIN (RIGHT JOIN): Tương tự như LEFT JOIN, nhưng trả về tất cả các hàng từ bảng bên phải và các hàng tương ứng từ bảng bên trái. Nếu không có hàng khớp từ bảng bên trái, các cột từ bảng bên trái sẽ là NULL.
 
-- FULL OUTER JOIN: Kết hợp giữa LEFT JOIN và RIGHT JOIN. Trả về tất cả các hàng khi có giá trị khớp trong một trong hai bảng. Nếu không có hàng khớp, các cột từ bảng thiếu sẽ là NULL.
+- FULL OUTER JOIN: Kết hợp giữa LEFT JOIN và RIGHT JOIN. Trả về tất cả các hàng khi có giá trị khớp trong một trong hai bảng. Nếu không có hàng khớp các cột từ bảng thiếu sẽ là NULL.
 
 -- SUB QUERY
 
@@ -112,13 +129,13 @@ vì nó đã được áp dụng mặc định.
 
 - Subquery hoạt động như 1 bảng ảo tạm thời, được sử dụng để lấy thông tin là các tables trong cùng 1 câu truy vấn.
 
-- VẤN ĐỀ CỦA SUB QUERY: Khi bạn sử dụng subquery làm điều kiện trong mệnh đề WHERE, subquery sẽ được thực thi lại cho mỗi hàng trong tập dữ liệu của câu lệnh SELECT. Điều này có nghĩa là nếu truy vấn chính có 1 triệu dòng, subquery có thể sẽ được thực thi 1 triệu lần, dẫn đến hiệu suất kém và thời gian xử lý lâu hơn.
+- VẤN ĐỀ CỦA SUB QUERY: Khi bạn sử dụng subquery làm điều kiện trong mệnh đề WHERE, subquery sẽ được thực thi lại cho mỗi hàng trong tập dữ liệu của câu lệnh SELECT. Điều này có nghĩa là nếu truy vấn chính có 1 triệu dòng, subquery có thể sẽ được thực thi 1 triệu lần dẫn đến hiệu suất kém và thời gian xử lý lâu hơn.
 
--- THỨ TỰ THỰC THI CÁC CÂU LỆNH SQL
+-- THỨ TỰ THỰC THI CÁC CÂU LỆNH
 
 1. FROM: SQL bắt đầu bằng cách lấy dữ liệu từ các bảng và thực hiện các phép nối (nếu có) giữa các bảng được liệt kê sau từ khóa FROM.
 
-2. JOIN: Các phép nối (như INNER JOIN, LEFT JOIN, RIGHT JOIN,...) giữa các bảng được xử lý trong bước này. Kết quả sẽ là một bảng tạm chứa dữ liệu từ các bảng được kết nối theo điều kiện nối. JOIN diễn ra trước, xác định các bảng nào sẽ được kết nối và loại kết nối nào sẽ được thực hiện. Sau đó, điều kiện nối (câu lệnh ON) sẽ quyết định cách các bản ghi từ các bảng đó được kết hợp với nhau. Dựa trên loại JOIN, điều kiện ON sẽ xử lý khác nhau, và từ đó phân biệt giữa các kiểu INNER JOIN, LEFT JOIN, RIGHT JOIN, và FULL JOIN
+2. JOIN: Các phép nối (như INNER JOIN, LEFT JOIN, RIGHT JOIN,...) giữa các bảng được xử lý trong bước này. Kết quả sẽ là một bảng tạm chứa dữ liệu từ các bảng được kết nối theo điều kiện nối. JOIN diễn ra trước, xác định các bảng nào sẽ được kết nối và loại kết nối nào được thực hiện. Sau đó, điều kiện nối (câu lệnh ON) sẽ quyết định cách các bản ghi từ các bảng đó được kết hợp với nhau. Dựa trên lo JOIN, điều kiện ON sẽ xử lý khác nhau, và từ đó phân biệt giữa các kiểu INNER JOIN, LEFT JOIN, RIGHT JOIN, và FULL JOIN
 
 3. WHERE: Sau khi có bảng tạm, các điều kiện lọc ở WHERE sẽ được áp dụng để loại bỏ các hàng không thỏa mãn điều kiện.
 
@@ -188,9 +205,11 @@ vì nó đã được áp dụng mặc định.
 
 -- Index là một cách tối ưu hiệu suất truy vấn database bằng việc giảm lượng truy cập vào bộ nhớ khi thực hiện truy vấn.
 
--- Nói đơn giản, index trỏ tới địa chỉ dữ liệu trong một bảng, giống như Mục lục của một cuốn sách (Gồm tên đề mục và số trang), nó giúp truy vấn trở nên nhanh chóng như việc bạn xem mục lục và tìm đúng trang cần đọc.
+-- Nói đơn giản, index trỏ tới địa chỉ dữ liệu trong một bảng, giống như Mục lục của một cuốn sách (Gồm tên đề mục và số trang), nó giúp truy vấn trở
+nên nhanh chóng như việc bạn xem mục lục và tìm đúng trang cần đọc.
 
--- Trong cơ sở dữ liệu, chỉ mục (index) được đánh vào cột (hoặc các cột) của một bảng, chứ không phải vào dòng. Khi bạn tạo chỉ mục cho một cột, hệ thống sẽ sắp xếp dữ liệu trong cột đó và lưu trữ vị trí của các giá trị, giúp truy vấn dữ liệu từ cột đó nhanh hơn.
+-- Trong cơ sở dữ liệu, chỉ mục (index) được đánh vào cột (hoặc các cột) của một bảng, chứ không phải vào dòng. Khi bạn tạo chỉ mục cho một cột,
+hệ thống sẽ sắp xếp dữ liệu trong cột đó và lưu trữ vị trí của các giá trị, giúp truy vấn dữ liệu từ cột đó nhanh hơn.
 
 -- Cấu trúc của INDEX bao gồm: SEARCH KEY và DATA REFERENCE.
 
@@ -210,19 +229,24 @@ vì nó đã được áp dụng mặc định.
 
 - CHECK OPTION
 
--- CHECK OPTION trong View là một điều kiện cho phép bạn xác định ràng buộc về việc cập nhật hoặc chèn dữ liệu vào View. Nó đảm bảo rằng các dòng dữ liệu được chèn hoặc cập nhật thông qua View sẽ tuân theo một điều kiện cụ thể.
+-- CHECK OPTION trong View là một điều kiện cho phép bạn xác định ràng buộc về việc cập nhật hoặc chèn dữ liệu vào View. Nó đảm bảo rằng các dòng dữ liệu được
+chèn hoặc cập nhật thông qua View sẽ tuân theo một điều kiện cụ thể.
 
 - T-SQL
 
--- T-SQL (Transact-SQL) là một mở rộng của ngôn ngữ SQL tiêu chuẩn, được phát triển bởi Microsoft và Sybase để hỗ trợ các tính năng bổ sung giúp xử lý các yêu cầu phức tạp hơn trong cơ sở dữ liệu.
+-- T-SQL (Transact-SQL) là một mở rộng của ngôn ngữ SQL tiêu chuẩn, được phát triển bởi Microsoft và Sybase để hỗ trợ các tính năng bổ sung giúp xử lý
+các yêu cầu phức tạp hơn trong cơ sở dữ liệu.
 
 -- Ngoài các câu lệnh SQL tiêu chuẩn, T-SQL cung cấp các tính năng bổ sung như:
 
---- Kiểm soát giao dịch: Giúp đảm bảo tính toàn vẹn của dữ liệu thông qua các câu lệnh như BEGIN TRANSACTION, COMMIT, và ROLLBACK, cho phép xử lý các giao dịch (transactions) một cách an toàn.
+--- Kiểm soát giao dịch: Giúp đảm bảo tính toàn vẹn của dữ liệu thông qua các câu lệnh như BEGIN TRANSACTION, COMMIT, và ROLLBACK, cho phép xử lý các giao dịch
+(transactions) một cách an toàn.
 
---- Xử lý lỗi: T-SQL có các khối TRY...CATCH để xử lý lỗi, giúp bạn bắt và xử lý lỗi trong quá trình thực thi các câu lệnh SQL, tăng độ tin cậy của các thao tác cơ sở dữ liệu.
+--- Xử lý lỗi: T-SQL có các khối TRY...CATCH để xử lý lỗi, giúp bạn bắt và xử lý lỗi trong quá trình thực thi các câu lệnh SQL, tăng độ tin cậy của
+các thao tác cơ sở dữ liệu.
 
---- Khai báo và sử dụng biến: T-SQL cho phép khai báo và sử dụng biến với cú pháp DECLARE, SET, và SELECT INTO. Điều này rất hữu ích khi bạn cần lưu trữ tạm thời dữ liệu hoặc làm việc với các giá trị trong các phép tính.
+--- Khai báo và sử dụng biến: T-SQL cho phép khai báo và sử dụng biến với cú pháp DECLARE, SET, và SELECT INTO. Điều này rất hữu ích khi bạn cần lưu trữ
+tạm thời dữ liệu hoặc làm việc với các giá trị trong các phép tính.
 
 --- Lập trình thủ tục: Bạn có thể viết các stored procedure (thủ tục lưu trữ), trigger, và function (hàm) với T-SQL, giúp tăng cường khả năng tái sử dụng và quản lý mã code tốt hơn.
 
@@ -232,9 +256,12 @@ vì nó đã được áp dụng mặc định.
 
 -- STORED PROCEDURE là tập hợp một hoặc nhiều câu lệnh T-SQL thành một nhóm đơn vị xử lý logic và được lưu trữ trên Database Server.
 
--- Khi một câu lệnh gọi chạy STORED PROCEDURE lần đầu tiên thì SQL Server sẽ chạy nó và lưu trữ vào bộ nhớ đệm, gọi là plan cache, những lần tiếp theo SQL Server sẽ sử dụng lại plan cache nên sẽ cho tốc độ xử lý tối ưu.
+-- Khi một câu lệnh gọi chạy STORED PROCEDURE lần đầu tiên thì SQL Server sẽ chạy nó và lưu trữ vào bộ nhớ đệm, gọi là plan cache, những lần tiếp theo
+SQL Server sẽ sử dụng lại plan cache nên sẽ cho tốc độ xử lý tối ưu.
 
--- SQL Server sẽ làm việc hiệu quả hơn nếu dùng stored procedure vì người gởi chỉ gởi một câu lệnh đơn và SQL Server chỉ kiếm tra một lần sau đó tạo ra một execute plan và thực thi. Nếu stored procedure được gọi nhiều lần thì execute plan có thể được sử dụng lại nên sẽ làm việc nhanh hơn. Ngoài ra cú pháp của các câu lệnh SQL đã được SQL Sever kiếm tra trước khi save nên nó không cần kiếm lại khi thực thi.
+-- SQL Server sẽ làm việc hiệu quả hơn nếu dùng stored procedure vì người gởi chỉ gởi một câu lệnh đơn và SQL Server chỉ kiếm tra một lần sau đó tạo
+ra một execute plan và thực thi. Nếu stored procedure được gọi nhiều lần thì execute plan có thể được sử dụng lại nên sẽ làm việc nhanh hơn.
+Ngoài ra cú pháp của các câu lệnh SQL đã được SQL Sever kiếm tra trước khi save nên nó không cần kiếm lại khi thực thi.
 
 - TRIGGER
 
