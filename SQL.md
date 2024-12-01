@@ -88,6 +88,12 @@ vì nó đã được áp dụng mặc định.
 
 - Toán tử IN cho phép bạn chỉ định nhiều giá trị cho 1 field trong mệnh đề WHERE.
 
+-- ON DELETE CASCADE
+
+- DELETE CASCADE trong SQL là một tùy chọn được sử dụng khi thiết lập khóa ngoại (foreign key) giữa hai bảng.
+  Nó cho phép tự động xóa các rows liên quan trong bảng con (child table) khi một hàng trong bảng cha
+  (parent table) bị xóa.
+
 -- GROUP BY
 
 - Dùng để nhóm các dòng có cùng giá trị.
