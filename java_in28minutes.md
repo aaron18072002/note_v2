@@ -773,6 +773,8 @@ của lớp đó và điều đó giúp cho chương trình tiết kiệm bộ n
 
 +) Người dùng không thể override (đè) phương thức static trong Java.
 
++) static method, attribute sẽ được khởi tạo cùng thời điểm loading class --> khởi tạo trước non-static method
+
 -- Lớp static (static class):
 
 +) Trong Java, một lớp static phải là lớp lồng nhau (nested class) bên trong một lớp không phải static khác,
