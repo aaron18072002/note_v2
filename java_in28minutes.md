@@ -753,7 +753,8 @@ sẽ nhận được kết quả.
 
 +) Biến static thuộc về lớp chứ không phải thuộc về từng đối tượng cụ thể.
 
-+) Chỉ có một bản sao duy nhất của biến static được tạo ra trong bộ nhớ, bất kể có bao nhiêu đối tượng của lớp đó được tạo ra.
++) Chỉ có một bản sao duy nhất của biến static được tạo ra trong bộ nhớ, bất kể có bao nhiêu đối tượng của
+lớp đó được tạo ra.
 
 +) Biến static có thể được sử dụng làm thuộc tính chung, để làm dữ liệu chung cho tất cả objects (hoặc instances)
 của lớp đó và điều đó giúp cho chương trình tiết kiệm bộ nhớ hơn.
