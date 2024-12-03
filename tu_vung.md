@@ -10,6 +10,7 @@ DONT LOOK BACK, JUST GOING, GOING ON.
 - as well as: cũng như
 - as long as = provided that: miễn là
 - as far as: theo như
+- abundant (ajd) = many = numerous = plentiful: nhiều, phong phú
 - occurrence = happening (n): xảy ra
 - occasion (n): dịp
 - obligation (n) = duty (n) : nghĩa vụ
@@ -24,7 +25,7 @@ DONT LOOK BACK, JUST GOING, GOING ON.
 - precidence (n): quyền ưu tiên
 - precise (adj) = exact = accurate: chính xác
 - punctual (v): đúng giờ
-- promptly (adv) = quickly: nhanh chóng
+- promptly (adv) = quickly = swiftly nhanh chóng
 - pavement (n) = sidewalk (n): vỉa hè
 - prospective (adj) = potential : tiềm năng
 - put off: cởi / put on: mặc / put up: dựng
