@@ -61,8 +61,9 @@ Biến cho phép bạn lưu trữ giá trị hoặc thông tin để có thể t
 
 -- VARIABLE là 1 thứ mà giá trị của nó có thể thay đổi trong suốt vòng đời của ứng dụng.
 
--- Trong JAVA, biến được sử dụng để lưu trữ và thao tác với dữ liệu. Nó là một NAMED MEMORY LOCATION, có thể chứa một giá trị thuộc một kiểu dữ liệu cụ thể.
-Từ khóa "VARIABLE" được sử dụng để khai báo và định nghĩa các biến, cho phép phân bổ bộ nhớ để lưu trữ dữ liệu trong quá trình thực thi chương trình.
+-- Trong JAVA, biến được sử dụng để lưu trữ và thao tác với dữ liệu. Nó là một NAMED MEMORY LOCATION, có thể chứa
+một giá trị thuộc một kiểu dữ liệu cụ thể. Từ khóa "VARIABLE" được sử dụng để khai báo và định nghĩa các biến,
+cho phép phân bổ bộ nhớ để lưu trữ dữ liệu trong quá trình thực thi chương trình.
 
 - METHOD OVERLOADING
 
@@ -365,17 +366,18 @@ giá trị của tham số không thể thay đổi trong suốt quá trình th�
 Khi kế thừa class con được hưởng tất cả các phương thức và thuộc tính của class cha. Tuy nhiên, nó chỉ được truy cập các thành viên public và protected của class cha.
 Nó không được phép truy cập đến thành viên private của class cha.
 
--- Trong Java, khi một đối tượng con được tạo, một đối tượng cha cũng được khởi tạo ngầm. Điều này xảy ra vì lớp con luôn phải gọi constructor của lớp cha,
-trực tiếp hoặc gián tiếp. Nếu bạn không gọi constructor của lớp cha rõ ràng bằng từ khóa super(), Java sẽ tự động gọi constructor
-không tham số (nếu có) của lớp cha trước khi thực hiện constructor của lớp con. Quy trình này giúp đảm bảo rằng tất cả các phần thuộc lớp cha đều
-được khởi tạo trước khi lớp con có thể sử dụng.
+-- Trong Java, khi một đối tượng con được tạo, một đối tượng cha cũng được khởi tạo ngầm. Điều này xảy ra vì lớp con
+luôn phải gọi constructor của lớp cha, trực tiếp hoặc gián tiếp. Nếu bạn không gọi constructor của lớp cha rõ ràng
+bằng từ khóa super(), Java sẽ tự động gọi constructor không tham số (nếu có) của lớp cha trước khi thực hiện constructor
+của lớp con. Quy trình này giúp đảm bảo rằng tất cả các phần thuộc lớp cha đều được khởi tạo trước khi lớp con có thể sử dụng.
 
--- Trong Java, nếu một lớp không mở rộng (extend) bất kỳ lớp nào, thì nó mặc định sẽ kế thừa lớp Object. Object là lớp gốc của tất cả các lớp
-trong Java và cung cấp một số phương thức cơ bản như toString(), equals(), hashCode(), và clone(). Do đó, ngay cả khi bạn không viết
-extends Object, mọi lớp trong Java vẫn kế thừa lớp Object và có thể sử dụng các phương thức này.
+-- Trong Java, nếu một lớp không mở rộng (extend) bất kỳ lớp nào, thì nó mặc định sẽ kế thừa lớp Object. Object là lớp
+gốc của tất cả các lớp trong Java và cung cấp một số phương thức cơ bản như toString(), equals(), hashCode(), và clone().
+Do đó, ngay cả khi bạn không viết extends Object, mọi lớp trong Java vẫn kế thừa lớp Object và có thể sử dụng các phương thức này.
 
--- JAVA không hỗ trợ đa kế thừa (multiple inheritance) để tránh vấn đề "diamond problem". Vấn đề này xảy ra khi một lớp kế thừa từ hai lớp cha,
-mà cả hai lớp cha này đều có phương thức cùng tên và cùng tham số (signature). Khi đó, trình biên dịch sẽ gặp khó khăn trong việc xác định nên gọi phương thức nào.
+-- JAVA không hỗ trợ đa kế thừa (multiple inheritance) để tránh vấn đề "diamond problem". Vấn đề này xảy ra khi một lớp
+kế thừa từ hai lớp cha, mà cả hai lớp cha này đều có phương thức cùng tên và cùng tham số (signature). Khi đó, trình biên dịch
+sẽ gặp khó khăn trong việc xác định nên gọi phương thức nào.
 
 -- Tại sao sử dụng tính kế thừa trong Java?
 
