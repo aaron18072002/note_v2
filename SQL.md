@@ -96,17 +96,24 @@ vì nó đã được áp dụng mặc định.
 
 -- GROUP BY
 
-- Dùng để nhóm các dòng có cùng giá trị.
+- Dùng để nhóm các rows có cùng giá trị.
 
 - Thường dùng với các aggregate functions: COUNT(), MAX(), MIN(), SUM(), AVG().
 
 - DISTINCT khá giống với GROUP BY và thực chất thì GROUP BY là một trường hợp đặc biệt của DISTINCT khi nó tự động sắp xếp kết quả còn DISTINCT thì không.
 
-- GROUP BY chạy trước aggragation function.
+- GROUP BY chạy trước aggregation function.
+
+-- GROUP BY ROLL UP
+
+- GROUP BY thông thường sẽ nhóm các rows có cùng giá trị
+
+- Với GROUP BY ROLL UP thì sau khi GROUP BY rồi thì GROUP BY lại cột đó lần nữa với.
 
 -- HAVING
 
-- Thay thế cho Where vì Where không thể dùng với aggregate functions. WHERE Lọc các hàng dữ liệu trước khi các phép tính toán hoặc
+- Thay thế cho Where vì Where không thể dùng với aggregate functions. WHERE Lọc các hàng dữ liệu trước khi các
+  phép tính toán hoặc
   hàm tổng hợp được thực hiện. Điều này có nghĩa là bất kỳ điều kiện nào trong
   câu lệnh WHERE phải dựa trên các cột hoặc giá trị của các hàng dữ liệu ban đầu.
 
@@ -227,11 +234,13 @@ hệ thống sẽ sắp xếp dữ liệu trong cột đó và lưu trữ vị t
 
 - VIEW
 
--- Database View là sự trình bày data theo ý muốn được trích xuất từ một hoặc nhiều table/view khác. View không lưu data nên nó còn được biết đến với cái tên "bảng ảo(virtual tables)".
+-- Database View là sự trình bày data theo ý muốn được trích xuất từ một hoặc nhiều table/view khác.
+View không lưu data nên nó còn được biết đến với cái tên "bảng ảo(virtual tables)".
 
 -- Các thao tác select, insert, update và delete với view tương tự như table bình thường.
 
--- VIEW không lưu data nên tất cả những thao tác được thực hiện trên view thì đều được phản ánh đến base table mà được trích xuất dữ liệu.
+-- Dữ liệu trong VIEW luôn được lấy trực tiếp từ các bảng cơ sở khi VIEW được gọi.
+Vì vậy, nếu dữ liệu trong bảng gốc thay đổi, kết quả của VIEW cũng thay đổi theo ngay lập tức.
 
 - CHECK OPTION
 
