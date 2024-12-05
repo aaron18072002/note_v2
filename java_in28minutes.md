@@ -410,6 +410,7 @@ Phiên bản Java 9, có thể thêm private methods.
 -- Interface chỉ có các biến static final.
 
 -- Tất cả các methods trong Interface đều được ngầm định là public và abstract (trừ default và static method).
+Và không được set access modifier cho các methods đó là private.
 
 - POLYMORPHISM
 
