@@ -387,8 +387,8 @@ sẽ gặp khó khăn trong việc xác định nên gọi phương thức nào.
 
 - ABSTRACTION
 
--- Trong JAVA, abstract class (lớp trừu tượng) được sử dụng để làm lớp cha, chứa các đặc điểm và hành vi chung mà các lớp con kế thừa,
-abstract class được sử dụng để định nghĩa các hành vi và thuộc tính chung.
+-- Trong JAVA, abstract class (lớp trừu tượng) được sử dụng để làm lớp cha, chứa các đặc điểm và hành vi chung mà
+các lớp con kế thừa, abstract class được sử dụng để định nghĩa các hành vi và thuộc tính chung.
 
 -- Lớp con bắt buộc phải implement tất cả các phương thức trừu tượng của lớp cha.
 
