@@ -407,7 +407,7 @@ lớp trừu tượng đó.
 -- Phiên bản Java < 8, Interface chỉ có thể có phương thức abstract. Phiên bản Java 8, có thể thêm default và static methods.
 Phiên bản Java 9, có thể thêm private methods.
 
--- Interface chỉ có các biến static final.
+-- Biến trong Interface mặc định có thêm từ khóa public static final.
 
 -- Tất cả các methods trong Interface đều được ngầm định là public và abstract (trừ default và static method).
 Và không được set access modifier cho các methods đó là private.
