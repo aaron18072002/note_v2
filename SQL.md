@@ -100,7 +100,8 @@ vì nó đã được áp dụng mặc định.
 
 - Thường dùng với các aggregate functions: COUNT(), MAX(), MIN(), SUM(), AVG().
 
-- DISTINCT khá giống với GROUP BY và thực chất thì GROUP BY là một trường hợp đặc biệt của DISTINCT khi nó tự động sắp xếp kết quả còn DISTINCT thì không.
+- DISTINCT khá giống với GROUP BY và thực chất thì GROUP BY là một trường hợp đặc biệt của DISTINCT
+  khi nó tự động sắp xếp kết quả còn DISTINCT thì không.
 
 - GROUP BY chạy trước aggregation function.
 
@@ -119,7 +120,8 @@ vì nó đã được áp dụng mặc định.
 
 -- UNION
 
-- Toán tử UNION được sử dụng để kết hợp tập hợp kết quả của hai hoặc nhiều câu lệnh SELECT. Mỗi câu lệnh SELECT với UNION phải có
+- Toán tử UNION được sử dụng để kết hợp tập hợp kết quả của hai hoặc nhiều câu lệnh SELECT. Mỗi câu lệnh SELECT
+  với UNION phải có
   cùng số lượng cột, các cột phải có cùng kiểu dữ liệu, các cột trong mỗi câu lệnh SELECT phải có cùng trật tự.
 
 - UNION loại bỏ các bản ghi trùng lặp trong kết quả.
@@ -130,11 +132,14 @@ vì nó đã được áp dụng mặc định.
 
 - INNER JOIN: Trả về các hàng khi có ít nhất một giá trị khớp giữa các bảng. Các hàng không khớp ở cả hai bảng đều bị loại bỏ.
 
-- LEFT OUTER JOIN (LEFT JOIN): Trả về tất cả các hàng từ bảng bên trái (Left Table), cùng với các hàng tương ứng từ bảng bên phải (Right Table). Nếu không có hàng khớp từ bảng bên phải, các cột từ bảng bên phải sẽ là NULL.
+- LEFT OUTER JOIN (LEFT JOIN): Trả về tất cả các hàng từ bảng bên trái (Left Table), cùng với các hàng tương ứng
+  từ bảng bên phải (Right Table). Nếu không có hàng khớp từ bảng bên phải, các cột từ bảng bên phải sẽ là NULL.
 
-- RIGHT OUTER JOIN (RIGHT JOIN): Tương tự như LEFT JOIN, nhưng trả về tất cả các hàng từ bảng bên phải và các hàng tương ứng từ bảng bên trái. Nếu không có hàng khớp từ bảng bên trái, các cột từ bảng bên trái sẽ là NULL.
+- RIGHT OUTER JOIN (RIGHT JOIN): Tương tự như LEFT JOIN, nhưng trả về tất cả các hàng từ bảng bên phải và
+  các hàng tương ứng từ bảng bên trái. Nếu không có hàng khớp từ bảng bên trái, các cột từ bảng bên trái sẽ là NULL.
 
-- FULL OUTER JOIN: Kết hợp giữa LEFT JOIN và RIGHT JOIN. Trả về tất cả các hàng khi có giá trị khớp trong một trong hai bảng. Nếu không có hàng khớp các cột từ bảng thiếu sẽ là NULL.
+- FULL OUTER JOIN: Kết hợp giữa LEFT JOIN và RIGHT JOIN. Trả về tất cả các hàng khi có giá trị khớp trong
+  một trong hai bảng. Nếu không có hàng khớp các cột từ bảng thiếu sẽ là NULL.
 
 -- SUB QUERY
 
@@ -269,14 +274,16 @@ tạm thời dữ liệu hoặc làm việc với các giá trị trong các ph�
 
 - STORED PROCEDURE
 
--- STORED PROCEDURE là tập hợp một hoặc nhiều câu lệnh T-SQL thành một nhóm đơn vị xử lý logic và được lưu trữ trên Database Server.
+-- STORED PROCEDURE là tập hợp một hoặc nhiều câu lệnh T-SQL thành một nhóm đơn vị xử lý logic và được lưu trữ
+trên Database Server.
 
--- Khi một câu lệnh gọi chạy STORED PROCEDURE lần đầu tiên thì SQL Server sẽ chạy nó và lưu trữ vào bộ nhớ đệm, gọi là plan cache, những lần tiếp theo
-SQL Server sẽ sử dụng lại plan cache nên sẽ cho tốc độ xử lý tối ưu.
+-- Khi một câu lệnh gọi chạy STORED PROCEDURE lần đầu tiên thì SQL Server sẽ chạy nó và lưu trữ vào bộ nhớ đệm,
+gọi là plan cache, những lần tiếp theo SQL Server sẽ sử dụng lại plan cache nên sẽ cho tốc độ xử lý tối ưu.
 
--- SQL Server sẽ làm việc hiệu quả hơn nếu dùng stored procedure vì người gởi chỉ gởi một câu lệnh đơn và SQL Server chỉ kiếm tra một lần sau đó tạo
-ra một execute plan và thực thi. Nếu stored procedure được gọi nhiều lần thì execute plan có thể được sử dụng lại nên sẽ làm việc nhanh hơn.
-Ngoài ra cú pháp của các câu lệnh SQL đã được SQL Sever kiếm tra trước khi save nên nó không cần kiếm lại khi thực thi.
+-- SQL Server sẽ làm việc hiệu quả hơn nếu dùng stored procedure vì người gởi chỉ gởi một câu lệnh đơn và SQL Server
+chỉ kiếm tra một lần sau đó tạo ra một execute plan và thực thi. Nếu stored procedure được gọi nhiều lần thì execute
+plan có thể được sử dụng lại nên sẽ làm việc nhanh hơn. Ngoài ra cú pháp của các câu lệnh SQL đã được SQL Sever
+kiếm tra trước khi save nên nó không cần kiếm lại khi thực thi.
 
 - TRIGGER
 
