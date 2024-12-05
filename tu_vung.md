@@ -39,8 +39,9 @@ DONT LOOK BACK, JUST GOING, GOING ON.
 - recognize (v): nhận ra, nhận biết
 - reserve (v): đặt chỗ
 - revise (v) = review (v): ôn lại / revision (n): sự ôn tập
-- routines (n) = habits: thói quen
+- redundant (n): thừa
 - release (v) = launch (v): ra mắt
+- routines (n) = habits: thói quen
 - towards (preposition): hướng tới
 - forward (adv): phía trước / (v): chuyển hướng
 - fortunate (adj) = lucky: may mắn
