@@ -570,10 +570,12 @@ nhưng chỉ có một terminal operator (toán tử kết thúc) để kích ho
 
 - FUNCTIONAL INTERFACE
 
--- Functional Interface là một interface chỉ có một phương thức trừu tượng. Điều này cho phép Java biết rằng interface đó có thể được thay thế bởi một biểu thức lambda,
-giúp đơn giản hóa cú pháp khi làm việc với các hàm callback, xử lý sự kiện, hoặc các phương thức ngắn gọn.
+-- Functional Interface là một interface chỉ có một phương thức trừu tượng. Điều này cho phép Java biết rằng interface
+đó có thể được thay thế bởi một biểu thức lambda, giúp đơn giản hóa cú pháp khi làm việc với các hàm callback,
+xử lý sự kiện, hoặc các phương thức ngắn gọn.
 
--- Lợi ích chính của functional interface là chúng ta có thể sử dụng Lambda Expression để tạo ra thể hiện (instance) cho interface đó.
+-- Lợi ích chính của functional interface là chúng ta có thể sử dụng Lambda Expression để tạo ra thể hiện (instance)
+cho interface đó.
 
 -- Các đặc điểm của 1 Functional Interface:
 
@@ -587,13 +589,14 @@ Functional interface có thể kế thừa các phương thức từ java.lang.O
 Những phương thức này không ảnh hưởng đến tính chất của functional interface vì chúng không được xem là các phương thức trừu tượng.
 
 +) Phương thức default và static không phá vỡ quy tắc của functional interface
-Functional interface có thể chứa các phương thức default và static mà không làm mất đi tính chất của nó. Các phương thức default và static đều
-có phần triển khai (implementation), nên chúng không được xem là các phương thức trừu tượng và không ảnh hưởng đến đặc tính "một phương thức trừu tượng duy nhất".
+Functional interface có thể chứa các phương thức default và static mà không làm mất đi tính chất của nó. Các phương thức
+default và static đều có phần triển khai (implementation), nên chúng không được xem là các phương thức trừu tượng và
+không ảnh hưởng đến đặc tính "một phương thức trừu tượng duy nhất".
 
-+) Một Functional Interface có thể mở rộng một interface khác chỉ khi nó không có bất kỳ phương thức trừu tượng nào Functional interface
-có thể mở rộng một interface khác, nhưng chỉ khi interface kia không có phương thức trừu tượng hoặc có chính xác một phương thức
-trừu tượng (bao gồm cả trường hợp nó là một functional interface). Điều này đảm bảo rằng functional interface mở rộng vẫn tuân theo
-quy tắc "một phương thức trừu tượng duy nhất".
++) Một Functional Interface có thể mở rộng một interface khác chỉ khi nó không có bất kỳ phương thức trừu tượng nào
+Functional interface có thể mở rộng một interface khác, nhưng chỉ khi interface kia không có phương thức trừu tượng hoặc
+có chính xác một phương thức trừu tượng (bao gồm cả trường hợp nó là một functional interface). Điều này đảm bảo rằng
+functional interface mở rộng vẫn tuân theo quy tắc "một phương thức trừu tượng duy nhất".
 
 - THREAD
 
