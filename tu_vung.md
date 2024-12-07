@@ -10,6 +10,7 @@ DONT LOOK BACK, JUST GOING, GOING ON.
 - as well as: cũng như
 - as long as = provided that: miễn là
 - as far as: theo như
+- accommodate (v) = meet (v): đáp ứng
 - abundant (ajd) = many = numerous = plentiful: nhiều, phong phú
 - occurrence = happening (n): xảy ra
 - occasion (n): dịp
