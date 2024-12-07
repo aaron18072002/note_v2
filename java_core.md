@@ -274,6 +274,8 @@ Tuy nhiên, StringBuilder phù hợp với môi trường có một luồng duy 
 
 - EQUALS METHOD và TOÁN TỬ ==
 
+- Toán tử == hoạt động trên STACK.
+
 -- Toán tử == dùng để so sánh địa chỉ (hoặc tham chiếu), tức là kiểm tra xem cả hai đối tượng có trỏ đến
 cùng một vị trí bộ nhớ hay không.
 
