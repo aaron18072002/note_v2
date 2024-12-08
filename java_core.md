@@ -835,6 +835,10 @@ Throwable -> Exception -> RuntimeException.
 ví dụ: OutOfMemoryError, VirtualMachineError, AssertionError, v.v.
 Throwable -> Error.
 
+- THROW và THROWS
+
+-- Trong Java, từ khóa throws được sử dụng để khai báo rằng một phương thức có thể ném ra một hoặc nhiều checked exceptions.
+
 - ACCESS MODIFIER
 
 -- Có hai loại modifier trong java: access modifiers và non-access modifiers.
