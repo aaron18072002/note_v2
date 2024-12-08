@@ -841,6 +841,8 @@ Throwable -> Error.
 
 -- Chỉ sử dụng THROWS khi trong hàm có thể ném ra checked exception.
 
+-- Chỉ được phép catch checked exception nếu trong khối try đang chứa code mà throw ra checked exception.
+
 - ACCESS MODIFIER
 
 -- Có hai loại modifier trong java: access modifiers và non-access modifiers.
