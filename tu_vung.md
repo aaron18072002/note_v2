@@ -1,4 +1,6 @@
 DONT LOOK BACK, JUST GOING, GOING ON.
+“CƠ HỘI CHỈ DÀNH CHO NHỮNG NGƯỜI CÓ GIA ĐÌNH TỐT. VỚI CHÚNG TA, NHỮNG KẺ ĐẾN TỪ ĐÁY CỦA XÃ HỘI,
+KHÔNG AI NGHĨ ĐẾN CHUYỆN ĐẶT CƯỢC VÀO BỌN CẶN BÃ NHƯ CHÚNG TA, THỨ DUY NHẤT CÓ THỂ DỰA VÀO CHỈ LÀ CAM ĐẢM MÀ THÔI.”
 
 +) QKD: Diễn tả một hành động đã xảy ra và kết thúc trong quá khứ, không còn ảnh hưởng đến hiện tại.
 +) HTHT: Diễn tả một hành động bắt đầu trong quá khứ và kéo dài đến hiện tại hoặc có ảnh hưởng đến hiện tại.
