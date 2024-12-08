@@ -837,7 +837,9 @@ Throwable -> Error.
 
 - THROW và THROWS
 
--- Trong Java, từ khóa throws được sử dụng để khai báo rằng một phương thức có thể ném ra một hoặc nhiều checked exceptions.
+-- Trong Java, từ khóa THROWS được sử dụng để khai báo rằng một phương thức có thể ném ra một hoặc nhiều checked exceptions.
+
+-- Chỉ sử dụng THROWS khi trong hàm có thể ném ra checked exception.
 
 - ACCESS MODIFIER
 
