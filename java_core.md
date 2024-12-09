@@ -909,11 +909,11 @@ thuộc tính và phương thức riêng.
 +) Mỗi hằng số là một đối tượng: Khi khai báo một enum với các hằng số, Java tự động tạo ra các đối tượng duy nhất
 cho mỗi hằng số đó. Các đối tượng này là singleton (chỉ có một thể hiện duy nhất trong toàn bộ ứng dụng).
 
-+) Có thể có phương thức và thuộc tính: enum không chỉ là tập hợp các giá trị tĩnh. Bạn có thể khai báo các thuộc tính
-và phương thức trong enum để cung cấp thêm thông tin hoặc hành vi cho từng hằng số.
++) Có thể có phương thức và thuộc tính: enum không chỉ là tập hợp các giá trị tĩnh. Bạn có thể khai báo các
+thuộc tính và phương thức trong enum để cung cấp thêm thông tin hoặc hành vi cho từng hằng số.
 
-+) Có thể sử dụng các constructor: Mặc dù các constructor trong enum phải là private hoặc package-private, bạn vẫn có thể tạo constructor
-để khởi tạo các thuộc tính của từng đối tượng enum.
++) Có thể sử dụng các constructor: Mặc dù các constructor trong enum phải là private hoặc package-private,
+bạn vẫn có thể tạo constructor để khởi tạo các thuộc tính của từng đối tượng enum.
 
 - MODULARIZATION
 
@@ -934,8 +934,8 @@ mà module xuất ra (exports) hoặc yêu cầu từ các module khác (require
 
 -- requires transitive:
 
-+) requires transitive không chỉ cho phép module hiện tại truy cập vào module phụ thuộc mà còn cho phép tất cả các module
-khác phụ thuộc vào module hiện tại truy cập module phụ thuộc đó.
++) requires transitive không chỉ cho phép module hiện tại truy cập vào module phụ thuộc mà còn cho phép tất cả
+các module khác phụ thuộc vào module hiện tại truy cập module phụ thuộc đó.
 
 +) B phụ thuộc C, A phụ thuộc B, suy ra A có thể truy cập vào C.
 
