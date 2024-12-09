@@ -108,7 +108,10 @@ khác trong quá trình thực thi.
 
 - JAR FILE
 
--- Trong Spring Boot, một JAR file (Java ARchive) là một file nén chứa tất cả các thành phần cần thiết để chạy ứng dụng Java, bao gồm các lớp Java đã biên dịch (compiled classes), thư viện bên ngoài (dependencies), và các tài nguyên (resources). Spring Boot sử dụng JAR file để đóng gói và triển khai ứng dụng dễ dàng, giúp chạy ứng dụng mà không cần cấu hình thêm hoặc phụ thuộc vào các server bên ngoài.
+-- Trong Spring Boot, một JAR file (Java ARchive) là một file nén chứa tất cả các thành phần cần thiết để chạy ứng dụng Java,
+bao gồm các lớp Java đã biên dịch (compiled classes), thư viện bên ngoài (dependencies), và các tài nguyên (resources).
+Spring Boot sử dụng JAR file để đóng gói và triển khai ứng dụng dễ dàng, giúp chạy ứng dụng mà không cần cấu hình thêm
+hoặc phụ thuộc vào các server bên ngoài.
 
 -- Trong Spring Boot, JAR file có khả năng chứa embedded server (server nhúng), cho phép ứng dụng có thể tự chạy mà không cần triển khai lên một server bên ngoài. Tomcat là embedded server mặc định được tích hợp trong Spring Boot khi bạn sử dụng các starter như spring-boot-starter-web.
 
