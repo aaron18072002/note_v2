@@ -284,12 +284,16 @@ gọi là plan cache, những lần tiếp theo SQL Server sẽ sử dụng lạ
 procedure và nhận lại dữ liệu từ nó.Stored Procedure không bắt buộc phải trả về giá trị, nhưng có thể sử
 dụng tham số OUT để trả về kết quả.
 
+-- Dùng CALL để gọi STORED PROCEDURE.
+
 - FUNCTION
 
 -- Function không hỗ trợ tham số OUT như Stored Procedure. Thay vào đó, một Function luôn phải trả về một
 giá trị thông qua câu lệnh RETURN.
 
 -- Giá trị trả về của Function phải có kiểu dữ liệu cụ thể (ví dụ: INT, VARCHAR, DATE, v.v.).
+
+-- Dùng SELECT để gọi FUNCTION.
 
 - TRIGGER
 
