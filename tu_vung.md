@@ -106,6 +106,7 @@ KHÔNG AI NGHĨ ĐẾN CHUYỆN ĐẶT CƯỢC VÀO BỌN CẶN BÃ NHƯ CHÚNG 
 - gather (v): tụ họp
 - erect (v): dựng lên = build something
 - instrument (n): nhạc cụ
+- installment (n): trả góp
 - turn (v): xoay, chuyển, đổi
 - tire (n): lốp xe / tile (n): gạch
 - THOROUGHLY (adv): kỹ lưỡng
