@@ -49,6 +49,7 @@ KHÔNG AI NGHĨ ĐẾN CHUYỆN ĐẶT CƯỢC VÀO BỌN CẶN BÃ NHƯ CHÚNG 
 - forward (adv): phía trước / (v): chuyển hướng
 - fortunate (adj) = lucky: may mắn
 - formaly (adv): trước đây
+- former (adj): trước
 - factor (n): nhân tố
 - fall apart: rớt ra
 - further (adv): xa hơn
