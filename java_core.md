@@ -357,6 +357,8 @@ giai đoạn runtime bằng CONSTRUCTOR.
 -- Sử dụng với tham số: Trong Java, từ khóa final có thể được sử dụng với các tham số của phương thức để chỉ ra rằng
 giá trị của tham số không thể thay đổi trong suốt quá trình thực thi của phương thức.
 
+-- Final là bất biến ở STACK, IMMUTABLE là bất biến ở HEAP.
+
 - DEFAULT
 
 -- Kể từ Java 8, có thể định nghĩa các phương thức có thân (body) trong một Interface bằng cách sử dụng từ khóa default.
@@ -946,6 +948,16 @@ các module khác phụ thuộc vào module hiện tại truy cập module phụ
 -- YIELD trong Switch Expression có chức năng trả về giá trị cho chính biểu thức switch, không phải thoát ra khỏi
 phương thức. yield cho phép biểu thức switch tiếp tục hoạt động như một khối lệnh trả về giá trị mà không ảnh hưởng
 đến luồng điều khiển của phương thức.
+
+- LOCALDATE
+
+-- LocalDate là một lớp trong Java, thuộc gói java.time, dùng để biểu diễn một ngày (ngày, tháng, năm)
+mà không có thông tin về thời gian (giờ, phút, giây).
+
+-- LocalDate là một phần của API ngày giờ mới được giới thiệu trong Java 8 (java.time package),
+được thiết kế để thay thế các lớp ngày giờ cũ như Date và Calendar.
+
+-- LocalDate là 1 immutable object.
 
 - JAVA VERSIONS
 
