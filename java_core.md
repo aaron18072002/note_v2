@@ -959,9 +959,9 @@ mà không có thông tin về thời gian (giờ, phút, giây).
 
 -- LocalDate là 1 immutable object.
 
--- LocalDate - NĂM THÁNG NGÀY
+-- LocalDate - NĂM THÁNG NGÀY --> Period
 
--- LocalTime - GIỜ PHÚT GIÂY
+-- LocalTime - GIỜ PHÚT GIÂY --> Duration
 
 -- LocalDateTime - LocalDate + LocalTime
 
