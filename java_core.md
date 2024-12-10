@@ -959,6 +959,12 @@ mà không có thông tin về thời gian (giờ, phút, giây).
 
 -- LocalDate là 1 immutable object.
 
+-- LocalDate - NĂM THÁNG NGÀY
+
+-- LocalTime - GIỜ PHÚT GIÂY
+
+-- LocalDateTime - LocalDate + LocalTime
+
 - JAVA VERSIONS
 
 -- JAVA 5.0: Enhanced for loop, Generics, Enum, Autoboxing.
