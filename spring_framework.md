@@ -221,8 +221,7 @@ Spring Beans.
 
 -- Trong Spring Framework, các đối tượng được Spring quản lý trong container của nó được gọi là Spring Bean.
 
--- Spring Bean là một đối tượng có type là POJO class được khởi tạo, cấu hình và quản lý bởi Spring IoC
-(Inversion of Control) container.
+-- Bất kì POJO class nào được quản lý bởi IoC Container đều là Spring Bean.
 
 -- Khi một lớp được đánh dấu là một bean, Spring sẽ chịu trách nhiệm khởi tạo nó, quản lý vòng đời của nó,
 và xử lý các phụ thuộc cần thiết cho nó.
