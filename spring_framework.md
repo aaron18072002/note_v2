@@ -444,8 +444,9 @@ thu hồi và đóng lại.
 
 +) Đây là annotation rất quan trọng của Spring Boot, cho phép Spring Boot tự động cấu hình ứng dụng dựa trên các dependency mà bạn đã thêm vào.
 
-+) Khi @EnableAutoConfiguration được kích hoạt, Spring Boot sẽ tự động quét classpath để tìm các thư viện cần thiết (như spring-boot-starter-web,
-spring-boot-starter-data-jpa, v.v.) và tự động cấu hình các bean tương ứng mà không cần cấu hình thủ công.
++) Khi @EnableAutoConfiguration được kích hoạt, Spring Boot sẽ tự động quét classpath để tìm các thư viện
+cần thiết (như spring-boot-starter-web, spring-boot-starter-data-jpa, v.v.) và tự động cấu hình các bean
+tương ứng mà không cần cấu hình thủ công.
 
 +) Bạn có thể tắt hoặc cấu hình các chức năng tự động này bằng cách thêm tùy chọn trong file application.properties.
 
