@@ -62,7 +62,7 @@ và Aspect Oriented Programming (AOP).
 
 -- Spring Framework chứa các Spring Modules như:
 
-+) Spring Core: IoC Container, DI, Auto wiring, ...
++) Spring Core: IoC Container, DI, Auto wiring, Beans, SpEL - Spring Expression Language.
 
 +) Data Access: JDBC, JPA.
 
