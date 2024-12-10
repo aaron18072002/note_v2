@@ -79,6 +79,7 @@ KHÔNG AI NGHĨ ĐẾN CHUYỆN ĐẶT CƯỢC VÀO BỌN CẶN BÃ NHƯ CHÚNG 
 - stiff (adj): cứng
 - steadily (adv) = rapidly (adv): đều đặn
 - seldom (adv) = rarely (adv): hiếm khi
+- settle (v): ổn định
 - sponsor (n): nhà tài trợ
 - regret (n): hối hận
 - remain (v): giữ nguyên
