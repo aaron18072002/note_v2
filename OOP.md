@@ -56,7 +56,9 @@ Khác: Các Class con kế thừa abstract class bắt buộc phải override ab
 
 - Các Class giao tiếp thông qua interface, không phải việc implement.
 
-- VD: Với code thông thường, các module cấp cao sẽ phụ thuộc vào các module cấp thấp, tạo ra các dependency. Trong trường hợp đó, khi các module cấp thấp thay đổi thì các module cấp cao phải thay đổi theo. Dẫn đến việc code thay đổi nhiều, khó maintain.
+- VD: Với code thông thường, các module cấp cao sẽ phụ thuộc vào các module cấp thấp, tạo ra các dependency.
+  Trong trường hợp đó, khi các module cấp thấp thay đổi thì các module cấp cao phải thay đổi theo. Dẫn đến việc
+  code thay đổi nhiều, khó maintain.
 
 -- Inversion of control
 
