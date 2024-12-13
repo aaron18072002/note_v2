@@ -506,7 +506,7 @@ mà không cần phải di chuyển lớp đó vào package đã quét.
 
 - Các annotation để GET request data từ Client:
 
-+) Nhận dữ liệu từ Request Body (@RequestBody).
++) Nhận dữ liệu từ Request Body (@RequestBody) -- nhận dữ liệu JSON hoặc XML từ body của request..
 
 +) Nhận dữ liệu từ Form Data (@ModelAttribute).
 
