@@ -457,17 +457,21 @@ thu hồi và đóng lại.
 
 -- @SpringBootApplication:
 
-+) @SpringBootApplication annotation là sự kết hợp của: @SpringBootConfiguration + @EnableAutoConfiguration + @ComponentScan.
++) @SpringBootApplication annotation là sự kết hợp của: @SpringBootConfiguration + @EnableAutoConfiguration
+
+- @ComponentScan.
 
 -- @SpringBootConfiguration:
 
-+) Annotation này là một biến thể của @Configuration và được sử dụng để chỉ định rằng lớp này là lớp cấu hình chính của Spring Boot.
++) Annotation này là một biến thể của @Configuration và được sử dụng để chỉ định rằng lớp này là lớp cấu hình
+chính của Spring Boot.
 
 +) Nó cho phép Spring Boot tạo ra một ApplicationContext với các cấu hình mà bạn định nghĩa.
 
 -- @EnableAutoConfiguration:
 
-+) Đây là annotation rất quan trọng của Spring Boot, cho phép Spring Boot tự động cấu hình ứng dụng dựa trên các dependency mà bạn đã thêm vào.
++) Đây là annotation rất quan trọng của Spring Boot, cho phép Spring Boot tự động cấu hình ứng dụng dựa trên các
+dependency mà bạn đã thêm vào.
 
 +) Khi @EnableAutoConfiguration được kích hoạt, Spring Boot sẽ tự động quét classpath để tìm các thư viện
 cần thiết (như spring-boot-starter-web, spring-boot-starter-data-jpa, v.v.) và tự động cấu hình các bean
