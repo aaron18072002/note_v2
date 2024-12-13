@@ -504,6 +504,16 @@ ví dụ như khi cần tạo một bean với tham số constructor hoặc cầ
 mà Spring đang quét (thông qua component scanning), bạn có thể sử dụng @Bean để khai báo và tạo bean cho lớp đó
 mà không cần phải di chuyển lớp đó vào package đã quét.
 
+- Các annotation để GET request data từ Client:
+
++) Nhận dữ liệu từ Request Body (@RequestBody).
+
++) Nhận dữ liệu từ Form Data (@ModelAttribute).
+
++) Nhận dữ liệu từ Query String (@RequestParam).
+
++) Nhận dữ liệu từ URL Parameters (@PathVariable).
+
 - FILTER và INTERCEPTOR
 
 -- Filter là một thành phần của Servlet API, được triển khai từ interface javax.servlet.Filter.
