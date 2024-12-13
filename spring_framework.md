@@ -409,6 +409,14 @@ và gửi thẳng về cho client, thay vì điều hướng tới một view.
 +) @ComponentScan thường được sử dụng với @Configuration trong Spring để cấu hình phạm vi quét các bean và
 tự động đăng ký chúng vào Spring IoC container.
 
+-- @RequestMapping:
+
++) Ánh xạ URL: @RequestMapping giúp ánh xạ một URL cụ thể tới một phương thức xử lý trong controller.
+
++) Hỗ trợ nhiều HTTP Method: Mặc định, @RequestMapping ánh xạ với tất cả các HTTP method
+(GET, POST, PUT, DELETE, PATCH, etc.). Tuy nhiên, có thể chỉ định phương thức cụ thể bằng
+cách sử dụng thuộc tính method.
+
 -- @Lazy:
 
 +) @Lazy được sử dụng để trì hoãn việc khởi tạo các bean cho đến khi chúng thực sự được yêu cầu trong ứng dụng.
