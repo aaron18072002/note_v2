@@ -321,6 +321,20 @@ type của tham số và tự động tiêm (inject) chúng vào đối tượng
 
 +) Autowiring theo constructor (by constructor).
 
+- WEB SERVER
+
+-- Web Server là một máy chủ chuyên dụng, chịu trách nhiệm tiếp nhận các request từ trình duyệt web (client)
+và gửi lại các response tương ứng.
+
+-- Web Server hoạt động thông qua giao thức HTTP/HTTPS.
+
+- DISPATCHER SERVLET
+
+-- DispatcherServlet trong Spring Framework đóng vai trò là trung gian (hay còn gọi là Front Controller)
+giữa Web Server (như Tomcat, Jetty) và các Controller trong ứng dụng web. Nó là thành phần cốt lõi trong
+kiến trúc Spring MVC, chịu trách nhiệm xử lý tất cả các yêu cầu HTTP đến từ WebServer và chuyển chúng đến
+các Controller phù hợp.
+
 - ANNOTATIONs
 
 -- Annotation là cách để chúng ta thêm siêu dữ liệu (metadata) vào các thành phần trong Java
@@ -503,13 +517,6 @@ Thường được sử dụng để xử lý các tác vụ như:
 -- Interceptor là một thành phần của Spring MVC, được triển khai từ interface HandlerInterceptor.
 Nó hoạt động trong phạm vi Spring MVC, tức là sau khi request đã được DispatcherServlet xử lý nhưng
 trước khi nó đến Controller.
-
-- WEB SERVER
-
--- Web Server là một máy chủ chuyên dụng, chịu trách nhiệm tiếp nhận các request từ trình duyệt web (client)
-và gửi lại các response tương ứng.
-
--- Web Server hoạt động thông qua giao thức HTTP/HTTPS.
 
 - WEB APPLICATION
 
