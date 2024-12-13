@@ -431,6 +431,9 @@ tự động đăng ký chúng vào Spring IoC container.
 (GET, POST, PUT, DELETE, PATCH, etc.). Tuy nhiên, có thể chỉ định phương thức cụ thể bằng
 cách sử dụng thuộc tính method.
 
++) @RequestMapping thường được áp dụng ở cấp độ class để xác định một URL gốc (base URL) cho tất cả
+các phương thức trong controller đó.
+
 -- @Lazy:
 
 +) @Lazy được sử dụng để trì hoãn việc khởi tạo các bean cho đến khi chúng thực sự được yêu cầu trong ứng dụng.
