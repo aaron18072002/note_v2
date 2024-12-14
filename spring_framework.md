@@ -351,6 +351,9 @@ thành một TABLE hay một ENTITY trong cơ sở dữ liệu.
 
 -- FetchType.LAZY: không nạp kèm row ở bảng phụ khi fetch. / FetchType.EAGER: nạp kèm row ở bảng phụ khi fetch.
 
+-- mappedBy không phải là để ánh xạ trực tiếp đến cột trong bảng cơ sở dữ liệu. mappedBy chỉ ra mối quan hệ
+giữa các ENTITY và giúp JPA biết rằng phía đối tác của mối quan hệ đã có mối quan hệ 2 chiều với bên còn lại.
+
 - ANNOTATIONs
 
 -- Annotation là cách để chúng ta thêm siêu dữ liệu (metadata) vào các thành phần trong Java
