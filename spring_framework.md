@@ -341,6 +341,16 @@ các Controller phù hợp.
 
 -- ORM biến câu code thành các câu SQL thuần để giao tiếp với hệ quản trị CSDL.
 
+- JPA
+
+-- JPA (Java Persistence API) dùng để persist đối tượng Java (POJO - Plain Old Java Object)
+vào trong CSDL hoặc lấy dữ liệu từ CSDL và ánh xạ (mapping) các đối tượng Java một cách đơn giản.
+
+-- JPA (Java Persistence API) cung cấp các annotation để biến một lớp POJO (Plain Old Java Object)
+thành một TABLE hay một ENTITY trong cơ sở dữ liệu.
+
+-- FetchType.LAZY: không nạp kèm row ở bảng phụ khi fetch. / FetchType.EAGER: nạp kèm row ở bảng phụ khi fetch.
+
 - ANNOTATIONs
 
 -- Annotation là cách để chúng ta thêm siêu dữ liệu (metadata) vào các thành phần trong Java
