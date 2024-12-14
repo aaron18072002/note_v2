@@ -335,6 +335,12 @@ giữa Web Server (như Tomcat, Jetty) và các Controller trong ứng dụng we
 kiến trúc Spring MVC, chịu trách nhiệm xử lý tất cả các yêu cầu HTTP đến từ WebServer và chuyển chúng đến
 các Controller phù hợp.
 
+- ORM
+
+-- Object-Relational Mapping là 1 kĩ thuật ánh xạ các table trong hệ quản trị CSDL thành các class tương ứng.
+
+-- ORM biến câu code thành các câu SQL thuần để giao tiếp với hệ quản trị CSDL.
+
 - ANNOTATIONs
 
 -- Annotation là cách để chúng ta thêm siêu dữ liệu (metadata) vào các thành phần trong Java
