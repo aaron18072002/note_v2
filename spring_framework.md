@@ -520,8 +520,8 @@ mà không cần phải di chuyển lớp đó vào package đã quét.
 Nó hoạt động ở mức Servlet Container, tức là trước khi Spring xử lý request.
 Filter được áp dụng cho tất cả các request đến ứng dụng web, không phụ thuộc vào Spring.
 
--- Filter chặn và xử lý request trước khi nó đến DispatcherServlet và sau khi phản hồi được trả về từ DispatcherServlet.
-Thường được sử dụng để xử lý các tác vụ như:
+-- Filter chặn và xử lý request trước khi nó đến DispatcherServlet và sau khi phản hồi được trả về
+từ DispatcherServlet. Thường được sử dụng để xử lý các tác vụ như:
 
 +) Thay đổi hoặc thêm HTTP Header.
 
