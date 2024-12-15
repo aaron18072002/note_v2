@@ -249,8 +249,8 @@ trong suốt vòng đời của session đó. Bean sẽ được lưu trữ cho 
 
 -- Bean Definition : khởi tạo bean thông qua sử dụng Annotation hoặc XML file.
 
--- Bean Instantiation : Spring khởi tạo các đối tượng Bean giống như khởi tạo đối tượng Java thông thường
-và đưa nó vào ApplicationContext.
+-- Bean Instantiation : Spring khởi tạo các đối tượng Bean giống như khởi tạo đối tượng Java
+thông thường và đưa nó vào ApplicationContext.
 
 -- Populating Bean properties : Spring thực hiện scan các bean thực thi các Aware interfaces và
 thực hiện set các giá vào các property như id, scope và giá trị mặc định như khai báo của bean đấy.
