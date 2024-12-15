@@ -514,9 +514,9 @@ cho từng loại dữ liệu.
 
 - WILDCARD
 
--- Wildcard-Ký tự đại diện trong Java là ký hiệu dùng trong Generics để đại diện cho một kiểu không xác định. Nó thường được sử dụng khi bạn muốn tạo tính linh hoạt
-trong các phương thức, lớp hoặc interface mà không cần chỉ rõ kiểu cụ thể, giúp các lớp generic có thể làm việc với nhiều loại dữ liệu khác nhau
-mà không bị hạn chế vào một kiểu cố định.
+-- Wildcard-Ký tự đại diện trong Java là ký hiệu dùng trong Generics để đại diện cho một kiểu không xác định. Nó thường được
+sử dụng khi bạn muốn tạo tính linh hoạt trong các phương thức, lớp hoặc interface mà không cần chỉ rõ kiểu cụ thể,
+giúp các lớp generic có thể làm việc với nhiều loại dữ liệu khác nhau mà không bị hạn chế vào một kiểu cố định.
 
 -- Unbounded Wildcard (?): Chấp nhận bất kỳ kiểu nào.
 
@@ -526,10 +526,10 @@ mà không bị hạn chế vào một kiểu cố định.
 
 - STREAM trong JAVA
 
--- Trong Java, Stream là 1 Interface đại diện cho một chuỗi dữ liệu mà bạn có thể xử lý theo kiểu khai báo (declarative) và phong cách hàm (functional).
-Stream cho phép thực hiện các thao tác như lọc (filtering), ánh xạ (mapping), và tổng hợp (reducing) trên một tập hợp dữ liệu.
-Stream có thể được sử dụng với nhiều nguồn dữ liệu khác nhau, bao gồm mảng (arrays), bộ sưu tập (collections),
-và thậm chí cả kênh I/O (I/O channels).
+-- Trong Java, Stream là 1 Interface đại diện cho một chuỗi dữ liệu mà bạn có thể xử lý theo kiểu khai báo
+(declarative) và phong cách hàm (functional). Stream cho phép thực hiện các thao tác như lọc (filtering),
+ánh xạ (mapping), và tổng hợp (reducing) trên một tập hợp dữ liệu. Stream có thể được sử dụng với nhiều
+nguồn dữ liệu khác nhau, bao gồm mảng (arrays), bộ sưu tập (collections), và thậm chí cả kênh I/O (I/O channels).
 
 -- Không lưu trữ các phần tử của collection hoặc array: Stream không phải là một cấu trúc dữ liệu lưu trữ như List hoặc Set.
 Thay vào đó, nó xử lý từng phần tử khi chúng được yêu cầu (demand-driven) thông qua pipeline các thao tác.
