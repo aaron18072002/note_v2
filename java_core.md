@@ -908,6 +908,8 @@ tạo ra một lớp riêng biệt. Lớp ẩn danh thường rất hữu ích k
 
 +) Mỗi hằng số là một đối tượng của Enum đó.
 
++) Là immutable, nên ko có setters.
+
 +) Mỗi hằng số đều là static final.
 
 +) Private-Constructor.
