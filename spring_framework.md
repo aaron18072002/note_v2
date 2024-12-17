@@ -349,13 +349,17 @@ vào trong CSDL hoặc lấy dữ liệu từ CSDL và ánh xạ (mapping) các 
 -- JPA (Java Persistence API) cung cấp các annotation để biến một lớp POJO (Plain Old Java Object)
 thành một TABLE hay một ENTITY trong cơ sở dữ liệu.
 
--- FetchType.LAZY: không nạp kèm row ở bảng phụ khi fetch. / FetchType.EAGER: nạp kèm row ở bảng phụ khi fetch.
+-- FetchType.LAZY: không nạp kèm row ở bảng phụ khi fetch. / FetchType.EAGER: nạp kèm row ở bảng
+phụ khi fetch.
 
--- mappedBy không phải là để ánh xạ trực tiếp đến cột trong bảng cơ sở dữ liệu. mappedBy chỉ ra mối quan hệ
-giữa các ENTITY và giúp JPA biết rằng phía đối tác của mối quan hệ đã có mối quan hệ 2 chiều với bên còn lại.
+-- mappedBy không phải là để ánh xạ trực tiếp đến cột trong bảng cơ sở dữ liệu. mappedBy chỉ
+ra mối quan hệ giữa các ENTITY và giúp JPA biết rằng phía đối tác của mối quan hệ đã có
+mối quan hệ 2 chiều với bên còn lại.
 
--- Trong @JoinColumn, thuộc tính name sẽ trỏ đến tên cột trong bảng cơ sở dữ liệu, nơi ánh xạ khóa ngoại từ bảng hiện
-tại (bảng chứa entity đang định nghĩa) đến bảng khác.
+-- Trong @JoinColumn, thuộc tính name sẽ trỏ đến tên cột trong bảng cơ sở dữ liệu,
+nơi ánh xạ khóa ngoại từ bảng hiện tại (bảng chứa entity đang định nghĩa) đến bảng khác.
+
+-- TIPs: nếu bảng nào có id là khóa ngoại thì dùng @JoinColumn và @ManyToOne.
 
 - ANNOTATIONs
 
