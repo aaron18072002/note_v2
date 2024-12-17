@@ -72,6 +72,7 @@ KHÔNG AI NGHĨ ĐẾN CHUYỆN ĐẶT CƯỢC VÀO BỌN CẶN BÃ NHƯ CHÚNG 
 - compact (adj): nhỏ gọn
 - clinic (n): phòng khám
 - ceremony (n): lễ / celebration (n): lễ kỉ niệm
+- shuttle bus (n): xe đưa đón
 - state (v): diễn đạt
 - supply (n): đồ dùng / supply (v): cung cấp
 - supplementary (adj): bổ sung
