@@ -96,6 +96,7 @@ KHÔNG AI NGHĨ ĐẾN CHUYỆN ĐẶT CƯỢC VÀO BỌN CẶN BÃ NHƯ CHÚNG 
 - regard (v): xem như
 - regarding = concerning = about: về
 - exclusive (adj) = unique: độc quyền, duy nhất
+- exceed (v): vượt qua ...
 - bulletin (n): bản tin
 - bulletin (v) = inform = notify = announce
 - barn (n): kho thóc, chuồn
