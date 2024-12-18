@@ -363,7 +363,7 @@ nơi ánh xạ khóa ngoại từ bảng hiện tại (bảng chứa entity đan
 
 +) nếu bảng nào có FIELD là khóa ngoại thì dùng @JoinColumn và @ManyToOne.
 
-+) nếu bảng nào có quan hệ 1-1 hay 1-n thì giữ khóa ngoại làm FIELD.
++) nếu bảng nào có quan hệ 1-1 thì giữ khóa ngoại làm FIELD. VD: users n-1 roles -> users có FIELD role_id.
 
 - ANNOTATIONs
 
