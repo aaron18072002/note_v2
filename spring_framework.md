@@ -359,7 +359,11 @@ mối quan hệ 2 chiều với bên còn lại.
 -- Trong @JoinColumn, thuộc tính name sẽ trỏ đến tên cột trong bảng cơ sở dữ liệu,
 nơi ánh xạ khóa ngoại từ bảng hiện tại (bảng chứa entity đang định nghĩa) đến bảng khác.
 
--- TIPs: nếu bảng nào có id là khóa ngoại thì dùng @JoinColumn và @ManyToOne.
+-- TIPs:
+
++) nếu bảng nào có FIELD là khóa ngoại thì dùng @JoinColumn và @ManyToOne.
+
++) nếu bảng nào có quan hệ 1-1 hay 1-n thì giữ khóa ngoại làm FIELD.
 
 - ANNOTATIONs
 
