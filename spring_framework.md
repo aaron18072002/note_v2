@@ -349,6 +349,12 @@ vào trong CSDL hoặc lấy dữ liệu từ CSDL và ánh xạ (mapping) các 
 -- JPA (Java Persistence API) cung cấp các annotation để biến một lớp POJO (Plain Old Java Object)
 thành một TABLE hay một ENTITY trong cơ sở dữ liệu.
 
+-- JPA đã bao gồm Hilbernate ORM.
+
+-- JPA là một module nhỏ trong Spring Data project.
+
+-- Interface JpaRepository<T,G>: T là type của Entity, G là type của khóa chính.
+
 -- FetchType.LAZY: không nạp kèm row ở bảng phụ khi fetch. / FetchType.EAGER: nạp kèm row ở bảng
 phụ khi fetch.
 
