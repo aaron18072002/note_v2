@@ -519,6 +519,10 @@ tương ứng mà không cần cấu hình thủ công.
 
 +) Bạn có thể tắt hoặc cấu hình các chức năng tự động này bằng cách thêm tùy chọn trong file application.properties.
 
+-- @Value(""):
+
++) Dùng để lấy biến env từ file application config.
+
 - SO SÁNH @Bean và @Component:
 
 -- Dùng @Component khi:
