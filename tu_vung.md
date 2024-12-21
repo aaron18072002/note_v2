@@ -1,6 +1,7 @@
 DONT LOOK BACK, JUST GOING, GOING ON.
-“CƠ HỘI CHỈ DÀNH CHO NHỮNG NGƯỜI CÓ GIA ĐÌNH TỐT. VỚI CHÚNG TA, NHỮNG KẺ ĐẾN TỪ ĐÁY CỦA XÃ HỘI,
-KHÔNG AI NGHĨ ĐẾN CHUYỆN ĐẶT CƯỢC VÀO BỌN CẶN BÃ NHƯ CHÚNG TA, THỨ DUY NHẤT CÓ THỂ DỰA VÀO CHỈ LÀ CAM ĐẢM MÀ THÔI.”
+“CƠ HỘI CHỈ DÀNH CHO NHỮNG NGƯỜI CÓ GIA ĐÌNH TỐT. VỚI NHỮNG KẺ ĐẾN TỪ ĐÁY CỦA XÃ HỘI,
+KHÔNG AI NGHĨ ĐẾN CHUYỆN ĐẶT CƯỢC VÀO BỌN HỌ, THỨ DUY NHẤT CÓ THỂ DỰA VÀO CHỈ LÀ CAN ĐẢM
+MÀ THÔI.”
 
 +) QKD: Diễn tả một hành động đã xảy ra và kết thúc trong quá khứ, không còn ảnh hưởng đến hiện tại.
 +) HTHT: Diễn tả một hành động bắt đầu trong quá khứ và kéo dài đến hiện tại hoặc có ảnh hưởng đến hiện tại.
@@ -102,9 +103,11 @@ KHÔNG AI NGHĨ ĐẾN CHUYỆN ĐẶT CƯỢC VÀO BỌN CẶN BÃ NHƯ CHÚNG 
 - barn (n): kho thóc, chuồn
 - badge (n): boảng tên
 - berry (n): quả trứng cá
+- before = prior to = ahead of = in advance of: trước khi
 - be in charge of = be responsible for = be capable of = qualified: đủ khả năng
 - be accustomed to = be familiar with: quen với
-- because of = as = because = due to = owing to = as = since = on account of: bởi vì
+- because = as = since = now that = in that = given that: bởi vì
+- because of = due to = owing to = on account of = in light of = given = as result of: bởi vì
 - gather (v): tụ họp
 - erect (v): dựng lên = build something
 - instrument (n): nhạc cụ
