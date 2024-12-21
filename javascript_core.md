@@ -40,3 +40,10 @@ JavaScript xử lý các khai báo trong quá trình biên dịch trước khi c
 -- FALSY VALUES bao gồm : "", 0, false, undefined, null, NaN.
 
 -- FALSY VALUES trong điều kiện sẽ luôn trả về FALSE.
+
+- TYPE COERCION
+
+-- Type coercion là quá trình JavaScript tự động chuyển đổi kiểu dữ liệu của
+một giá trị thành kiểu khác để thực hiện một phép toán hoặc so sánh.
+
+-- Toán tử + luôn tự ép kiểu thành String với String(value).
