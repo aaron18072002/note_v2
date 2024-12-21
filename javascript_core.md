@@ -7,7 +7,8 @@ với các trình duyệt hoặc môi trường không hỗ trợ các tính nă
 -- Biên dịch mã ES6+ thành ES5.
 
 -- Hỗ trợ JSX. Babel chuyển đổi code JSX thành JavaScript thuần để trình
-duyệt hiểu được.
+duyệt hiểu được. Sau đó, JavaScript Engine (như V8/NodeJs): Biên dịch và
+thực thi mã JavaScript thành ngôn ngữ máy tại runtime.
 
 - HOISTING
 
@@ -26,8 +27,16 @@ JavaScript xử lý các khai báo trong quá trình biên dịch trước khi c
 
 -- biến VAR giống biến LET nhưng hỗ trợ cơ chế HOISTING.
 
-- UNDIFINED và NULL
+- UNDEFINED và NULL
 
--- UNDIFINED là khi khai báo biến mà chưa gán giá trị.
+-- UNDEFINED là khi khai báo biến mà chưa gán giá trị.
 
--- UNDIFINED là kiểu giá trị nguyên thủy.
+-- UNDEFINED là kiểu giá trị nguyên thủy.
+
+-- NULL là giá trị đã gán -> đại diện cho 1 ô nhớ chưa khởi tạo trong HEAP.
+
+- FALSY và TRUTHY
+
+-- FALSY VALUES bao gồm : "", 0, false, undefined, null, NaN.
+
+-- FALSY VALUES trong điều kiện sẽ luôn trả về FALSE.
