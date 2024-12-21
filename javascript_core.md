@@ -25,3 +25,9 @@ JavaScript xử lý các khai báo trong quá trình biên dịch trước khi c
 -- biến LET thì có thể thể gán lại giá trị sau khi đã khai báo.
 
 -- biến VAR giống biến LET nhưng hỗ trợ cơ chế HOISTING.
+
+- UNDIFINED và NULL
+
+-- UNDIFINED là khi khai báo biến mà chưa gán giá trị.
+
+-- UNDIFINED là kiểu giá trị nguyên thủy.
