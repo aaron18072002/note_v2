@@ -68,3 +68,16 @@ kiểu data type.
 -- FUNCTION có thể lưu vào 1 biến.
 
 -- ANONYMOUS FUNCTION không có cơ chế HOISTING.
+
+-- ARROW FUNCTION chỉ là 1 cách viết ngắn gọn của ANONYMOUS FUNCTION.
+
+- SCOPE
+
+-- SCOPE là phạm vi truy cập của 1 biến.
+
+-- Biến VAR luôn luôn là 1 GLOBAL SCOPE vì cơ chế HOISTING.
+
+- CLOSURE
+
+-- CLOSURE cho phép một FUNCTION bên trong có thể truy cập các biến
+của FUNCTION bên ngoài ngay cả khi FUNCTION bên ngoài đã hoàn tất thực thi.
