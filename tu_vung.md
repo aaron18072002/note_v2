@@ -10,6 +10,9 @@ MÀ THÔI.”
 
 +) when/while/as/once + S + HTĐ, S + TLĐ.
 
++) at + địa điểm cụ thể
++) in + không gian
+
 - as well as: cũng như
 - as long as = provided that: miễn là
 - as far as: theo như
@@ -45,6 +48,8 @@ MÀ THÔI.”
 - revise (v) = review (v): ôn lại / revision (n): sự ôn tập
 - redundant (n): thừa
 - release (v) = launch (v): ra mắt
+- retain (v) = hold: giữ lại
+- receipt (n) = invoice = bill = statement: hóa đơn
 - routines (n) = habits: thói quen
 - towards (preposition): hướng tới
 - forward (adv): phía trước / (v): chuyển hướng
@@ -107,7 +112,7 @@ MÀ THÔI.”
 - be in charge of = be responsible for = be capable of = qualified: đủ khả năng
 - be accustomed to = be familiar with: quen với
 - because = as = since = now that = in that = given that: bởi vì
-- because of = due to = owing to = on account of = in light of = given = as result of: bởi vì
+- because of = due to = owing to = on account of = in light of = given = as a result of: bởi vì
 - gather (v): tụ họp
 - erect (v): dựng lên = build something
 - instrument (n): nhạc cụ
@@ -167,6 +172,7 @@ MÀ THÔI.”
 - accordingly (adv) = suitable: phù hợp
 - agent (n): nhân viên = staff = employee = personnel / agency (n): đại lý
 - associate (n): cộng tác viên
+- afford (v): đủ khả năng
 - means (n): phương tiện
 - morden = up-to-date = state-of-the-art: hiện đại
 - venue (n): nơi gặp mặt
