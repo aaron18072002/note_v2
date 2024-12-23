@@ -343,15 +343,16 @@ các Controller phù hợp.
 
 - JPA
 
--- JPA (Java Persistence API) dùng để persist đối tượng Java (POJO - Plain Old Java Object)
-vào trong CSDL hoặc lấy dữ liệu từ CSDL và ánh xạ (mapping) các đối tượng Java một cách đơn giản.
+-- JPA là một tiêu chuẩn (specification) trong Java, cung cấp một cách tiếp cận thống nhất để quản
+lý dữ liệu quan hệ (relational data) trong các ứng dụng Java. JPA chỉ định các interfaces, annotations
+và hành vi mà một framework hoặc thư viện phải tuân theo để thực hiện tính năng ORM
+(Object-Relational Mapping).
 
 -- JPA (Java Persistence API) cung cấp các annotation để biến một lớp POJO (Plain Old Java Object)
 thành một TABLE hay một ENTITY trong cơ sở dữ liệu.
 
--- JPA đã bao gồm Hilbernate ORM.
-
--- JPA là một module nhỏ trong Spring Data project.
+-- Hibernate là một framework ORM được phát triển trước khi JPA ra đời. Sau khi JPA trở thành tiêu chuẩn,
+Hibernate đã được cập nhật để tuân thủ JPA.
 
 -- Interface JpaRepository<T,G>: T là type của Entity, G là type của khóa chính.
 
