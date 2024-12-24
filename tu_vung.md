@@ -82,7 +82,7 @@ MÀ THÔI.”
 - state (v): diễn đạt
 - supply (n): đồ dùng / supply (v): cung cấp
 - supplementary (adj): bổ sung
-- suspend (v) = delay: trì hoãn
+- suspend (v) = delay: trì hoãn / suspend (v) = hang (v): treo
 - stiff (adj): cứng
 - steadily (adv) = rapidly (adv): đều đặn
 - seldom (adv) = rarely (adv): hiếm khi
@@ -134,6 +134,7 @@ MÀ THÔI.”
 - defect (n): khuyết điểm
 - debt (n): món nợ
 - dedication (n): sự cống hiến / be dedicated to + N: dành cho / be dedicated to + Ving: cống hiến
+- despise = in spite of = nothwithstanding + N/Ving: mặc dù
 - directly (adv) = in person: trực tiếp
 - diverse (adj): phong phú
 - distinguished (adj): ưu tiến
@@ -148,6 +149,7 @@ MÀ THÔI.”
 - coverage (n): việc đưa tin
 - competence (n) = qualification (n): năng lực
 - cuisine (n): ẩm thực
+- cushion (n):gối
 - crucial (adj) = important (adj): quan trọng, chủ yếu
 - complex (adj) = intricate (adj): phức tạp
 - competent (adj) = qualified (adj): có năng lực
