@@ -42,6 +42,8 @@ MÀ THÔI.”
 - pantry (n): phòng đựng thức ăn
 - provision (n): điều khoản
 - prototype (n): bản nguyên mẫu
+- profoundly (adv): sâu sắc
+- perishable (adj) = spoilage: dễ hư hỏng
 - participant (n) = turnout (n): người tham gia
 - particaite in (v) = join in = engage in = involve in = take part in = attend: tham gia
 - recognize (v): nhận ra, nhận biết
@@ -112,7 +114,8 @@ MÀ THÔI.”
 - badge (n): boảng tên
 - berry (n): quả trứng cá
 - before = prior to = ahead of = in advance of: trước khi
-- be in charge of = be responsible for = be capable of = qualified: đủ khả năng
+- be in charge of = be responsible for: chịu trách nghiệm
+- be capable of = qualified for = eligible for: đủ khả năng
 - be accustomed to = be familiar with: quen với
 - because = as = since = now that = in that = given that: bởi vì
 - because of = due to = owing to = on account of = in light of = given = as a result of: bởi vì
