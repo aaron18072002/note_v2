@@ -637,6 +637,12 @@ dùng có thể truy cập thông qua trình duyệt hoặc các giao thức web
 
 +) Client sẽ hiển thị kết quả hoặc thực hiện các hành động dựa trên response đó.
 
+- JWT
+
+-- JSON WEB TOKEN là 1 chuỗi string được mã hóa.
+
+-- Bao gồm 3 phần: HEADER, PAYLOAD, SIGNATURE.
+
 - SERVLET
 
 -- Servlet là một lớp Java được thiết kế để xử lý các request cụ thể, phổ biến nhất là HTTP request.
