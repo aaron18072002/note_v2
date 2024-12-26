@@ -23,6 +23,7 @@ MÀ THÔI.”
 - obligation (n) = duty (n) : nghĩa vụ
 - ordinary (v) = common: thông thường
 - obtain = gain = achive: đạt được
+- outlet (n): ổ cắm
 - possession (n): sở hữu
 - poll (n) = survey: khảo sát, thăm dò
 - portable (adj): có thể mang đi
@@ -78,6 +79,7 @@ MÀ THÔI.”
 - compact (adj): nhỏ gọn
 - clinic (n): phòng khám
 - ceremony (n): lễ / celebration (n): lễ kỉ niệm
+- canopy (n): mái che
 - shuttle bus (n): xe đưa đón
 - state (v): diễn đạt
 - supply (n): đồ dùng / supply (v): cung cấp
@@ -88,6 +90,7 @@ MÀ THÔI.”
 - seldom (adv) = rarely (adv): hiếm khi
 - settle (v): ổn định
 - sponsor (n): nhà tài trợ
+- spill (v): tràn
 - regret (n): hối hận
 - remain (v): giữ nguyên
 - remand (v): nhác nhở

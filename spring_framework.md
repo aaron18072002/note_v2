@@ -146,7 +146,8 @@ không cần phải thêm mã code phức tạp.
 +) Health Checks: Cung cấp endpoint /actuator/health để kiểm tra tình trạng sức khỏe của ứng dụng
 (các kết nối với cơ sở dữ liệu, dung lượng bộ nhớ, trạng thái hệ thống, v.v.).
 
-+) Metrics: Thu thập các số liệu như bộ nhớ, số lượng request, sử dụng CPU, và nhiều thông tin chi tiết khác.
++) Metrics: Thu thập các số liệu như bộ nhớ, số lượng request, sử dụng CPU, và nhiều thông tin chi
+tiết khác.
 
 +) Environment: Endpoint /actuator/env giúp xem cấu hình môi trường của ứng dụng, bao gồm các biến môi
 trường và cấu hình đang hoạt động.
@@ -164,13 +165,15 @@ khởi động lại ứng dụng một cách thủ công.
 
 - JUNIT:
 
--- JUnit là một framework cho phép bạn viết và chạy unit tests trong Java. Nó giúp kiểm tra các thành phần
-nhỏ của ứng dụng như các phương thức và lớp, đảm bảo chúng hoạt động đúng như mong đợi.
+-- JUnit là một framework cho phép bạn viết và chạy unit tests trong Java. Nó giúp kiểm tra các
+thành phần nhỏ của ứng dụng như các phương thức và lớp, đảm bảo chúng hoạt động đúng như mong đợi.
 
--- Mockito cho phép bạn tạo các đối tượng giả (mock objects) để thay thế các phụ thuộc trong các unit test.
-Điều này rất hữu ích khi bạn muốn kiểm tra một lớp mà không phải phụ thuộc vào các thành phần bên ngoài.
+-- Mockito cho phép bạn tạo các đối tượng giả (mock objects) để thay thế các phụ thuộc trong các
+unit test. Điều này rất hữu ích khi bạn muốn kiểm tra một lớp mà không phải phụ thuộc vào các
+thành phần bên ngoài.
 
--- Trong một unit test trong Java, có 3 bước cơ bản thường được thực hiện, đó là Arrange, Act, và Assert:
+-- Trong một unit test trong Java, có 3 bước cơ bản thường được thực hiện, đó là Arrange, Act,
+và Assert:
 
 +) Arrange: Thiết lập dữ liệu, đối tượng cần kiểm tra, và các phụ thuộc cần thiết cho bài test.
 
@@ -187,9 +190,9 @@ tự động download javadoc và source …
 
 -- Các tính năng của Maven trong dự án Spring bao gồm:
 
-+) Quản lý dependency/modules: Maven tự động tải về các thư viện cần thiết từ các kho lưu trữ trực tuyến
-dựa vào file pom.xml (Project Object Model). Khi bạn khai báo một dependency trong pom.xml, Maven sẽ
-tự động tải về các phiên bản tương thích của thư viện đó và các thư viện liên quan.
++) Quản lý dependency/modules: Maven tự động tải về các thư viện cần thiết từ các kho lưu trữ
+trực tuyến dựa vào file pom.xml (Project Object Model). Khi bạn khai báo một dependency trong
+pom.xml, Maven sẽ tự động tải về các phiên bản tương thích của thư viện đó và các thư viện liên quan.
 
 +) Quản lý phiên bản: Maven cho phép quản lý phiên bản của các thư viện một cách dễ dàng.
 Bạn chỉ cần thay đổi phiên bản trong pom.xml, và toàn bộ dự án sẽ tự động cập nhật theo.
@@ -211,9 +214,9 @@ mở rộng một thành phần mà không ảnh hưởng đến các thành ph�
 
 - SPRING CONTAINER
 
--- Spring Container (hay còn gọi là Spring IoC Container) là một thành phần quan trọng trong Spring Framework.
-Nó chịu trách nhiệm chính trong việc khởi tạo, quản lý vòng đời và xử lý các phụ thuộc (dependencies) cho các
-Spring Beans.
+-- Spring Container (hay còn gọi là Spring IoC Container) là một thành phần quan trọng trong Spring
+Framework. Nó chịu trách nhiệm chính trong việc khởi tạo, quản lý vòng đời và xử lý các phụ thuộc
+(dependencies) cho các Spring Beans.
 
 -- IoC Container trong Spring có 2 kiểu là: BeanFactory và ApplicationContext:
 
@@ -323,8 +326,8 @@ type của tham số và tự động tiêm (inject) chúng vào đối tượng
 
 - WEB SERVER
 
--- Web Server là một máy chủ chuyên dụng, chịu trách nhiệm tiếp nhận các request từ trình duyệt web (client)
-và gửi lại các response tương ứng.
+-- Web Server là một máy chủ chuyên dụng, chịu trách nhiệm tiếp nhận các request từ trình duyệt web
+(client) và gửi lại các response tương ứng.
 
 -- Web Server hoạt động thông qua giao thức HTTP/HTTPS.
 
@@ -337,7 +340,8 @@ các Controller phù hợp.
 
 - ORM
 
--- Object-Relational Mapping là 1 kĩ thuật ánh xạ các table trong hệ quản trị CSDL thành các class tương ứng.
+-- Object-Relational Mapping là 1 kĩ thuật ánh xạ các table trong hệ quản trị CSDL thành các class
+tương ứng.
 
 -- ORM biến câu code thành các câu SQL thuần để giao tiếp với hệ quản trị CSDL.
 
@@ -351,8 +355,8 @@ và hành vi mà một framework hoặc thư viện phải tuân theo để th�
 -- JPA (Java Persistence API) cung cấp các annotation để biến một lớp POJO (Plain Old Java Object)
 thành một TABLE hay một ENTITY trong cơ sở dữ liệu.
 
--- Hibernate là một framework ORM được phát triển trước khi JPA ra đời. Sau khi JPA trở thành tiêu chuẩn,
-Hibernate đã được cập nhật để tuân thủ JPA.
+-- Hibernate là một framework ORM được phát triển trước khi JPA ra đời. Sau khi JPA trở thành
+tiêu chuẩn, Hibernate đã được cập nhật để tuân thủ JPA.
 
 -- Interface JpaRepository<T,G>: T là type của Entity, G là type của khóa chính.
 
@@ -374,7 +378,8 @@ nơi ánh xạ khóa ngoại từ bảng hiện tại (bảng chứa entity đan
 
 +) nếu bảng nào có FIELD là khóa ngoại thì dùng @JoinColumn và @ManyToOne.
 
-+) nếu bảng nào có quan hệ 1-1 thì giữ khóa ngoại làm FIELD. VD: users n-1 roles -> users có FIELD role_id.
++) nếu bảng nào có quan hệ 1-1 thì giữ khóa ngoại làm FIELD. VD: users n-1 roles ->
+users có FIELD role_id.
 
 - ANNOTATIONs
 
