@@ -564,6 +564,12 @@ mà không cần phải di chuyển lớp đó vào package đã quét.
 
 +) Nhận dữ liệu từ URL Parameters (@PathVariable).
 
+- Các annotation hỗ trợ authorization trên chính method.
+
++) @PreAuthorize: Annotation @PreAuthorize kiểm tra biểu thức đã cho trước khi gọi method
+
++) @PostAuthorize: Annotation @PostAuthorize xác minh nó sau khi thực hiện method và có thể thay đổi kết quả.
+
 - FILTER và INTERCEPTOR
 
 -- Filter là một thành phần của Servlet API, được triển khai từ interface javax.servlet.Filter.
