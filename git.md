@@ -14,5 +14,13 @@
 -- Là 1 con trỏ đặc biệt có thể trỏ đến nhánh (trỏ đến commit) hoặc commit.
 : Khi HEAD trỏ đến commit trực tiếp hay gián tiếp thông qua nhánh
 --> thư mục làm việc sẽ hiển thị code, tài liệu ở commit đó.
+: HEAD có thể nhảy đến bất kỳ commit, branch nào.
+
+- HEAD trỏ đến branch --> bình thường (khuyến khích)
+- HEAD trỏ đến commit --> detached HEAD (ko khuyến khích)
 
 -- master: là 1 nhánh ( là 1 con trỏ trỏ đến commit ).
+
+--> git log [--oneline] --all
+++ xem lịch sử commit: gồm commit hiện tại và các commit cha của nó.
+++ --all: hiển thị tất cả commit.
