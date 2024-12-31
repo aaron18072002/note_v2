@@ -24,3 +24,16 @@
 --> git log [--oneline] --all
 ++ xem lịch sử commit: gồm commit hiện tại và các commit cha của nó.
 ++ --all: hiển thị tất cả commit.
+
+-- GIT STATUS
+
++) untracked: mới tạo ra, chỉnh sửa ... chưa được git quản lý,
+chưa commit lần nào.
+
++) unmodified: file vừa mới commit.
+
++) modified: chỉnh sửa 1 file đã từng được commit.
+--> changes not staged got committed
+
++) staged: file được dùng để commit.
+--> change for commit
