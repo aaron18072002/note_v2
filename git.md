@@ -18,6 +18,9 @@
 
 - HEAD trỏ đến branch --> bình thường (khuyến khích)
 - HEAD trỏ đến commit --> detached HEAD (ko khuyến khích)
+  --> Vì khi đang ở detached head, nếu tạo commit mới thì HEAD nhảy lên nhưng quan
+  trọng là commit đó ko được chứa/quản lý trong bất kỳ branch (nhánh) nào
+  --> Nếu như mình gõ git log thậm chí với tham số -all nó cũng ko show ra
 
 -- master: là 1 nhánh ( là 1 con trỏ trỏ đến commit ).
 
@@ -37,3 +40,12 @@ chưa commit lần nào.
 
 +) staged: file được dùng để commit.
 --> change for commit
+
+- NHÁNH LÀ GÌ
+
++) Nhánh đơn thuần là một con trỏ, trỏ đến một commit và có khả năng di chuyến được
+
++) Nhánh thường đại diện cho 1 version của dự án, commit mà nhánh đang trỏ đến sẽ
+là commit, chức năng mới nhất của dự án đó
+
++) GIT có nhánh mặc định là master | main, HEAD -> master | main
