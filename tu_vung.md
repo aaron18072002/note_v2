@@ -144,6 +144,7 @@ MÀ THÔI.”
 - directly (adv) = in person: trực tiếp
 - diverse (adj): phong phú
 - distinguished (adj): ưu tiến
+- digging (v): đào bới
 - enquire (v): hỏi thăm # require (v): yêu cầu
 - entitle (v): trao quyền
 - confidential (adj) = private: bí mật
@@ -174,6 +175,7 @@ MÀ THÔI.”
 - accomplishment (n) = achievement (n): thành tựu
 - absence (n): sự vắng mặt
 - attempt (n): sự nỗ lực
+- avenue (n): đại lộ
 - anticipate (v) = estimate (v) = forecast: dự đoán
 - admittance (n) = permisson (n): sự cho phép
 - adequate (v) = complete: đầy đủ
