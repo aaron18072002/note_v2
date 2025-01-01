@@ -1,5 +1,5 @@
 MỤC TIÊU NĂM 2025
-+) Lương trên 12tr
++) Lương trên 12tr/tháng
 +) TOEIC 700+
 +) Đăng ký học thầy Quyền
 +) Tốt nghiệp đại học
