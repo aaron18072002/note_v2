@@ -1,3 +1,11 @@
+MỤC TIÊU NĂM 2025
++) Lương trên 12tr
++) TOEIC 700+
++) Đăng ký học thầy Quyền
++) Tốt nghiệp đại học
++) Mua cho mình 1 con iphone
++) Bình tĩnh hơn trong mọi trường hợp
+
 DONT LOOK BACK, JUST GOING, GOING ON.
 “CƠ HỘI CHỈ DÀNH CHO NHỮNG NGƯỜI CÓ GIA ĐÌNH TỐT. VỚI NHỮNG KẺ ĐẾN TỪ ĐÁY CỦA XÃ HỘI,
 KHÔNG AI NGHĨ ĐẾN CHUYỆN ĐẶT CƯỢC VÀO BỌN HỌ, THỨ DUY NHẤT CÓ THỂ DỰA VÀO CHỈ LÀ CAN ĐẢM
