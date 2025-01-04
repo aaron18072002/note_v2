@@ -897,9 +897,10 @@ lập trình viên phải giải phóng chúng một cách thủ công, thườn
 
 - ANONYMOUS CLASS
 
--- Trong Java, lớp ẩn danh là một loại lớp nội mà không có tên, được khai báo và khởi tạo trong một dòng mã.
-Lớp này thường được sử dụng để mở rộng một lớp hoặc triển khai một interface với hành vi cụ thể mà không cần
-tạo ra một lớp riêng biệt. Lớp ẩn danh thường rất hữu ích khi bạn chỉ cần một lần triển khai đơn giản.
+-- Trong Java, lớp ẩn danh là một loại lớp nội mà không có tên, được khai báo
+và khởi tạo trong một dòng mã. Lớp này thường được sử dụng để mở rộng một lớp hoặc
+triển khai một interface với hành vi cụ thể mà không cần tạo ra một lớp riêng biệt.
+Lớp ẩn danh thường rất hữu ích khi bạn chỉ cần một lần triển khai đơn giản.
 
 - ENUM
 
