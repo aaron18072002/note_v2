@@ -199,6 +199,8 @@ vì nó đã được áp dụng mặc định.
 
 - TRUNCATE: Xóa toàn bộ các dòng của bảng, giải phóng bộ nhớ và không thể phục hồi lại.
 
+- TRUNCATE sẽ DROP TABLE đó rồi sẽ tạo TABLE đó lại.
+
 - DELETE sẽ kích hoạt TRIGGER còn TRUNCATE thì ngược lại
 
 - MỘT SỐ TÌNH HUỐNG KHÔNG THỂ XÓA DỮ LIỆU
