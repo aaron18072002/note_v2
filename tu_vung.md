@@ -21,6 +21,8 @@ MÀ THÔI.”
 +) at + địa điểm cụ thể
 +) in + không gian
 
++) Ving + N/Cụm N + V số ít (e/es/is/has,...) VD: Studying english is important --> Cái việc học tập ...
+
 - as well as: cũng như
 - as long as = provided that: miễn là
 - as far as: theo như
