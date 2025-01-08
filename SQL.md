@@ -277,41 +277,54 @@ tạm thời dữ liệu hoặc làm việc với các giá trị trong các ph�
 
 - STORED PROCEDURE
 
--- STORED PROCEDURE là tập hợp một hoặc nhiều câu lệnh T-SQL thành một nhóm đơn vị xử lý logic và được lưu trữ
-trên Database Server.
+-- STORED PROCEDURE là tập hợp một hoặc nhiều câu lệnh T-SQL thành một nhóm
+đơn vị xử lý logic và được lưu trữ trên Database Server.
 
--- Khi một câu lệnh gọi chạy STORED PROCEDURE lần đầu tiên thì SQL Server sẽ chạy nó và lưu trữ vào bộ nhớ đệm,
-gọi là plan cache, những lần tiếp theo SQL Server sẽ sử dụng lại plan cache nên sẽ cho tốc độ xử lý tối ưu.
+-- Khi một câu lệnh gọi chạy STORED PROCEDURE lần đầu tiên thì SQL Server
+sẽ chạy nó và lưu trữ vào bộ nhớ đệm, gọi là plan cache, những lần tiếp theo
+SQL Server sẽ sử dụng lại plan cache nên sẽ cho tốc độ xử lý tối ưu.
 
--- Stored Procedure có thể có tham số OUT hoặc tham số IN/OUT. Các tham số này cho phép bạn truyền dữ liệu vào
-procedure và nhận lại dữ liệu từ nó.Stored Procedure không bắt buộc phải trả về giá trị, nhưng có thể sử
-dụng tham số OUT để trả về kết quả.
+-- Stored Procedure có thể có tham số OUT hoặc tham số IN/OUT.
+Các tham số này cho phép bạn truyền dữ liệu vào procedure và nhận
+lại dữ liệu từ nó.Stored Procedure không bắt buộc phải trả về giá trị,
+nhưng có thể sử dụng tham số OUT để trả về kết quả.
 
--- Dùng CALL để gọi STORED PROCEDURE.
+-- Dùng CALL/EXEC để gọi STORED PROCEDURE.
+
+-- Tham số với từ khóa OUTPUT sẽ hoạt động với tư cách là INPUT lẫn OUTPUT.
 
 - FUNCTION
 
--- Function không hỗ trợ tham số OUT như Stored Procedure. Thay vào đó, một Function luôn phải trả về một
-giá trị thông qua câu lệnh RETURN.
+-- Function không hỗ trợ tham số OUT như Stored Procedure. Thay vào đó,
+một Function luôn phải trả về một giá trị thông qua câu lệnh RETURN.
 
--- Giá trị trả về của Function phải có kiểu dữ liệu cụ thể (ví dụ: INT, VARCHAR, DATE, v.v.).
+-- Giá trị trả về của Function phải có kiểu dữ liệu cụ thể (ví dụ: INT,
+VARCHAR, DATE, v.v.).
 
 -- Dùng SELECT để gọi FUNCTION.
 
 - TRIGGER
 
--- TRIGGER (kích hoạt) trong SQL là một thủ tục được lưu trữ (stored procedure) được liên kết với một TABLE hoặc VIEW.
+-- TRIGGER (kích hoạt) trong SQL là một thủ tục được lưu trữ (stored procedure)
+được liên kết với một TABLE hoặc VIEW.
 
 -- TRIGGER có 2 loại: AFTER hoặc BEFORE
 
--- Nó sẽ tự động được thực thi khi có một sự kiện cụ thể xảy ra, chẳng hạn như INSERT, UPDATE, hoặc DELETE ( liên qua tới DDL DML ). Triggers thường được sử dụng để:
+-- Nó sẽ tự động được thực thi khi có một sự kiện cụ thể xảy ra,
+chẳng hạn như INSERT, UPDATE, hoặc DELETE ( liên qua tới DDL DML ).
+Triggers thường được sử dụng để:
 
---- Kiểm tra và xác thực dữ liệu: Đảm bảo rằng dữ liệu nhập vào đáp ứng các điều kiện nhất định trước khi chấp nhận thay đổi.
+--- Kiểm tra và xác thực dữ liệu: Đảm bảo rằng dữ liệu nhập vào đáp ứng
+các điều kiện nhất định trước khi chấp nhận thay đổi.
 
---- Tự động cập nhật dữ liệu: Có thể tự động tính toán và cập nhật các cột hoặc bảng khác dựa trên các thay đổi dữ liệu.
+--- Tự động cập nhật dữ liệu: Có thể tự động tính toán và cập nhật các
+cột hoặc bảng khác dựa trên các thay đổi dữ liệu.
 
---- Duy trì tính toàn vẹn tham chiếu: Đảm bảo rằng các ràng buộc và mối quan hệ giữa các bảng luôn được giữ vững.
+--- Duy trì tính toàn vẹn tham chiếu: Đảm bảo rằng các ràng buộc và mối
+quan hệ giữa các bảng luôn được giữ vững.
 
---- Ghi nhật ký thay đổi: Ghi lại lịch sử thay đổi của dữ liệu cho mục đích theo dõi hoặc audit.
+--- Ghi nhật ký thay đổi: Ghi lại lịch sử thay đổi của dữ liệu cho mục
+đích theo dõi hoặc audit.
 
---- Thực thi logic nghiệp vụ phức tạp: Để phản hồi ngay lập tức với các sự kiện trong cơ sở dữ liệu mà không cần sự can thiệp từ ứng dụng.
+--- Thực thi logic nghiệp vụ phức tạp: Để phản hồi ngay lập tức với các
+sự kiện trong cơ sở dữ liệu mà không cần sự can thiệp từ ứng dụng.
