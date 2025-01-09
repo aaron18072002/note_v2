@@ -293,6 +293,9 @@ nhưng có thể sử dụng tham số OUT để trả về kết quả.
 
 -- Tham số với từ khóa OUTPUT sẽ hoạt động với tư cách là INPUT lẫn OUTPUT.
 
+-- STORED PROCEDURE thường hay xử lý CREATE,DELETE,UPDATE và gọi FUNCTION trong đó
+như 1 VALIDATION.
+
 - FUNCTION
 
 -- Function không hỗ trợ tham số OUT như Stored Procedure. Thay vào đó,
