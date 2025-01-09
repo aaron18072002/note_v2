@@ -157,22 +157,23 @@ MÀ THÔI.”
 - digging (v): đào bới
 - enquire (v): hỏi thăm # require (v): yêu cầu
 - entitle (v): trao quyền
+- clothes = garment (n): áo quần
 - confidential (adj) = private: bí mật
 - conversation (n): cuộc hội thoại / conservation (n): sự bảo tồn / reservation (n): sự đặt chỗ
 - compensation (n) = reimbursement (n): sự bồi thường
 - concentrate (n): tập trung
-- clothes = garment (n): áo quần
 - CONSISTENTLY (adv): liên tục = CONSECUTIVELY (adv): liên tiếp, dồn dập
 - coverage (n): việc đưa tin
 - competence (n) = qualification (n): năng lực
-- cuisine (n): ẩm thực
-- cushion (n):gối
-- crucial (adj) = important (adj): quan trọng, chủ yếu
 - complex (adj) = intricate (adj): phức tạp
 - competent (adj) = qualified (adj): có năng lực
 - cover letter (n) = application (n): đơn xin việc
 - coastal (adj): thuộc ven biển
 - comply with (v) = follow = obey = adhere to = abide by: tuân thủ
+- colleague (n) = co-worker (n): đồng nghiệp
+- cuisine (n): ẩm thực
+- cushion (n):gối
+- crucial (adj) = important (adj): quan trọng, chủ yếu
 - enclose (v) = attach: đính kèm
 - emission (n): sự thải ra
 - wipe (v): lau chùi
