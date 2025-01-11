@@ -24,9 +24,9 @@
 
 -- master: là 1 nhánh ( là 1 con trỏ trỏ đến commit ).
 
---> git log [--oneline] --all
+--> git log [--oneline] [--all]
 ++ xem lịch sử commit: gồm commit hiện tại và các commit cha của nó.
-++ --all: hiển thị tất cả commit.
+++ --all: hiển thị tất cả commit được quản lý bởi BRANCH.
 
 -- GIT STATUS
 
