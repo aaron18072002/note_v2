@@ -28,6 +28,17 @@
 ++ xem lịch sử commit: gồm commit hiện tại và các commit cha của nó.
 ++ --all: hiển thị tất cả commit được quản lý bởi BRANCH.
 
+--> git ls-tree commit_hash
+++ xem danh sách blob của commit đó.
+++ xem commit đó có những file nào thay đổi so với commit trước đó.
+
+--> git checkout commit_hash
+++ đưa con trỏ HEAD đến commit_hash.
+++ thư mục làm việc(working directory) sẽ chứa code, tài liệu ở commit.
+
+--> git commit --amend -m 'new message'
+++ sửa message commit hiện tại
+
 -- GIT STATUS
 
 +) untracked: mới tạo ra, chỉnh sửa ... chưa được git quản lý,
@@ -49,3 +60,10 @@ chưa commit lần nào.
 là commit, chức năng mới nhất của dự án đó
 
 +) GIT có nhánh mặc định là master | main, HEAD -> master | main
+
++) Cách tạo nhánh:
+
+--> git branch ten_nhanh_moi commit_hash
+
+--> git branch ten_nhanh_moi ten_nhanh_cu : tạo ten_nhanh_moi từ cái commit
+mà ten_nhanh_cu đang trỏ đến
