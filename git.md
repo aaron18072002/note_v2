@@ -39,6 +39,11 @@
 --> git commit --amend -m 'new message'
 ++ sửa message commit hiện tại
 
+--> git branch ten_nhanh_moi ten_nhanh_cu
+--> git checkout new_branch
+
+--> git checkout -b new_branch old_branch
+
 -- GIT STATUS
 
 +) untracked: mới tạo ra, chỉnh sửa ... chưa được git quản lý,

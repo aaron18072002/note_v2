@@ -836,39 +836,41 @@ của lớp đó và điều đó giúp cho chương trình tiết kiệm bộ n
 
 +) Người dùng không thể override (đè) phương thức static trong Java.
 
-+) static method, attribute sẽ được khởi tạo cùng thời điểm loading class --> khởi tạo trước non-static method
++) static method, attribute sẽ được khởi tạo cùng thời điểm loading class --> khởi tạo trước
+non-static method
 
 -- Lớp static (static class):
 
-+) Trong Java, một lớp static phải là lớp lồng nhau (nested class) bên trong một lớp không phải static khác,
-tức là nó không thể tồn tại độc lập như một lớp riêng biệt.
++) Trong Java, một lớp static phải là lớp lồng nhau (nested class) bên trong một lớp không phải
+static khác, tức là nó không thể tồn tại độc lập như một lớp riêng biệt.
 
 +) Một nested class được khai báo với từ khóa static gọi là nested static class.
 
-+) Khác với các lớp thông thường, một nested static class có thể được truy cập mà không cần tạo một đối tượng của outer class
-(lớp bên ngoài).
++) Khác với các lớp thông thường, một nested static class có thể được truy cập mà không cần tạo một đối
+tượng của outer class (lớp bên ngoài).
 
-+) Lớp này hoạt động độc lập với thể hiện của lớp bên ngoài, nghĩa là nó không thể truy cập trực tiếp vào các thành viên non-static
-của lớp bên ngoài (như biến hoặc phương thức non-static)....
++) Lớp này hoạt động độc lập với thể hiện của lớp bên ngoài, nghĩa là nó không thể truy cập trực tiếp vào
+các thành viên non-static của lớp bên ngoài (như biến hoặc phương thức non-static)....
 
 -- Import static:
 
-+) Java cho phép import các thành viên tĩnh (static member) và static method của một class hoặc package vào một class khác
-với từ khóa import static.
++) Java cho phép import các thành viên tĩnh (static member) và static method của một class hoặc package
+vào một class khác với từ khóa import static.
 
 - EXCEPTION
 
 -- Trong JAVA, Exception là 1 class mà extends class Throwable.
 
--- Exception là những lỗi xảy ra trong quá trình chạy chương trình (runtime). Exception thường được sử dụng để chỉ các
-tình huống bất thường mà chương trình gặp phải và cần xử lý.
+-- Exception là những lỗi xảy ra trong quá trình chạy chương trình (runtime). Exception thường được sử dụng
+để chỉ các tình huống bất thường mà chương trình gặp phải và cần xử lý.
 
--- Khi một Exception xảy ra trong Java và nó không được handle (xử lý) bởi bất kỳ khối try-catch nào, luồng thực thi sẽ bị gián đoạn,
-và tất cả các dòng mã sau điểm xảy ra Exception sẽ không được thực hiện.
+-- Khi một Exception xảy ra trong Java và nó không được handle (xử lý) bởi bất kỳ khối try-catch nào,
+luồng thực thi sẽ bị gián đoạn, và tất cả các dòng mã sau điểm xảy ra Exception sẽ không được thực hiện.
 
--- Stack trace là một biểu diễn của call stack tại thời điểm mà Exception xảy ra, cho thấy trình tự các phương thức đã được gọi
-trước khi đến vị trí gây ra lỗi. Mỗi phần tử trong stack trace đại diện cho một lời gọi phương thức, bắt đầu từ phương thức gốc
-(ở cuối stack trace) cho đến phương thức nơi Exception được ném ra (ở đầu stack trace).
+-- Stack trace là một biểu diễn của call stack tại thời điểm mà Exception xảy ra, cho thấy trình tự các
+phương thức đã được gọi trước khi đến vị trí gây ra lỗi. Mỗi phần tử trong stack trace đại diện cho
+một lời gọi phương thức, bắt đầu từ phương thức gốc (ở cuối stack trace) cho đến phương thức nơi
+Exception được ném ra (ở đầu stack trace).
 
 -- Trong Java, khối finally được thiết kế để luôn thực thi sau khối try hoặc catch, bất kể có Exception xảy ra hay không,
 hoặc thậm chí khi có câu lệnh return trong khối try hoặc catch. Trường hợp duy nhất mà khối finally không được thực thi là
