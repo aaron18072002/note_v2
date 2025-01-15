@@ -635,13 +635,14 @@ cho interface đó.
 -- Các đặc điểm của 1 Functional Interface:
 
 +) Một Functional Interface hợp lệ chỉ có duy nhất một phương thức trừu tượng
-Đây là đặc điểm cốt lõi của functional interface. Một functional interface chỉ có một phương thức trừu tượng (abstract method),
-nghĩa là chỉ có một phương thức chưa được triển khai. Điều này giúp Java biết rằng interface đó có thể được thay thế bằng một biểu thức lambda.
-Đặc điểm này còn được gọi là Single Abstract Method (SAM).
+Đây là đặc điểm cốt lõi của functional interface. Một functional interface chỉ có một phương thức trừu tượng
+(abstract method), nghĩa là chỉ có một phương thức chưa được triển khai. Điều này giúp Java biết rằng interface
+đó có thể được thay thế bằng một biểu thức lambda. Đặc điểm này còn được gọi là Single Abstract Method (SAM).
 
 +) Một Functional Interface có thể có các phương thức của lớp java.lang.Object
-Functional interface có thể kế thừa các phương thức từ java.lang.Object (chẳng hạn như equals(), hashCode(), và toString()).
-Những phương thức này không ảnh hưởng đến tính chất của functional interface vì chúng không được xem là các phương thức trừu tượng.
+Functional interface có thể kế thừa các phương thức từ java.lang.Object (chẳng hạn như equals(), hashCode(),
+và toString()). Những phương thức này không ảnh hưởng đến tính chất của functional interface vì chúng không
+được xem là các phương thức trừu tượng.
 
 +) Phương thức default và static không phá vỡ quy tắc của functional interface
 Functional interface có thể chứa các phương thức default và static mà không làm mất đi tính chất của nó. Các phương thức
