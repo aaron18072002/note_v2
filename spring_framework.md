@@ -776,17 +776,20 @@ và giao tiếp với cơ sở dữ liệu.
 
 -- Các thành phần chính trong JDBC:
 
-+) DriverManager: Là một class dùng để quản lý danh sách các Driver
++) DriverManager: Là một class dùng để quản lý danh sách các Driver,
 
-+) Driver: Là một interface, chịu trách nhiệm xử lý các hoạt động giao tiếp giữa ứng dụng và database
++) Driver: Là một Interface, nó dùng để liên kết các liên lạc với cơ sở dữ liệu, điều khiến các
+liên lạc với database. Một khi Driver được tải lên, lập trình viên không cần phải gọi nó một cách cụ thể.
 
-+) Connection: Là một interface, cung cấp các phương thức cho việc thao tác với database
++) Connection: Là một Interface với tất cả các method cho việc liên lạc với database.
+Nó mô tả nội dung liên lạc. tất cả các thông tin liên lạc với cơ sở dữ liệu là thông qua chỉ
+có đối tượng Connection.
 
-+) Statement: Là một interface, để thực thi các câu lệnh SQL xuống database
++) Statement / PreparedStatement: Là một Interface, gói gọn một câu lệnh SQL gửi tới cơ sở dữ liệu
+được phân tích, tổng hợp, lập kế hoạch và thực hiện.
 
-+) ResultSet: Là một đối tượng trong Java được sử dụng để lưu trữ và thao tác với dữ liệu kết quả từ câu lệnh
-SELECT trong SQL. Nó đại diện cho một bảng dữ liệu (các dòng và cột) mà bạn nhận được từ cơ sở dữ liệu sau khi
-thực thi một câu truy vấn SELECT.
++) ResultSet: ResultSet đại diện cho tập hợp các bản ghi lấy do thực hiện truy vấn khi B4 sử dụng mệnh đề
+SELECT (executeQuery), nếu dùng INSERT/UDDATE/DELETE → trả về int(số dòng affected trong db tables)
 
 +) SQLException: Xử lý ngoại lệ xảy ra trong database
 
