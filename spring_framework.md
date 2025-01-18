@@ -787,6 +787,9 @@ có đối tượng Connection.
 
 +) Statement / PreparedStatement: Là một Interface, gói gọn một câu lệnh SQL gửi tới cơ sở dữ liệu
 được phân tích, tổng hợp, lập kế hoạch và thực hiện.
+-- DML - SELECT --> executeQuery(sql) -> ResultSet (returned rows)
+-- DML - INSERT/UPDATE/DELETE --> executeUpdate(sql) -> int(allected rows)
+-- FUNCTION/PROCEDURED --> execute (sql)
 
 +) ResultSet: ResultSet đại diện cho tập hợp các bản ghi lấy do thực hiện truy vấn khi B4 sử dụng mệnh đề
 SELECT (executeQuery), nếu dùng INSERT/UDDATE/DELETE → trả về int(số dòng affected trong db tables)
