@@ -675,7 +675,7 @@ web server nhẹ và servlet container.
 -- ServletContext là một interface trong Java Servlet API, và các Servlet Container (hay Web Container)
 như Apache Tomcat, Jetty, hoặc WildFly sẽ triển khai (implement) interface này.
 
--- Web Container (hay Servlet Container) sẽ tạo ra một đối tượng ServletContext duy nhất/singletion
+-- Web Container (hay Servlet Container) sẽ tạo ra một đối tượng ServletContext duy nhất/singleton
 khi ứng dụng web được khởi chạy.
 
 -- Đối tượng ServletContext được chia sẻ giữa tất cả các servlet, JSP, và các thành phần khác
@@ -754,6 +754,14 @@ nhúng mã Java trong các tệp HTML để tạo nội dung web đa dạng và 
 +) out -> PrintWriter
 
 +) jspInit() -> init() / jspDestroy -> destroy()
+
+- JSP Scripting Elements
+
+-- JSP Expression: <%= %>
+
+-- JSP Scriplet: <% %>
+
+-- JSP Declaration: <%! %>
 
 - JDBC
 
