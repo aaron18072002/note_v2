@@ -656,9 +656,9 @@ functional interface mở rộng vẫn tuân theo quy tắc "một phương th�
 
 - THREAD
 
--- Luồng (thread) trong Java là một đơn vị xử lý độc lập trong chương trình, cho phép thực hiện đa luồng (multithreading)
-để cải thiện hiệu suất và tận dụng tối đa tài nguyên máy tính. Mỗi luồng là một dòng thực thi độc lập trong chương trình,
-có thể chạy song song với các luồng khác.
+-- Luồng (thread) trong Java là một đơn vị xử lý độc lập trong chương trình, cho phép thực hiện đa luồng
+(multithreading)để cải thiện hiệu suất và tận dụng tối đa tài nguyên máy tính. Mỗi luồng là một dòng thực thi
+độc lập trong chương trình, có thể chạy song song với các luồng khác.
 
 -- Trong Java, mọi chương trình đều có ít nhất một luồng, gọi là luồng chính (main thread), được cung cấp bởi
 Java Virtual Machine (JVM) khi chương trình bắt đầu thực thi.
@@ -669,33 +669,37 @@ Java Virtual Machine (JVM) khi chương trình bắt đầu thực thi.
 
 +) Triển khai interface Runnable
 
--- Việc triển khai một luồng bằng phương thức của interface Runnable được ưu tiên và thuận lợi hơn vì Java không hỗ trợ kế thừa
-nhiều lớp.
+-- Việc triển khai một luồng bằng phương thức của interface Runnable được ưu tiên và thuận lợi hơn vì
+Java không hỗ trợ kế thừa nhiều lớp.
 
--- Phương thức start() tạo một call stack riêng biệt cho luồng mới và kích hoạt JVM gọi run() trong call stack đó.
+-- Phương thức start() tạo một call stack riêng biệt cho luồng mới và kích hoạt JVM gọi run() t
+rong call stack đó.
 
--- Việc gọi trực tiếp run() sẽ không tạo call stack mới, mà chỉ thực thi mã bên trong run() trên call stack hiện tại.
+-- Việc gọi trực tiếp run() sẽ không tạo call stack mới, mà chỉ thực thi mã bên trong run() trên call
+stack hiện tại.
 
 -- State của Thread:
 
-+) New: Khi instance của luồng được tạo và phương thức start() chưa được gọi, luồng được coi là còn sống và do đó ở trạng thái NEW.
++) New: Khi instance của luồng được tạo và phương thức start() chưa được gọi, luồng được coi là còn sống và do
+đó ở trạng thái NEW.
 
-+) Terminate/Dead: Khi quá trình thực thi phương thức run() hoàn tất, luồng được cho là đi vào bước TERMINATED và được coi là
-không còn tồn tại.
++) Terminate/Dead: Khi quá trình thực thi phương thức run() hoàn tất, luồng được cho là đi vào bước
+TERMINATED và được coi là không còn tồn tại.
 
-+) Runnable: Khi phương thức start() được gọi, trước khi phương thức run() được gọi bởi JVM, luồng được cho là ở trạng thái RUNNABLE
-(sẵn sàng chạy). Trạng thái này cũng có thể được nhập từ trạng thái Waiting hoặc Sleeping của luồng.
++) Runnable: Khi phương thức start() được gọi, trước khi phương thức run() được gọi bởi JVM, luồng được cho
+là ở trạng thái RUNNABLE (sẵn sàng chạy). Trạng thái này cũng có thể được nhập từ trạng thái Waiting hoặc
+Sleeping của luồng.
 
 +) Running: Khi phương thức run() được gọi và luồng bắt đầu thực thi, luồng được cho là đang ở trạng thái RUNNING.
 
-+) Blocked: Một luồng sẽ ở trạng thái Blocked khi nó cố gắng truy cập một đoạn mã được đồng bộ hóa (synchronized block)
-nhưng không thể vì có một luồng khác đang thực thi đoạn mã đó trên cùng một đối tượng.
-Trong tình huống này, luồng bị chặn sẽ phải đợi cho đến khi luồng đang thực thi thoát khỏi khối được đồng bộ hóa,
-sau đó nó mới có thể tiếp tục.
++) Blocked: Một luồng sẽ ở trạng thái Blocked khi nó cố gắng truy cập một đoạn mã được đồng bộ hóa
+(synchronized block) nhưng không thể vì có một luồng khác đang thực thi đoạn mã đó trên cùng một đối tượng.
+Trong tình huống này, luồng bị chặn sẽ phải đợi cho đến khi luồng đang thực thi thoát khỏi khối được
+đồng bộ hóa, sau đó nó mới có thể tiếp tục.
 
 +) Waiting: Trạng thái Waiting xảy ra khi một luồng đang đợi tín hiệu từ một luồng khác để tiếp tục thực thi.
-Trong trường hợp này, luồng không bị chặn bởi mã đồng bộ hóa nhưng đang "tạm dừng" để chờ tín hiệu báo hiệu từ một luồng khác
-để tiếp tục công việc của nó.
+Trong trường hợp này, luồng không bị chặn bởi mã đồng bộ hóa nhưng đang "tạm dừng" để chờ tín hiệu báo hiệu
+từ một luồng khác để tiếp tục công việc của nó.
 
 -- Độ ưu tiên của 1 Thread có phạm vi từ 1 đến 10.
 
