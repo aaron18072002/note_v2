@@ -657,6 +657,8 @@ functional interface mở rộng vẫn tuân theo quy tắc "một phương th�
 
 - THREAD
 
+- 1 Thread trong Java bằng 1 Thread trong hệ điều hành.
+
 -- Luồng (thread) trong Java là một đơn vị xử lý độc lập trong chương trình, cho phép thực hiện đa luồng
 (multithreading)để cải thiện hiệu suất và tận dụng tối đa tài nguyên máy tính. Mỗi luồng là một dòng thực thi
 độc lập trong chương trình, có thể chạy song song với các luồng khác.
