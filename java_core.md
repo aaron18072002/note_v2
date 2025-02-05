@@ -1030,7 +1030,7 @@ mà không có thông tin về thời gian (giờ, phút, giây).
 
 -- JAVA 5.0: Enhanced for loop, Generics, Enum, Autoboxing.
 
--- JAVA 8: Functional Programming, Lambda và Streams, Static Method trong Interface.
+-- JAVA 8: Functional Programming, Lambda và Streams, Static và Default Method trong Interface.
 
 -- JAVA 9: Modularization.
 

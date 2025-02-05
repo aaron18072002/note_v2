@@ -206,6 +206,38 @@ phát triển phần mềm, từ kiểm thử (test), biên dịch (compile) đ�
 +) Tích hợp với Spring: Trong các dự án Spring, Maven đóng vai trò rất quan trọng khi tích hợp các
 dependency của Spring như Spring Core, Spring MVC, Spring Boot, và nhiều thư viện khác của Spring Framework.
 
+- POM: Project Object Model
+
+- Có 3 loại built-in lifecycles: default, clean and site
+
+- Common Maven Build Lifecycles: validate, clean, compile, test, package, verify,
+  install, deploy.
+
+- Có 2 loại plugins trong Maven: Build plugins và Reporting plugins.
+
+- Maven Commands:
+
++) validate:
+
++) clean: xóa file .class (mục đích để compile lại)
+
++) compile: biên dịch file .java thành file .class
+
++) test:
+
++) install:
+
++) package:
+
++) deploy:
+
+- Tạo dự án maven:
+
++) C1: mvn archetype:generate rồi tự config tiếp
+
++) C2: mvn archetype:generate -DgroupId=[Tên package] -DartifactId=[Tên dự án]
+-DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+
 - TIGHTLY COUPLED
 
 -- Trong Java Spring, Tightly Coupled (liên kết chặt chẽ) ám chỉ khi các thành phần (components)
