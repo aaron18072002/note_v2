@@ -26,6 +26,12 @@ tên các element này là chúng ta có thể hiểu được nội dung bên t
 +) External: --> Viết trong file .css riêng, rồi liên kết bằng <link>. Giúp quản lý code tốt hơn, áp dụng
 được cho nhiều trang.
 
+-- Block và Inline
+
++) Block: Chiếm 100% width của cha
+
++) Inline: Chiếm đủ width của content, không set width và height được.
+
 -- So sánh normalize và reset CSS
 
 - reset CSS là set các giá trị như margin, padding, font-size về 0, Cũng list-style: none, ...
