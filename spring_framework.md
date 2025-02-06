@@ -54,35 +54,13 @@ ORM như Hibernate.
 
 - SPRING FRAMEWORK
 
--- Spring là một Framework phát triển các ứng dụng Java được sử dụng bởi hàng triệu lập trình viên.
-Nó giúp tạo các ứng dụng có hiệu năng cao, dễ kiểm thử, sử dụng lại code …
-
 -- Spring Framework được xây dựng dựa trên 2 nguyên tắc design chính là: Dependency Injection (DI)
 và Aspect Oriented Programming (AOP).
 
--- Spring Framework chứa các Spring Modules như:
-
-+) Spring Core: IoC Container, DI, Auto wiring, Beans, SpEL - Spring Expression Language.
-
-+) Data Access: JDBC, JPA.
-
-+) Integration: JMS.
-
-+) Web Module: Spring MVC.
-
-+) Testing: Mock Objects, Spring MVC Test.
-
-+) Spring Security: Một module tách biệt cho phép dễ dàng bảo mật ứng dụng, hỗ trợ xác thực và
-phân quyền người dùng.
-
-+) Spring Boot: Một module đặc biệt giúp phát triển ứng dụng nhanh chóng, tự động cấu hình các bean
-và cung cấp cấu trúc chuẩn cho ứng dụng Spring.
-
 - SPRING BOOT
 
--- Spring Boot là một module của Spring Framework, và nó tích hợp sẵn IoC (Inversion of Control)
-container mà Spring cung cấp. Điều này có nghĩa là Spring Boot tự động cấu hình và khởi tạo các
-thành phần trong ứng dụng của bạn mà không cần bạn phải cấu hình.
+-- Spring Boot chỉ là một tập hợp các module của Spring Framework, được tích hợp và cấu hình sẵn để giúp phát
+triển ứng dụng dễ dàng hơn trên nền tảng Spring Core.
 
 -- Khi bạn sử dụng Spring Boot, nó đã tích hợp sẵn Spring IoC Container. Điều này giúp bạn không
 cần phải cấu hình các lớp XML/Configuration phức tạp hoặc tốn thời gian tự định nghĩa các bean,
@@ -91,11 +69,8 @@ như trong Spring Framework trước đây.
 -- Spring Boot cung cấp hai cơ chế chính để giúp bạn phát triển ứng dụng nhanh chóng và dễ dàng hơn,
 đó là Spring Boot Starter Projects và Auto Configuration:
 
-+) Spring Boot Starter Projects: Spring Boot Starter là một nhóm các dependency được cấu hình
-sẵn mà bạn có thể thêm vào dự án của mình để nhanh chóng bắt đầu phát triển ứng dụng mà không
-cần phải cấu hình từng phần một. Starter giúp bạn không cần phải tự tìm và cấu hình các thư viện,
-thay vào đó chỉ cần thêm một dependency vào pom.xml hoặc build.gradle. Mỗi Starter chứa các
-cấu hình cơ bản và các thư viện cần thiết cho một loại ứng dụng cụ thể.
++) Spring Boot Starter Projects: Spring Boot Starter là một nhóm các sẵn các dependencies phù hợp theo từng
+chức năng (ví dụ: spring-boot-starter-web, spring-boot-starter-data-jpa...).
 
 +) AutoConfiguration trong Spring Boot dựa vào các dependencies mà bạn thêm vào dự án thông qua
 các starter projects để tự động cấu hình ứng dụng. Khi bạn thêm một Spring Boot Starter vào dự án,
@@ -181,62 +156,6 @@ và Assert:
 
 +) Assert: Sử dụng các phương thức xác nhận của JUnit như assertEquals, assertTrue, assertNull, v.v.,
 để kiểm tra xem kết quả trả về có đúng với mong đợi.
-
-- MAVEN
-
--- Apache Maven là một chương trình quản lý dự án cho phép các developers có thể quản lý về version,
-các dependencies( các thư viện sử dụng trong dự án ), các modules của Spring Project, quản lý build,
-tự động download javadoc và source …
-
--- Các tính năng của Maven trong dự án Spring bao gồm:
-
-+) Quản lý dependency/modules: Maven tự động tải về các thư viện cần thiết từ các kho lưu trữ
-trực tuyến dựa vào file pom.xml (Project Object Model). Khi bạn khai báo một dependency trong
-pom.xml, Maven sẽ tự động tải về các phiên bản tương thích của thư viện đó và các thư viện liên quan.
-
-+) Quản lý phiên bản: Maven cho phép quản lý phiên bản của các thư viện một cách dễ dàng.
-Bạn chỉ cần thay đổi phiên bản trong pom.xml, và toàn bộ dự án sẽ tự động cập nhật theo.
-
-+) Xây dựng và đóng gói: Maven hỗ trợ các quy trình xây dựng và đóng gói ứng dụng (build và package)
-bằng cách sử dụng các plugin tích hợp sẵn, giúp dễ dàng tạo ra các file jar hoặc war để triển khai.
-
-+) Quản lý lifecycle: Maven cung cấp một mô hình lifecycle, giúp tự động hóa các bước trong quá trình
-phát triển phần mềm, từ kiểm thử (test), biên dịch (compile) đến đóng gói (package) và triển khai (deploy).
-
-+) Tích hợp với Spring: Trong các dự án Spring, Maven đóng vai trò rất quan trọng khi tích hợp các
-dependency của Spring như Spring Core, Spring MVC, Spring Boot, và nhiều thư viện khác của Spring Framework.
-
-- POM: Project Object Model
-
-- Có 3 loại built-in lifecycles: default, clean and site
-
-- Common Maven Build Lifecycles: validate, clean, compile, test, package, verify,
-  install, deploy.
-
-- Có 2 loại plugins trong Maven: Build plugins và Reporting plugins.
-
-- Maven Commands:
-
-+) validate:
-
-+) clean: xóa file .class (mục đích để compile lại)
-
-+) compile: biên dịch file .java thành file .class
-
-+) test:
-
-+) install:
-
-+) package:
-
-+) deploy:
-
-- Tạo dự án maven:
-
-+) C1: mvn archetype:generate rồi tự config tiếp
-
-+) C2: mvn archetype:generate -DgroupId=[Tên package] -DartifactId=[Tên dự án]
--DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
 
 - TIGHTLY COUPLED
 

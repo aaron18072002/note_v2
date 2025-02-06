@@ -26,11 +26,20 @@ tên các element này là chúng ta có thể hiểu được nội dung bên t
 +) External: --> Viết trong file .css riêng, rồi liên kết bằng <link>. Giúp quản lý code tốt hơn, áp dụng
 được cho nhiều trang.
 
--- Block và Inline
+-- Block, Inline, Inline-Block
 
-+) Block: Chiếm 100% width của cha
++) Block: Chiếm 100% width của cha. Padding và Margin áp dụng cho 4 phía.
 
-+) Inline: Chiếm đủ width của content, không set width và height được.
++) Inline: Chiếm đủ width của content, không set width và height được. Padding và Margin không thể set
+theo chìu dọc.
+
++) Inline-Block: Giống như Inline nhưng set được height và width.
+
+-- Flex Box
+
+- justify-content: trục chính
+
+- align-items: trục phụ
 
 -- So sánh normalize và reset CSS
 
