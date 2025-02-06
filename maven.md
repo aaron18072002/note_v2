@@ -51,11 +51,12 @@ dependency của Spring như Spring Core, Spring MVC, Spring Boot, và nhiều t
 
 -- POM file sẽ chứa:
 
-+) project meta data: project name, version, output file type: JAR, WAR, ...
++) project meta data: Tên dự án, version, packaging.
 
-+) dependencies: danh sách các projects mà ta cần dùng như dependency.
++) dependencies: Danh sách thư viện cần dùng. Maven sử dụng metadata của dự án khác để tìm và tải các file jars
+từ Maven Central Repository.
 
-+) plugins: danh sách các custom task to run.
++) plugins: Các công cụ hỗ trợ build/test/package.
 
 - Có 3 loại built-in lifecycles: default, clean and site
 
