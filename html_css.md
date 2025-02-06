@@ -1,4 +1,4 @@
--- HTML viết tắt của HypherText Markup Language.
+-- HTML viết tắt của HypherText Markup Language. Ngôn ngữ đánh dấu siêu văn bản.
 
 -- Cách tính năng mới của HTML5:
 
@@ -14,6 +14,17 @@ tên các element này là chúng ta có thể hiểu được nội dung bên t
 -- thuộc tính target trong <a>
 
 +) \_self (mặc định) – Mở liên kết trong cùng tab hoặc cửa sổ hiện tại.
+
+-- CSS viết tắt của Cascading Style Sheet.
+
+-- Có 3 cách để viết CSS: Inline, Internal và External.
+
++) Inline --> Viết trực tiếp trong thuộc tính style của thẻ HTML. Chỉ áp dụng cho phần tử đó.
+
++) Internal: --> Viết trong thẻ <style> bên trong <head>. Dùng khi chỉ cần CSS cho một trang duy nhất.
+
++) External: --> Viết trong file .css riêng, rồi liên kết bằng <link>. Giúp quản lý code tốt hơn, áp dụng
+được cho nhiều trang.
 
 -- So sánh normalize và reset CSS
 
