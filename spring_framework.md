@@ -480,6 +480,8 @@ tương ứng mà không cần cấu hình thủ công.
 
 +) Dùng để lấy biến env từ file application config.
 
++) Spring dùng reflection để gán giá trị cho biến private.
+
 - SO SÁNH @Bean và @Component:
 
 -- Dùng @Component khi:
