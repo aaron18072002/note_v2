@@ -1,3 +1,5 @@
+- JS là 1 ngôn ngữ thông dịch
+
 - BABEL
 
 -- Babel.js là một công cụ JavaScript phổ biến được sử dụng chủ yếu cho việc
@@ -21,11 +23,16 @@ JavaScript xử lý các khai báo trong quá trình biên dịch trước khi c
 
 - CONST, LET, VAR
 
--- biến CONST không thể gán lại giá trị sau khi đã khai báo.
+-- biến CONST không thể gán lại giá trị sau khi đã khai báo (bắt buộc phải gán giá trị
+lúc khai báo).
 
 -- biến LET thì có thể thể gán lại giá trị sau khi đã khai báo.
 
 -- biến VAR giống biến LET nhưng hỗ trợ cơ chế HOISTING.
+
+- TRONG JS CÓ 7 LOẠI GIÁ TRỊ NGUYÊN THỦY
+
+-- Number, String, Boolean, Undefined, Null, Symbol(ES2015), BigInt
 
 - UNDEFINED và NULL
 
