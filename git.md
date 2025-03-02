@@ -36,13 +36,34 @@
 ++ đưa con trỏ HEAD đến commit_hash.
 ++ thư mục làm việc(working directory) sẽ chứa code, tài liệu ở commit.
 
+--> git commit ^^^ hiện notepad
+--> git commit -m "message"
+++ Kết quả: tạo commit mới
+
+--> git commit --amend ^^^ hiện notepad
 --> git commit --amend -m 'new message'
-++ sửa message commit hiện tại
+++ Kết quả: ghi đè commit hiện tại (đổi mã hash)
++) đè nội dung
++) đè message
+-> nếu k muốn update message --> git commit --amend --no-edit
+
+--> git reset --hard HEAD~1
+++ xóa commit, xóa luôn nội dung commit
+
+--> git reset --soft HEAD~1
+++ xóa commit, giữ lại nội dung commit
+
+--> git reflog
+++ hiện lịch sử các commit mà HEAD từng đi qua (gián/trực tiếp)
 
 --> git branch ten_nhanh_moi ten_nhanh_cu
 --> git checkout new_branch
 
 --> git checkout -b new_branch old_branch
+
+--> git ls-tree commit_hash
+++ xem ds các blob của commit đó
+++ xem commit đó có những file nào thay đổi so với commit trước
 
 -- GIT STATUS
 

@@ -712,9 +712,16 @@ nhúng mã Java trong các tệp HTML để tạo nội dung web đa dạng và 
 
 -- JSP Expression: <%= %>
 
--- JSP Scriplet: <% %>
+-- JSP Scriplet: <% ... %>: Biến có phạm vi method scope, chỉ tồn tại trong phương thức service().
 
--- JSP Declaration: <%! %>
+-- JSP Declaration: <%! %>: Khai báo biến/phương thức global, tồn tại trên toàn bộ servlet JSP.
+
+- Bean Scope
+
+-- page: Chỉ tồn tại trong trang JSP hiện tại --> Hết request của trang
+-- request: Tồn tại trong suốt quá trình xử lý request (bao gồm chuyển tiếp request) --> Hết request hiện tại
+-- session: Tồn tại trong suốt phiên làm việc của người dùng Khi session --> hết hạn hoặc bị hủy
+-- application: Tồn tại trong suốt vòng đời của ứng dụng --> Khi ứng dụng bị shutdown
 
 - JDBC
 
