@@ -44,14 +44,20 @@ lúc khai báo).
 
 - FALSY và TRUTHY
 
--- FALSY VALUES bao gồm : "", 0, false, undefined, null, NaN.
+-- FALSY VALUES bao gồm : "", 0, undefined, null, NaN.
 
--- FALSY VALUES trong điều kiện sẽ luôn trả về FALSE.
+-- FALSY VALUES trong điều kiện sẽ luôn tự ép kiểu trả về FALSE.
 
 - TYPE COERCION
 
 -- Type coercion là quá trình JavaScript tự động chuyển đổi kiểu dữ liệu của
 một giá trị thành kiểu khác để thực hiện một phép toán hoặc so sánh.
+
+-- Type Coercion (Ép kiểu tự động) trong JavaScript không thay đổi giá trị gốc,
+mà chỉ chuyển đổi kiểu dữ liệu tạm thời trong quá trình tính toán.
+
+-- Type Coercion (Ép kiểu tự động) trong JavaScript chỉ chuyển đổi giá trị
+sang Boolean, String, hoặc Number, tùy vào ngữ cảnh sử dụng.
 
 -- Toán tử + luôn tự ép kiểu thành String với String(value).
 
@@ -62,6 +68,13 @@ kiểu data type.
 
 -- TOÁN TỬ === so sánh theo giá trị và kiểu dữ liệu
 (typeof(value1) == typeof(value2)).
+
+- STATEMENT VÀ EXPRESSION
+
+- Bất cứ đoạn code nào trả về một giá trị đều là một Expression.
+
+- Statement (Câu lệnh) là một đoạn code thực thi nhưng không nhất thiết
+  phải trả về 1 giá trị.
 
 - FUNCTION
 
