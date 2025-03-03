@@ -182,6 +182,8 @@ và xử lý các phụ thuộc cần thiết cho nó.
 
 - BEAN SCOPEs
 
+-- Mặc định SCOPE của 1 bean là SINGLETON.
+
 -- SINGLETON: Trong singleton scope, Spring container sẽ chỉ tạo một instance duy nhất của bean
 trong suốt vòng đời của Spring IoC Container (context).
 
@@ -367,7 +369,7 @@ các method định nghĩa bean mà ứng dụng cần, và Spring sẽ xử lý
 +) Các bean được tạo ra với @Bean theo mặc định là singleton, tức là chỉ có một instance duy nhất
 trong Spring container.
 
-+) Bạn có thể thay đổi scope của bean bằng cách sử dụng thuộc tính @Scope.
++) Bạn có thể thay đổi scope của bean bằng cách sử dụng thuộc tính @Scope(ConfigurableBeanFactory.[loại_scope]).
 
 -- @Autowired:
 
@@ -386,6 +388,12 @@ một instance của một bean (đối tượng) được Spring quản lý đ�
 
 +) Nếu bạn không sử dụng @Qualifier và có nhiều bean cùng kiểu, Spring sẽ không biết phải
 tiêm bean nào và sẽ ném ra lỗi.
+
++) Dùng @Qualifier trước tham số của constructor (với constructor injection).
+
++) Tên ở đây là tên của class với chữ cái đầu là lowercase.
+
++) @Qualifier có độ ưu tiên cao hơn @Primary.
 
 -- @Component: Khi một class sử dụng annotation @Component trong Spring Framework, đây là một phần của cơ chế
 dependency injection (DI). Cụ thể, khi bạn đánh dấu một class với @Component, Spring sẽ:
