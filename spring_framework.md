@@ -180,6 +180,10 @@ Framework. Nó chịu trách nhiệm chính trong việc khởi tạo, quản l�
 -- Khi một lớp được đánh dấu là một bean, Spring sẽ chịu trách nhiệm khởi tạo nó, quản lý vòng đời của nó,
 và xử lý các phụ thuộc cần thiết cho nó.
 
+-- Mọi @Bean phải nằm trong class có @Configuration hoặc @Component, @Service, @Repository.
+
+-- BEAN ID mặc định là tên của method.
+
 - BEAN SCOPEs
 
 -- Mặc định SCOPE của 1 bean là SINGLETON.
@@ -382,7 +386,7 @@ một instance của một bean (đối tượng) được Spring quản lý đ�
 
 +) @Autowired sử dụng setter injection khi được đặt trực tiếp trên một hàm setter trong lớp.
 
--- @Qualifier("tên");
+-- @Qualifier("tên/bean id");
 
 +) @Qualifier cho phép chỉ định bean name khi có nhiều bean cùng loại.
 

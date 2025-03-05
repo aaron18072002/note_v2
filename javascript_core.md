@@ -24,7 +24,7 @@ JavaScript xử lý các khai báo trong quá trình biên dịch trước khi c
 - CONST, LET, VAR
 
 -- biến CONST không thể gán lại giá trị sau khi đã khai báo (bắt buộc phải gán giá trị
-lúc khai báo).
+lúc khai báo). Tính bất biến của biến CONST giống như FINAL trong java.
 
 -- biến LET thì có thể thể gán lại giá trị sau khi đã khai báo.
 
@@ -85,11 +85,44 @@ kiểu data type.
 -- Nếu FUNCTION có khai báo tham số mà ta không truyền đối số vào thì giá trị tham số
 đó sẽ là undefined. Có thể truyền FUNCTION vào 1 FUNCTION với tư cách là tham số.
 
--- FUNCTION có thể lưu vào 1 biến.
-
 -- ANONYMOUS FUNCTION không có cơ chế HOISTING.
 
 -- ARROW FUNCTION chỉ là 1 cách viết ngắn gọn của ANONYMOUS FUNCTION.
+
+-- ARROW FUNCTION là một Expression Function vì nó tạo ra một giá trị và
+có thể gán vào biến.
+
+-- Không giống FUNCTION DECLARATION, ARROW FUNCTION không thể đứng một mình
+như một câu lệnh (Statement).
+
+-- ARROW FUNCTION không thể sử dụng từ khóa this.
+
+- ARRAY BUILT-IN FUNCTIONS
+
+-- push: thêm phần tử vào cuối mảng, trả về độ dài mảng mới
+
+-- unshift: thêm phần tử vào đầu mảng, trả về độ dài mảng mới
+
+-- pop: xóa phần tử ở cuối mảng, trả về phần tử đã xóa.
+
+-- shift: xóa phần tử ở đầu mảng, trả về phần tử đã xóa.
+
+-- indexOf: tìm index của 1 phần tử trong mảng, trả về -1 nếu
+trong mảng ko có phần tử đó.
+
+-- includes: xác định xem phần tử có ở trong mảng ko, trả về true
+hoặc false (includes so sánh cả giá trị lẫn kiểu dữ liệu).
+
+- DOM LÀ GÌ
+
+-- DOM viết tắt của Document Object Model.
+
+-- DOM là 1 model dưới dạng cây, nó thị đầy đủ mối quan hệ, thuộc tính và nội dung
+của trang HTML mà trình duyệt nhận được. Document trỏ tới trang html hoặc xml
+được thể hiện như một đối tượng.
+
+-- HTML DOM sẽ cho phép Javascipt chỉnh sửa nội dung của các elements trong trang HTML
+bằng Javascript thông qua DOM interface - document.
 
 - SCOPE
 
