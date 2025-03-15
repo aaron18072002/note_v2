@@ -288,6 +288,12 @@ type của tham số và tự động tiêm (inject) chúng vào đối tượng
 
 -- Web Server hoạt động thông qua giao thức HTTP/HTTPS.
 
+- RESPONSE ENTITY
+
+-- ResponseEntity là 1 wrapper class của HTTP Response
+
+-- ResponseEntity bao gồm HTTP status code, HTTP headers, Response body...
+
 - DISPATCHER SERVLET
 
 -- DispatcherServlet trong Spring Framework đóng vai trò là trung gian (hay còn gọi là Front Controller)
@@ -337,6 +343,14 @@ nơi ánh xạ khóa ngoại từ bảng hiện tại (bảng chứa entity đan
 
 +) nếu bảng nào có quan hệ 1-1 thì giữ khóa ngoại làm FIELD. VD: users n-1 roles ->
 users có FIELD role_id.
+
+-- JPQL (JPA Query Language): cho phép Hibernate Query Language (HQL) Dùng tên của entity để truy vấn
+thay vì tên Table.
+
+-- TypedQuery<T>: được sử dụng khi bạn cần truy vấn dữ liệu (SELECT) và trả về danh sách đối tượng kiểu T.
+
+-- Query: được dùng cho các câu lệnh không trả về dữ liệu như DELETE hoặc UPDATE, vì chúng chỉ trả về số
+dòng bị ảnh hưởng thay vì một danh sách đối tượng.
 
 - ANNOTATIONs
 
@@ -494,6 +508,16 @@ tương ứng mà không cần cấu hình thủ công.
 
 +) Spring dùng reflection để gán giá trị cho biến private.
 
+-- @Transactional
+
++) Tự động BEGIN và END 1 transaction.
+
+-- @Repository
+
++) Hỗ trợ Component Scanning
+
++) Chuyên đổi JDBC exceptions thành unchecked exceptions.
+
 - SO SÁNH @Bean và @Component:
 
 -- Dùng @Component khi:
@@ -518,6 +542,14 @@ ví dụ như khi cần tạo một bean với tham số constructor hoặc cầ
 +) Lớp cần tạo bean không nằm trong package quét của Spring: Nếu lớp bạn muốn tạo bean không nằm trong package
 mà Spring đang quét (thông qua component scanning), bạn có thể sử dụng @Bean để khai báo và tạo bean cho lớp đó
 mà không cần phải di chuyển lớp đó vào package đã quét.
+
+-- @ExceptionHandler và @ControllerAdvice
+
++) Nếu @ExceptionHanlder nằm trong 1 @Controller cụ thể thì chỉ xử lý exception cho
+@Controller đó thôi.
+
++) Nếu @ExceptionHandler nằm trong @ControllerAdvice thì có thể xử lý exception
+cho toàn bộ @Controller.
 
 - Các annotation để GET request data từ Client:
 

@@ -138,7 +138,7 @@ MÀ THÔI.”
 - THOROUGHLY (adv): kỹ lưỡng
 - gather (v) = assenble (v): tụ họp
 - shovel (n): xẻng / shovel (v): xúc
-- so = therefore = thus = hence = consequently: do đó
+- so = therefore = thus = hence = consequently = thereby: do đó
 - significant (adj) = remarkable (adj) = noticeable = substantially (adj) = considerable (adj) đáng kể
 - utensil (n): dụng cụ nhà bếp
 - unforeseen (adv) = unexpected (v): không lường trước được
@@ -155,6 +155,7 @@ MÀ THÔI.”
 - diverse (adj): phong phú
 - distinguished (adj): ưu tiến
 - digging (v): đào bới
+- draw in = attract: thu hút
 - enquire (v): hỏi thăm # require (v): yêu cầu
 - entitle (v): trao quyền
 - clothes = garment (n): áo quần

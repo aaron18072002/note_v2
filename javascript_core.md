@@ -18,8 +18,8 @@ thực thi mã JavaScript thành ngôn ngữ máy tại runtime.
 JavaScript "đưa" phần khai báo của các biến, hàm, hoặc lớp lên đầu phạm vi
 của chúng (scope) trước khi thực thi mã.
 
--- Tuy nhiên, HOISTING không thực sự "di chuyển" mã nguồn lên đầu. Nó chỉ là cách
-JavaScript xử lý các khai báo trong quá trình biên dịch trước khi chạy chương trình.
+-- Cơ chế HOISTING trong JavaScript chỉ đưa phần khai báo của biến lên đầu,
+nhưng không HOISTING phần gán giá trị.
 
 - CONST, LET, VAR
 
@@ -29,6 +29,9 @@ lúc khai báo). Tính bất biến của biến CONST giống như FINAL trong 
 -- biến LET thì có thể thể gán lại giá trị sau khi đã khai báo.
 
 -- biến VAR giống biến LET nhưng hỗ trợ cơ chế HOISTING.
+
+-- biến được khai báo với từ khóa VAR thì biến đó sẽ trở thành một thuộc tính của đối
+tượng window trong trình duyệt
 
 - TRONG JS CÓ 7 LOẠI GIÁ TRỊ NGUYÊN THỦY
 
@@ -78,12 +81,17 @@ kiểu data type.
 
 - FUNCTION
 
--- FUNCTION có cơ chế HOISTING.
+-- FUNCTION DECLARATION có cơ chế HOISTING.
 
 -- Nếu không return thì FUNCTION sẽ trả về undefined.
 
 -- Nếu FUNCTION có khai báo tham số mà ta không truyền đối số vào thì giá trị tham số
 đó sẽ là undefined. Có thể truyền FUNCTION vào 1 FUNCTION với tư cách là tham số.
+
+-- Nếu FUNCTION được gọi trong strict mode, this sẽ là undefined khi gọi trong phạm vi
+global hoặc trong một FUNCTION độc lập.
+
+-- Nếu FUNCTION là một thuộc tính của object, thì this trỏ đến object đó.
 
 -- ANONYMOUS FUNCTION không có cơ chế HOISTING.
 
@@ -95,7 +103,8 @@ có thể gán vào biến.
 -- Không giống FUNCTION DECLARATION, ARROW FUNCTION không thể đứng một mình
 như một câu lệnh (Statement).
 
--- ARROW FUNCTION không thể sử dụng từ khóa this.
+-- ARROW FUNCTION không có this của riêng nó mà nó sẽ kế thừa this từ
+phạm vi (scope) chứa nó.
 
 - ARRAY BUILT-IN FUNCTIONS
 
@@ -124,11 +133,36 @@ của trang HTML mà trình duyệt nhận được. Document trỏ tới trang 
 -- HTML DOM sẽ cho phép Javascipt chỉnh sửa nội dung của các elements trong trang HTML
 bằng Javascript thông qua DOM interface - document.
 
+- EVENT LOOP
+
+-- Global Execution Context (GEC): Được tạo đầu tiên khi mã JavaScript được chạy.
+Chứa các biến và hàm được khai báo trong phạm vi toàn cục (nằm ngoài function) và
+this trong GEC tham chiếu đến window (trong trình duyệt) hoặc global (trong Node.js).
+
+-- Function Execution Context (FEC): Được tạo ra mỗi khi một hàm được gọi.
+Chứa các biến cục bộ, Lexial Scope và this.
+
+-- Call Stack trong Event Loop là tập hợp các Execution Context.
+
+-- Khi một Exection Context thực thi xong thì các biến nguyên thủy trong
+Execution Context đó sẽ được Garbage Collection release.
+
 - SCOPE
 
 -- SCOPE là phạm vi truy cập của 1 biến.
 
+-- Có 3 loại SCOPE: GLOBAL SCOPE, BLOCK SCOPE và FUNCTION SCOPE.
+
 -- Biến VAR luôn luôn là 1 GLOBAL SCOPE vì cơ chế HOISTING.
+
+-- Lexial Scope: là cơ chế trong JavaScript giúp một function con có thể truy cập các biến
+của function cha tại thời điểm function được định nghĩa (chứ không phải lúc nó được gọi).
+
+-- SCOPE CHAIN: là cơ chế giúp một function/block có thể truy cập các biến bên ngoài phạm vi
+của nó bằng cách tìm kiếm theo chuỗi phạm vi (scope) từ trong ra ngoài.
+
+-- Thứ tự gọi hàm không ảnh hướng tới SCOPE CHAIN. Bởi vì SCOPE CHAIN được xác định
+tại tời điểm COMPILE, không phải RUNTIME.
 
 - CLOSURE
 
