@@ -352,6 +352,9 @@ thay vì tên Table.
 -- Query: được dùng cho các câu lệnh không trả về dữ liệu như DELETE hoặc UPDATE, vì chúng chỉ trả về số
 dòng bị ảnh hưởng thay vì một danh sách đối tượng.
 
+-- getSingleResult(): không bao giờ trả về null, nếu ko có record nó sẽ ném ra NoResultException
+hoặc NonUniqueResultException.
+
 - ANNOTATIONs
 
 -- Annotation là cách để chúng ta thêm siêu dữ liệu (metadata) vào các thành phần trong Java
@@ -650,6 +653,15 @@ dùng có thể truy cập thông qua trình duyệt hoặc các giao thức web
 -- JSON WEB TOKEN là 1 chuỗi string được mã hóa.
 
 -- Bao gồm 3 phần: HEADER, PAYLOAD, SIGNATURE.
+
+- SPRING MVC
+
+-- HTML thì tìm trong resources/templates còn CSS thì tìm trong
+resources/static/css (dùng th.href trong Thymeleaf).
+
+-- Model là một interface dùng để truyền dữ liệu từ CONTROLLER đến VIEW. Nó đóng vai trò như một container
+giúp bạn đặt các thuộc tính (attributes) vào, và những thuộc tính này có thể được truy cập trong
+template engine (như Thymeleaf, JSP, v.v.).
 
 - SERVLET
 
