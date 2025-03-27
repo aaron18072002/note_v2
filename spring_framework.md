@@ -663,6 +663,11 @@ resources/static/css (dùng th.href trong Thymeleaf).
 giúp bạn đặt các thuộc tính (attributes) vào, và những thuộc tính này có thể được truy cập trong
 template engine (như Thymeleaf, JSP, v.v.).
 
+-- th:field = "\*{}" là shortcut cho th:field = "${object.fieldName}".
+
+-- Khi sử dụng @ModelAttribute trong phương thức controller, Spring tự động thêm đối tượng vào model,
+mà không cần gọi model.addAttribute.
+
 - SERVLET
 
 -- Servlet là một lớp Java được thiết kế để xử lý các request cụ thể, phổ biến nhất là HTTP request.

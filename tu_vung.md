@@ -26,6 +26,8 @@ MÀ THÔI.”
 - as well as: cũng như
 - as long as = provided that: miễn là
 - as far as: theo như
+- assortment (n): sự phân loại
+- apparently = clearly (adv): rõ ràng
 - accommodate (v) = meet (v): đáp ứng
 - abundant (ajd) = many = numerous = plentiful: nhiều, phong phú
 - occurrence = happening (n): xảy ra
@@ -199,3 +201,4 @@ MÀ THÔI.”
 - morden = up-to-date = state-of-the-art: hiện đại
 - venue (n): nơi gặp mặt
 - hedge (n) = hence (n): hàng rào
+- harbor (n): bến cảng

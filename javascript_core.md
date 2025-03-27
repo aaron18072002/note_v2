@@ -164,6 +164,12 @@ của nó bằng cách tìm kiếm theo chuỗi phạm vi (scope) từ trong ra 
 -- Thứ tự gọi hàm không ảnh hướng tới SCOPE CHAIN. Bởi vì SCOPE CHAIN được xác định
 tại tời điểm COMPILE, không phải RUNTIME.
 
+- SPREAD OPERATOR
+
+-- SPREAD OPERATOR lặp qua các ITERABLES.
+
+-- ITERABLE trong JS gồm: ARRAYS, STRINGS, MAPS, SETS. Không phải OBJECTS.
+
 - CLOSURE
 
 -- CLOSURE cho phép một FUNCTION bên trong có thể truy cập các biến
