@@ -170,6 +170,10 @@ tại tời điểm COMPILE, không phải RUNTIME.
 
 -- ITERABLE trong JS gồm: ARRAYS, STRINGS, MAPS, SETS. Không phải OBJECTS.
 
+- NULLISH COALESCING OPERATOR (??)
+
+-- A ?? B: Nếu A = null hoặc undefined thì trả về B, ngược lại trả về A.
+
 - CLOSURE
 
 -- CLOSURE cho phép một FUNCTION bên trong có thể truy cập các biến

@@ -570,6 +570,13 @@ cho toàn bộ @Controller.
 
 +) @PostAuthorize: Annotation @PostAuthorize xác minh nó sau khi thực hiện method và có thể thay đổi kết quả.
 
+- SPRING SECURITY
+
+-- Trong Spring, mỗi một REQUEST được gửi từ browser sẽ được WEB SERVER (TOMCAT) biến thành 1 ServletRequest
+object và sẽ được gửi lại bởi WEB SERVER dưới dạng 1 ServletResponse object.
+
+-- Spring Security mặc định sử dụng cookie có tên JSESSIONID để duy trì phiên làm việc (session) của người dùng.
+
 - FILTER và INTERCEPTOR
 
 -- Filter là một thành phần của Servlet API, được triển khai từ interface javax.servlet.Filter.

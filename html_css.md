@@ -37,6 +37,19 @@ không thể set theo chìu dọc. pseudo element là 1 inline element.
 
 - align-items: trục phụ
 
+- flex-grow: giá trị mặc định là 0, dùng để cho phép các phần tử giãn ra để chiếm các
+  empty space còn lại. Nếu phần tử A có flex-grow: 1 còn phần tử B có flex-grow: 2 thì sẽ khoảng
+  empty space mà B được chiếm sẽ gấp đôi A chứ không phải B sẽ bự gấp 2 lần A.
+
+- flex-basis: giá trị mặc định là auto, đùng để set chiều rộng hoặc chiều cao của phần tử dựa vào
+  flex-direction row hay column.
+
+- flex-shrink: giá trị mặc định là 1, đùng để cho phép các phần tử tự động thu hẹp lại
+  để phù hợp với flex container.
+
+- flex: cả 3 properties flex-grow, flex-shrink và flex-basis đều dùng cho flex items con. Và flex
+  là property shorthand của cả 3.
+
 -- CSS SELECTOR
 
 - [elementA] [elementB]: select tất cả elementB bên trong elementA.
@@ -68,10 +81,14 @@ không thể set theo chìu dọc. pseudo element là 1 inline element.
 -- CSS POSITION
 
 - static: mặc định. absolute ko coi static là cha.
+
 - relative: theo vị trí ban đầu của nó.
+
 - absolute: theo vị trí của cha nó. absolute luôn đi tìm relative gần nhất. Một absolute element không
   chiếm diện tích trong dòng chảy bình thường của trang web.
+
 - fixed: đi theo viewport.
+
 - sticky: kết hợp giữa relative và fixed.
 
 -- BOX MODEL
