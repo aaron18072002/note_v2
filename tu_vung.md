@@ -160,6 +160,7 @@ MÀ THÔI.”
 - draw in = attract: thu hút
 - enquire (v): hỏi thăm # require (v): yêu cầu
 - entitle (v): trao quyền
+- except + for = other than = apart from: ngoại trừ
 - clothes = garment (n): áo quần
 - confidential (adj) = private: bí mật
 - conversation (n): cuộc hội thoại / conservation (n): sự bảo tồn / reservation (n): sự đặt chỗ

@@ -15,6 +15,8 @@ tên các element này là chúng ta có thể hiểu được nội dung bên t
 
 +) \_self (mặc định) – Mở liên kết trong cùng tab hoặc cửa sổ hiện tại.
 
++) \_blank – Mở liên kết sang tab mới.
+
 -- CSS viết tắt của Cascading Style Sheet.
 
 -- Có 3 cách để viết CSS: Inline, Internal và External.
@@ -24,9 +26,23 @@ tên các element này là chúng ta có thể hiểu được nội dung bên t
 +) External: --> Viết trong file .css riêng, rồi liên kết bằng <link>. Giúp quản lý code tốt hơn, áp dụng
 được cho nhiều trang.
 
+-- Table Element
+
+- Ý nghĩa các thẻ:
+  +) <table></table>: Xác định một bảng
+  +) <thead></thead>: Phần đầu của bảng
+  +) <tbody></tbody>: Phần thân của bảng
+  +) <tr></tr> (table row): Xác định một hàng của bảng
+  +) <th></th> (table header): Xác định tiêu đề của bảng
+  +) <td></td> (table data): Xác định dữ liệu ô của bảng
+
+- Thuộc tính:
+  +) colspan: tạo ô mở rộng trên nhiều cột
+  +) rowspan: tạo ô kéo dài trên nhiều hàng
+
 -- Block, Inline, Inline-Block
 
-+) Block: Chiếm 100% width của cha. Padding và Margin áp dụng cho 4 phía.
++) Block: Luôn luôn bắt đầu trên một dòng mới, chiếm 100% width của cha. Padding và Margin áp dụng cho 4 phía.
 +) Inline: Chiếm đủ width của content, không set width và height được. Padding và Margin
 không thể set theo chìu dọc. pseudo element là 1 inline element.
 +) Inline-Block: Giống như Inline nhưng set được height và width. img là 1 inline-block element.
@@ -49,6 +65,14 @@ không thể set theo chìu dọc. pseudo element là 1 inline element.
 
 - flex: cả 3 properties flex-grow, flex-shrink và flex-basis đều dùng cho flex items con. Và flex
   là property shorthand của cả 3.
+
+-- GRID
+
+- Căn chỉnh các tracks bên trong grid containers --> Dùng justify-content, align-content.
+
+- Căn chỉnh các grid items bên trong các grid cells chứa nó --> Dùng justify-items, align-items.
+
+- Căn chỉnh 1 grid item trong grid cell chứa nó --> Dùng align-self, justify-self.
 
 -- CSS SELECTOR
 
@@ -90,6 +114,31 @@ không thể set theo chìu dọc. pseudo element là 1 inline element.
 - fixed: đi theo viewport.
 
 - sticky: kết hợp giữa relative và fixed.
+
+-- BOX SHADOW
+
+- box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
+
++) none: Giá trị default: là không có shadow
+
++) h-offset: Điều chỉnh khoảng cách shadow theo chiều ngang. Giá trị dương cho shadow đổ bóng về bên phải
+(bóng hiển thị ở bên phải), giá trị âm đổ bóng về bên trái (bóng đổ về bên trái)
+
++) v-offset: Điều chỉnh khoảng cách shadow theo chiều dọc. Giá trị dương cho shadow đổ bóng xuống dưới
+(bóng xuất hiện ở dưới hình), giá trị âm cho shadow đổ bóng lên phía trên (bóng xuất hiện phía trên hình)
+
++) blur - không bắt buộc: Độ 'blur' - độ mờ của bóng. Giá trị càng lớn thì bóng càng mờ đi. Giá trị càng
+nhỏ càng 'solid'
+
++) spread - không bắt buộc: Độ phân tán của shadow. Giá trị dương sẽ làm shadow rộng ra, giá trị âm sẽ thu nhỏ
+kích cỡ shadow
+
++) color: màu của shadow. Mặc định là màu font-color hiện tại
+
++) inset - không bắt buộc: thay đổi shadow ngoài thành shadow nằm trong hình
+(giống như mình nhìn đèn trần thạch cao ấy 😃)
+
+- text-shadow: offset-x | offset-y | blur-radius | color
 
 -- BOX MODEL
 
