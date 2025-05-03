@@ -74,6 +74,8 @@ không thể set theo chìu dọc. pseudo element là 1 inline element.
 
 - Căn chỉnh 1 grid item trong grid cell chứa nó --> Dùng align-self, justify-self.
 
+- Muốn element bắt đầu ở dòng hoặc cột cụ thể nào đó trong lưới --> Dùng grid-column, grid-row.
+
 -- CSS SELECTOR
 
 - [elementA] [elementB]: select tất cả elementB bên trong elementA.
@@ -114,6 +116,8 @@ không thể set theo chìu dọc. pseudo element là 1 inline element.
 - fixed: đi theo viewport.
 
 - sticky: kết hợp giữa relative và fixed.
+
++) Có thể dùng left, right, top, bottom với bất kỳ phần tử nào có position khác static.
 
 -- BOX SHADOW
 
