@@ -164,6 +164,18 @@ kích cỡ shadow
 - Khi % áp dụng cho thuộc tính liên quan đến chữ (line-height, font-size), nó sẽ dựa vào chính kích thước
   của phần tử đó.
 
+-- REM trong CSS
+
+- REM trong CSS được viết gọn lại của root em. Nó có nghĩa là "The root element's font-size",
+  hiểu đơn giản REM trong CSS sẽ được tính toán dựa trên font-size của html(root).
+
+- Nếu chúng ta không set cho HTML root một giá trị font-size, giá trị mặc định của font-size khi đó sẽ là 16px.
+  Do đó, khi phần tử sử dụng đơn vị REM, phần tử này sẽ tìm để phần tử root xem giá trị font-size là bao nhiêu
+  để tính toán và set giá trị.
+
+- Nên dùng % thay vì fixed pixel khi set font-size cho html element vì nếu người dùng thay đổi cài đặt mặc định
+  trong trình duyệt (ví dụ: font-size mặc định là 18px thay vì 16px), thì layout vẫn co giãn theo đúng tỷ lệ.
+
 -- So sánh normalize và reset CSS
 
 - reset CSS là set các giá trị như margin, padding, font-size về 0, Cũng list-style: none, ...
