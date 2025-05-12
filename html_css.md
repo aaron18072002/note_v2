@@ -80,6 +80,8 @@ không thể set theo chìu dọc. pseudo element là 1 inline element.
 
 - [elementA] [elementB]: select tất cả elementB bên trong elementA.
 
+- [classA][classB]: select phần tử có cả classA và classB đồng thời.
+
 - [elementA] + [elementB]: select elementB đầu tiên bên trong elementA.
 
 - id và class:
