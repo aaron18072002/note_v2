@@ -50,6 +50,11 @@
 +) đè message
 -> nếu k muốn update message --> git commit --amend --no-edit
 
+--> git restore <file>:
+++ khôi phục sự thay đổi của file từ modified về unmodified
+--> git restore --staged <file>:
+++ chuyển đổi trạng thái của file từ staged về modified/untracked
+
 --> git reset --hard HEAD~1
 ++ xóa commit, xóa luôn nội dung commit
 
