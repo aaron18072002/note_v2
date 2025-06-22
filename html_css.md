@@ -1,4 +1,4 @@
--- HTML viết tắt của HypherText Markup Language. Ngôn ngữ đánh dấu siêu văn bản.
+> HTML viết tắt của HypherText Markup Language. Ngôn ngữ đánh dấu siêu văn bản.
 
 -- Cách tính năng mới của HTML5:
 
@@ -11,22 +11,22 @@ tên các element này là chúng ta có thể hiểu được nội dung bên t
 
 -- <a>: anchor element --> Có 2 loại link: link với page khác trong cùng project, link tới một trang khác.
 
--- thuộc tính target trong <a>
+> thuộc tính target trong <a>
 
 +) \_self (mặc định) – Mở liên kết trong cùng tab hoặc cửa sổ hiện tại.
 
 +) \_blank – Mở liên kết sang tab mới.
 
--- CSS viết tắt của Cascading Style Sheet.
+> CSS viết tắt của Cascading Style Sheet.
 
--- Có 3 cách để viết CSS: Inline, Internal và External.
+- Có 3 cách để viết CSS: Inline, Internal và External.
 
 +) Inline --> Viết trực tiếp trong thuộc tính style của thẻ HTML. Chỉ áp dụng cho phần tử đó.
 +) Internal: --> Viết trong thẻ <style> bên trong <head>. Dùng khi chỉ cần CSS cho một trang duy nhất.
 +) External: --> Viết trong file .css riêng, rồi liên kết bằng <link>. Giúp quản lý code tốt hơn, áp dụng
 được cho nhiều trang.
 
--- Table Element
+> Table Element
 
 - Ý nghĩa các thẻ:
   +) <table></table>: Xác định một bảng
@@ -40,14 +40,14 @@ tên các element này là chúng ta có thể hiểu được nội dung bên t
   +) colspan: tạo ô mở rộng trên nhiều cột
   +) rowspan: tạo ô kéo dài trên nhiều hàng
 
--- Block, Inline, Inline-Block
+> Block, Inline, Inline-Block
 
 +) Block: Luôn luôn bắt đầu trên một dòng mới, chiếm 100% width của cha. Padding và Margin áp dụng cho 4 phía.
 +) Inline: Chiếm đủ width của content, không set width và height được. Padding và Margin
 không thể set theo chìu dọc. pseudo element là 1 inline element.
 +) Inline-Block: Giống như Inline nhưng set được height và width. img là 1 inline-block element.
 
--- FLEX BOX
+> FLEX BOX
 
 - justify-content: trục chính
 
@@ -66,7 +66,7 @@ không thể set theo chìu dọc. pseudo element là 1 inline element.
 - flex: cả 3 properties flex-grow, flex-shrink và flex-basis đều dùng cho flex items con. Và flex
   là property shorthand của cả 3.
 
--- GRID
+> GRID
 
 - Căn chỉnh các tracks bên trong grid containers --> Dùng justify-content, align-content.
 
@@ -76,7 +76,7 @@ không thể set theo chìu dọc. pseudo element là 1 inline element.
 
 - Muốn element bắt đầu ở dòng hoặc cột cụ thể nào đó trong lưới --> Dùng grid-column, grid-row.
 
--- CSS SELECTOR
+> CSS SELECTOR
 
 - [elementA] [elementB]: select tất cả elementB bên trong elementA.
 
@@ -86,13 +86,13 @@ không thể set theo chìu dọc. pseudo element là 1 inline element.
 
 - id và class:
 
--- ĐỘ ƯU TIÊN SELECTOR
+> ĐỘ ƯU TIÊN SELECTOR
 
 - !important -> ID [#] -> Class [.] hoặc pseudo class [:] -> element -> universal [*].
 
 +) Trong CSS, một id chỉ nên được sử dụng cho một phần tử duy nhất trong một file HTML.
 
--- COLOR
+> COLOR
 
 - Mọi màu đều có thể tạo ra nhờ sự kết hợp giữa 3 màu Red, Green, Blue.
 
@@ -106,7 +106,7 @@ không thể set theo chìu dọc. pseudo element là 1 inline element.
   +) GG (Green) là giá trị màu xanh lá cây (từ 00 đến FF).
   +) BB (Blue) là giá trị màu xanh dương (từ 00 đến FF).
 
--- CSS POSITION
+> CSS POSITION
 
 - static: mặc định. absolute ko coi static là cha.
 
@@ -121,7 +121,7 @@ không thể set theo chìu dọc. pseudo element là 1 inline element.
 
 +) Có thể dùng left, right, top, bottom với bất kỳ phần tử nào có position khác static.
 
--- BOX SHADOW
+> BOX SHADOW
 
 - box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;
 
@@ -146,7 +146,7 @@ kích cỡ shadow
 
 - text-shadow: offset-x | offset-y | blur-radius | color
 
--- BOX MODEL
+> BOX MODEL
 
 - Box Model là thứ mà browser dựa vào để tính toán một element rộng/cao bao nhiêu để render cho chính xác
   và đúng ý của developer.
@@ -158,7 +158,7 @@ kích cỡ shadow
 +) Padding: Khoảng cách tính từ bên trong của phần tử.
 +) Content: Nội dung trong phần tử.
 
--- % trong CSS
+> % trong CSS
 
 - Khi dùng % cho kích thước (width, height, top, left, right, bottom, padding, margin, v.v.), giá trị sẽ
   dựa vào phần tử cha gần nhất có thuộc tính liên quan.
@@ -166,7 +166,7 @@ kích cỡ shadow
 - Khi % áp dụng cho thuộc tính liên quan đến chữ (line-height, font-size), nó sẽ dựa vào chính kích thước
   của phần tử đó.
 
--- REM trong CSS
+> REM trong CSS
 
 - REM trong CSS được viết gọn lại của root em. Nó có nghĩa là "The root element's font-size",
   hiểu đơn giản REM trong CSS sẽ được tính toán dựa trên font-size của html(root).
@@ -178,7 +178,7 @@ kích cỡ shadow
 - Nên dùng % thay vì fixed pixel khi set font-size cho html element vì nếu người dùng thay đổi cài đặt mặc định
   trong trình duyệt (ví dụ: font-size mặc định là 18px thay vì 16px), thì layout vẫn co giãn theo đúng tỷ lệ.
 
--- So sánh normalize và reset CSS
+> So sánh normalize và reset CSS
 
 - reset CSS là set các giá trị như margin, padding, font-size về 0, Cũng list-style: none, ...
 - normalize cũng như reset CSS nhưng không hoàn toàn loại bỏ các giá trị default mà thay vào đó chuẩn hóa

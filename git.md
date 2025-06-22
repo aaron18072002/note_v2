@@ -65,13 +65,23 @@
 ++ hiện lịch sử các commit mà HEAD từng đi qua (gián/trực tiếp)
 
 --> git branch ten_nhanh_moi ten_nhanh_cu
---> git checkout new_branch
+--> git checkout ten_nhanh_moi
 
---> git checkout -b new_branch old_branch
+--> git checkout -b ten_nhanh_moi ten_nhanh_cu =
+git branch ten_nhanh_moi ten_nhanh_cu + git checkout ten_nhanh_moi
+--> git checkout commit_hash
 
 --> git ls-tree commit_hash
 ++ xem ds các blob của commit đó
 ++ xem commit đó có những file nào thay đổi so với commit trước
+
+--> git cherry-pick
+++ bóc(copy) commit từ nhánh này sang nhánh kia
+
+--> git merge branch
+++ merge branch vào nhánh hiện tại
+++ nếu branch là nhánh cha --> already up to date
+++ nếu branch là nhánh con(có commit mới hơn) --> no conflict --> cha nhảy lên (thay đổi commit)
 
 > GIT STATUS
 
@@ -90,6 +100,8 @@ chưa commit lần nào.
 
 +) Nhánh đơn thuần là một con trỏ, trỏ đến một commit và có khả năng di chuyến được
 
++) BRANCH -> commit
+
 +) Nhánh thường đại diện cho 1 version của dự án, commit mà nhánh đang trỏ đến sẽ
 là commit, chức năng mới nhất của dự án đó
 
@@ -97,7 +109,10 @@ là commit, chức năng mới nhất của dự án đó
 
 +) Cách tạo nhánh:
 
---> git branch ten_nhanh_moi commit_hash
+--> git branch ten_nhanh_moi commit_hash : tạo nhánh mới trỏ đến commit_hash
 
 --> git branch ten_nhanh_moi ten_nhanh_cu : tạo ten_nhanh_moi từ cái commit
 mà ten_nhanh_cu đang trỏ đến
+
+--> git branch ten_nhanh_moi : tạo ten_nhanh_moi từ cái commit
+mà HEAD đang trỏ đến
