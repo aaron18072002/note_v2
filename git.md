@@ -66,6 +66,7 @@
 
 --> git branch ten_nhanh_moi ten_nhanh_cu
 --> git checkout ten_nhanh_moi
+--> got branch -d ten_nhanh_muon_xoa
 
 --> git checkout -b ten_nhanh_moi ten_nhanh_cu =
 git branch ten_nhanh_moi ten_nhanh_cu + git checkout ten_nhanh_moi
@@ -82,6 +83,20 @@ git branch ten_nhanh_moi ten_nhanh_cu + git checkout ten_nhanh_moi
 ++ merge branch vào nhánh hiện tại
 ++ nếu branch là nhánh cha --> already up to date
 ++ nếu branch là nhánh con(có commit mới hơn) --> no conflict --> cha nhảy lên (thay đổi commit)
+
+--> git merge --abort
+
+> Để xóa commit
+
+- Xóa commit gồm 2 việc:
+  +) Xóa việc lưu trữ thay đổi bên trong .git
+  +) Xóa nội dung mình thay đổi ở folder làm việc
+  +) Xóa commit xóa luôn nội dung: git reset --hard HEAD~n
+  +) Xóa commit xóa và giữ lại nội dung thay đổi: git reset --soft HEAD~n --> giữ trong staging
+  +) n là số commit gần nhất của branch hiện tại (HEAD)
+
+- Không thể xóa 1 commit đang là commit cha của 1 commit khác, vì nội dung trong commit cha có thể
+  đang được sử dụng trong các commit con.
 
 > GIT STATUS
 
